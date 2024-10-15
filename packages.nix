@@ -1,0 +1,60 @@
+{ pkgs, ...}:
+{
+    environment.systemPackages = with pkgs; [
+        anki
+        bartib
+        bat
+        bottles
+        brave
+        btop
+        dafny
+        deluge
+        fastfetch
+        fd
+        ferdium
+        file
+        fzf
+        gcc
+        gdu
+        git
+        gnome-calendar
+        gnome-clocks
+        gnumake
+        gnupg
+        heroic
+        hledger
+        hledger-ui
+        hledger-web
+        inkscape
+        kdePackages.yakuake
+        libnotify
+        lsd
+        lutris
+        meslo-lgs-nf
+        mpv
+        newsboat
+        nodejs-slim
+        obsidian
+        pass
+        pinentry-qt
+        polonium
+        prismlauncher
+        python3
+        renameutils
+        ripgrep
+        stow
+        stretchly # no breaktimer on nix
+        texliveFull
+        thunderbird
+        tmux
+        tree-sitter
+        unrar-free
+        unzip
+        vesktop
+        wl-clipboard
+        yazi
+        zathura
+        zotero_7
+        zsh-powerlevel10k
+    ];
+}
