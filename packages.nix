@@ -1,7 +1,7 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
-        anki
+        anki-bin
         bartib
         bat
         bottles
