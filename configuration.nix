@@ -144,7 +144,6 @@
         ohMyZsh = {
             enable = true;
             plugins = [
-                "z"
             ];
         };
     };
