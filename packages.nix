@@ -1,8 +1,7 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
-        # gnome-calendar
-        # gnome-clocks
+        alacritty
         anki-bin
         bartib
         bat
