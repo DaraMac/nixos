@@ -46,8 +46,8 @@
     # services.displayManager.sddm.wayland.enable = true;
 
     # Enable GNOME desktop
-    services.displayManager.gdm = true;
-    services.desktopManager.gnome.enable = true;
+    services.xserver.displayManager.gdm.enable = true;
+    services.xserver.desktopManager.gnome.enable = true;
 
     # Enable COSMIC desktop
     # services.desktopManager.cosmic.enable = true;
