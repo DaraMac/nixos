@@ -1,6 +1,8 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
+        # gnome-calendar
+        # gnome-clocks
         anki-bin
         bartib
         bat
@@ -17,8 +19,7 @@
         gcc
         gdu
         git
-        gnome-calendar
-        gnome-clocks
+        gnomeExtensions.appindicator
         gnumake
         gnupg
         heroic
@@ -26,7 +27,6 @@
         hledger-ui
         hledger-web
         inkscape
-        kdePackages.yakuake
         libnotify
         lsd
         lutris
@@ -36,8 +36,7 @@
         nodejs-slim
         obsidian
         pass
-        pinentry-qt
-        polonium
+        pinentry-gnome3
         prismlauncher
         python3
         renameutils

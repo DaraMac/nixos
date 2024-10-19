@@ -40,25 +40,27 @@
     # Enable the X11 windowing system.
     services.xserver.enable = true;
 
-    # Enable the KDE Plasma Desktop Environment.
-    # services.desktopManager.plasma6.enable = true;
-    # services.displayManager.defaultSession = "plasma";
-    # services.displayManager.sddm.wayland.enable = true;
-
     # Enable GNOME desktop
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.desktopManager.gnome.enable = true;
 
-    # Enable COSMIC desktop
-    # services.desktopManager.cosmic.enable = true;
-    # services.displayManager.cosmic-greeter.enable = true;
+    environment.gnome.excludePackages = with pkgs; [
+        epiphany
+        evince
+        geary
+        gnome-connections
+        gnome-maps
+        gnome-music
+        gnome-text-editor
+        gnome-tour
+        simple-scan
+        snapshot
+        totem
+        yelp
+    ];
 
     # Enable Hyprland
     programs.hyprland.enable = true;
-
-    # environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    #     kate
-    # ];
 
     # Enable OpenGL
     hardware.graphics = {
