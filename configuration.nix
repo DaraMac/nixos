@@ -41,17 +41,24 @@
     services.xserver.enable = true;
 
     # Enable the KDE Plasma Desktop Environment.
-    services.desktopManager.plasma6.enable = true;
-    services.displayManager.defaultSession = "plasma";
+    # services.desktopManager.plasma6.enable = true;
+    # services.displayManager.defaultSession = "plasma";
     # services.displayManager.sddm.wayland.enable = true;
 
-    # Enable COSMIC desktop
-    services.desktopManager.cosmic.enable = true;
-    services.displayManager.cosmic-greeter.enable = true;
+    # Enable GNOME desktop
+    services.desktopManager.gdm = true;
+    services.desktopManager.gnome.enable = true;
 
-    environment.plasma6.excludePackages = with pkgs.kdePackages; [
-        kate
-    ];
+    # Enable COSMIC desktop
+    # services.desktopManager.cosmic.enable = true;
+    # services.displayManager.cosmic-greeter.enable = true;
+
+    # Enable Hyprland
+    programs.hyprland.enable = true;
+
+    # environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    #     kate
+    # ];
 
     # Enable OpenGL
     hardware.graphics = {
