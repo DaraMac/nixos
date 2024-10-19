@@ -169,7 +169,10 @@
     programs.steam.gamescopeSession.enable = true;
     programs.gamemode.enable = true;
 
-    programs.kdeconnect.enable = true;
+    programs.kdeconnect = {
+        enable = true;
+        package = pkgs.gnomeExtensions.gsconnect;
+    };
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
