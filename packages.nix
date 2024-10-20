@@ -42,6 +42,7 @@
         ripgrep
         stow
         stretchly # no breaktimer on nix
+        swaynotificationcenter
         texliveFull
         thunderbird
         tmux
@@ -50,6 +51,7 @@
         unzip
         vesktop
         wl-clipboard
+        wofi
         yazi
         zathura
         zotero_7
