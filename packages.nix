@@ -7,6 +7,7 @@
         bat
         bottles
         brave
+        broot
         btop
         dafny
         deluge

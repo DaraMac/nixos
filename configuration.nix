@@ -185,6 +185,13 @@
         })
     ];
 
+    services.grocy = {
+        enable = true;
+        hostName = "grocy.local";
+        nginx.enableSSL = false;
+        dataDir = "/var/lib/grocy";
+    };
+
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
     programs.gnupg.agent = {
