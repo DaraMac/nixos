@@ -20,6 +20,8 @@
         gdu
         git
         gnomeExtensions.appindicator
+        gnomeExtensions.dash-to-dock
+        gnomeExtensions.forge
         gnumake
         gnupg
         heroic
@@ -28,6 +30,7 @@
         hledger-web
         inkscape
         libnotify
+        libreoffice-fresh
         lsd
         lutris
         meslo-lgs-nf
