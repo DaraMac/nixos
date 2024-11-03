@@ -18,6 +18,7 @@
         gcc
         gdu
         git
+        gnome-tweaks
         gnomeExtensions.appindicator
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge
