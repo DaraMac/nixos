@@ -7,7 +7,6 @@
         bat
         bottles
         brave
-        broot
         btop
         dafny
         deluge
@@ -26,8 +25,7 @@
         gnupg
         heroic
         hledger
-        hledger-ui
-        hledger-web
+        hledger-iadd
         inkscape
         libnotify
         libreoffice-fresh
@@ -35,7 +33,6 @@
         lutris
         meslo-lgs-nf
         mpv
-        newsboat
         nodejs-slim
         obsidian
         pass
