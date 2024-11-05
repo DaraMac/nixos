@@ -22,6 +22,7 @@
         gnomeExtensions.appindicator
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge
+        gnomeExtensions.night-theme-switcher
         gnumake
         gnupg
         heroic
