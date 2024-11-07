@@ -40,6 +40,7 @@
         pass
         pinentry-gnome3
         prismlauncher
+        puffin
         python3
         renameutils
         ripgrep
