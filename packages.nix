@@ -29,20 +29,22 @@
         hledger
         hledger-iadd
         inkscape
+        kitty
         libnotify
         libreoffice-fresh
         lsd
         lutris
-        meslo-lgs-nf
         mpv
         nodejs-slim
         obsidian
+        p7zip
         pass
         pinentry-gnome3
         prismlauncher
         puffin
         python3
         renameutils
+        rio
         ripgrep
         stow
         stretchly # no breaktimer on nix

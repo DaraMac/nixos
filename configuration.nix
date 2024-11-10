@@ -59,6 +59,12 @@
         yelp
     ];
 
+    # Get fonts
+    fonts.packages = with pkgs; [
+        meslo-lgs-nf
+        nerdfonts
+    ];
+
     # Enable Hyprland
     programs.hyprland.enable = true;
 
