@@ -63,6 +63,20 @@
         yelp
     ];
 
+    programs.dconf = {
+        enable = true;
+        profiles.user.databases = [
+            {
+                lockAll = true; # prevents overriding
+                settings = {
+                    "org/gnome/desktop/interface" = {
+                        clock-show-weekday = true;
+                    };
+                };
+            }
+        ];
+    };
+
     # Get fonts
     fonts.packages = with pkgs; [
         meslo-lgs-nf
