@@ -47,10 +47,13 @@
     environment.gnome.excludePackages = with pkgs; [
         epiphany
         evince
+        file-roller
         geary
         gnome-connections
+        gnome-logs
         gnome-maps
         gnome-music
+        gnome-system-monitor
         gnome-text-editor
         gnome-tour
         simple-scan
