@@ -1,7 +1,6 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
-        alacritty
         anki-bin
         bartib
         bat
@@ -44,7 +43,6 @@
         puffin
         python3
         renameutils
-        rio
         ripgrep
         stow
         stretchly # no breaktimer on nix

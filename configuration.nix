@@ -56,6 +56,7 @@
         gnome-system-monitor
         gnome-text-editor
         gnome-tour
+        kgx # gnome terminal
         simple-scan
         snapshot
         totem
