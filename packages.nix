@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
+        adwsteamgtk
         anki-bin
         bartib
         bat
@@ -22,6 +23,7 @@
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge
         gnomeExtensions.night-theme-switcher
+        gnomeExtensions.rounded-window-corners-reborn
         gnumake
         gnupg
         heroic
