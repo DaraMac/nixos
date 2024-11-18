@@ -72,6 +72,7 @@
                     "org/gnome/desktop/interface" = {
                         clock-show-weekday = true;
                     };
+
                     "org/gnome/shell" = {
                         disable-user-extensions = false;
 
@@ -84,6 +85,9 @@
                             "nightthemeswitcher@romainvigier.fr"
                             "rounded-window-corners@fxgn"
                         ];
+                    };
+                    "org/gnome/desktop/wm/preferences" = {
+                        focus-mode = "mouse";
                     };
                 };
             }
