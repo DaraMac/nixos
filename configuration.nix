@@ -72,6 +72,19 @@
                     "org/gnome/desktop/interface" = {
                         clock-show-weekday = true;
                     };
+                    "org/gnome/shell" = {
+                        disable-user-extensions = false;
+
+                        enabled-extensions = [
+                            "appindicatorsupport@rgcjonas.gmail.com"
+                            "dash-to-dock@micxgx.gmail.com"
+                            "drive-menu@gnome-shell-extensions.gcampax.github.com"
+                            "forge@jmmaranan.com"
+                            "gsconnect@andyholmes.github.io"
+                            "nightthemeswitcher@romainvigier.fr"
+                            "rounded-window-corners@fxgn"
+                        ];
+                    };
                 };
             }
         ];
