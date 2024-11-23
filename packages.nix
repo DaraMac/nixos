@@ -19,6 +19,7 @@
         gdu
         git
         gnome-tweaks
+        gnome-user-share
         gnomeExtensions.appindicator
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge

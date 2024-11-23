@@ -83,6 +83,8 @@
                     };
 
                     "org/gnome/shell" = {
+                        "app-switcher/current-workspace-only" = false;
+
                         disable-user-extensions = false;
                         favorite-apps = [
                             "org.gnome.Nautilus.desktop"
@@ -103,12 +105,8 @@
                             "nightthemeswitcher@romainvigier.fr"
                             "rounded-window-corners@fxgn"
                         ];
-
-                        # app-switcher = {
-                        #     current-workspace-only = false;
-                        # };
-
                     };
+
 
                     "org/gnome/settings-daemon/plugins/color" = {
                         night-light-enabled = true;
