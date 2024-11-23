@@ -78,6 +78,10 @@
                         focus-mode = "mouse";
                     };
 
+                    "org/gnome/desktop/peripherals/mouse" = {
+                        natural-scroll = true;
+                    };
+
                     "org/gnome/mutter" = {
                         dynamic-workspaces = true;
                     };
@@ -112,6 +116,10 @@
                         night-light-enabled = true;
                         night-light-schedule-automatic = true;
                         night-light-temperature = pkgs.lib.gvariant.mkUint32 4135;
+                    };
+
+                    "org/gnome/settings-daemon/plugins/media-keys" = {
+                        www = ["<Super>b"];
                     };
                 };
             }
