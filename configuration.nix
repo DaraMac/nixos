@@ -62,6 +62,7 @@
         yelp
     ];
 
+    # GNOME configuration
     programs.dconf = {
         enable = true;
         profiles.user.databases = [
@@ -70,10 +71,28 @@
                 settings = {
                     "org/gnome/desktop/interface" = {
                         clock-show-weekday = true;
+                        enable-hot-corners = true;
+                    };
+
+                    "org/gnome/desktop/wm/preferences" = {
+                        focus-mode = "mouse";
+                    };
+
+                    "org/gnome/mutter" = {
+                        dynamic-workspaces = true;
                     };
 
                     "org/gnome/shell" = {
                         disable-user-extensions = false;
+                        favorite-apps = [
+                            "org.gnome.Nautilus.desktop"
+                            "firefox.desktop"
+                            "thunderbird.desktop"
+                            "anki.desktop"
+                            "kitty.desktop"
+                            "org.gnome.Calendar.desktop"
+                            "org.gnome.Settings.desktop"
+                        ];
 
                         enabled-extensions = [
                             "appindicatorsupport@rgcjonas.gmail.com"
@@ -84,9 +103,17 @@
                             "nightthemeswitcher@romainvigier.fr"
                             "rounded-window-corners@fxgn"
                         ];
+
+                        # app-switcher = {
+                        #     current-workspace-only = false;
+                        # };
+
                     };
-                    "org/gnome/desktop/wm/preferences" = {
-                        focus-mode = "mouse";
+
+                    "org/gnome/settings-daemon/plugins/color" = {
+                        night-light-enabled = true;
+                        night-light-schedule-automatic = true;
+                        night-light-temperature = pkgs.lib.gvariant.mkUint32 4135;
                     };
                 };
             }
@@ -225,12 +252,12 @@
         })
     ];
 
-    services.grocy = {
-        enable = true;
-        hostName = "grocy.local";
-        nginx.enableSSL = false;
-        dataDir = "/var/lib/grocy";
-    };
+    # services.grocy = {
+    #     enable = true;
+    #     hostName = "grocy.local";
+    #     nginx.enableSSL = false;
+    #     dataDir = "/var/lib/grocy";
+    # };
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
