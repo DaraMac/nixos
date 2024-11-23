@@ -32,7 +32,7 @@
         inkscape
         kitty
         libnotify
-        libreoffice-fresh
+        libreoffice
         lsd
         lutris
         mpv
