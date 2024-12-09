@@ -46,7 +46,6 @@
     environment.gnome.excludePackages = with pkgs; [
         epiphany
         evince
-        file-roller
         geary
         gnome-connections
         gnome-logs
