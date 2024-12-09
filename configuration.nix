@@ -126,11 +126,13 @@
         ];
     };
 
-    # Get fonts
-    fonts.packages = with pkgs; [
-        meslo-lgs-nf
-        nerdfonts
-    ];
+    # fonts.packages = with pkgs; [
+    #     meslo-lgs-nf
+    #     nerdfonts
+    # ];
+
+    # Get fonts, including all nerdfonts
+    fonts.packages = with pkgs; [ meslo-lgs-nf ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
     # Enable Hyprland
     programs.hyprland.enable = true;
