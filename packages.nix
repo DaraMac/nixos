@@ -60,7 +60,7 @@
         wofi
         yazi
         zathura
-        zotero_7
+        zotero
         zoxide
         zsh-powerlevel10k
     ];
