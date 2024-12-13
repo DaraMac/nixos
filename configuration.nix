@@ -129,6 +129,15 @@
                     "org/gnome/settings-daemon/plugins/media-keys" = {
                         www = ["<Super>b"];
                     };
+		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding '<Super>Return'
+		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command 'kitty'
+		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name 'Launch kitty'
+		#
+		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+		# /org/gnome/clocks/world-clocks [{'location': <(uint32 2, <('Anywhere on Earth (AoE)', '@AoE', false, @a(dd) [], @a(dd) [])>)>}]
+
+		# /org/gnome/shell/world-clocks/locations [<(uint32 2, <('Anywhere on Earth (AoE)', '@AoE', false, @a(dd) [], @a(dd) [])>)>]
                 };
             }
         ];
