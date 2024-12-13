@@ -254,6 +254,10 @@
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+    xdg.mime.defaultApplications = {
+        "default-web-browser" = "firefox.desktop";
+    };
+
     # Add media controls to mpv so KDE Connect works, and make the UI nicer
     nixpkgs.overlays = [
         (self: super: {
