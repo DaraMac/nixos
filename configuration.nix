@@ -10,13 +10,12 @@
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
     # Bootloader.
-    boot.loader.grub.enable = true;
-    boot.loader.grub.device = "/dev/nvme0n1";
-    boot.loader.grub.useOSProber = true;
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
 
     # Enable networking
-    networking.networkmanager.enable = true;
     networking.hostName = "nixos"; # Define your hostname.
+    networking.networkmanager.enable = true;
 
     # Set your time zone.
     time.timeZone = "Europe/Dublin";
@@ -42,6 +41,16 @@
     # Enable GNOME desktop
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.desktopManager.gnome.enable = true;
+
+    # Configure keymap in X11
+    services.xserver.xkb = {
+        layout = "gb";
+        variant = "";
+    };
+
+    # Configure console keymap
+    console.keyMap = "uk";
+
 
     environment.gnome.excludePackages = with pkgs; [
         epiphany
@@ -171,15 +180,6 @@
         # Optionally, you may need to select the appropriate driver version for your specific GPU.
         package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
-
-    # Configure keymap in X11
-    services.xserver.xkb = {
-        layout = "gb";
-        variant = "";
-    };
-
-    # Configure console keymap
-    console.keyMap = "uk";
 
     # Enable CUPS to print documents.
     services.printing.enable = true;
