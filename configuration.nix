@@ -110,13 +110,15 @@
                         ];
 
                         enabled-extensions = [
+			    "auto-accent-colour@Wartybix"
+			    "tilingshell@ferrarodomenico.com"
                             "appindicatorsupport@rgcjonas.gmail.com"
                             "dash-to-dock@micxgx.gmail.com"
                             "drive-menu@gnome-shell-extensions.gcampax.github.com"
-                            "forge@jmmaranan.com"
                             "gsconnect@andyholmes.github.io"
                             "nightthemeswitcher@romainvigier.fr"
-                            "rounded-window-corners@fxgn"
+                            # "forge@jmmaranan.com"
+                            # "rounded-window-corners@fxgn"
                         ];
                     };
 
@@ -134,23 +136,12 @@
 			screensaver = ["<Shift><Super>o"];
                     };
 
-
 		    "org/gnome/desktop/wm/keybindings" = {
 		        # disable these so they don't clash with the search shortcut
 		    	switch-input-source = pkgs.lib.gvariant.mkEmptyArray (pkgs.lib.gvariant.type.string);
 			switch-input-source-backward = pkgs.lib.gvariant.mkEmptyArray (pkgs.lib.gvariant.type.string);
 			close = ["<Shift><Super>q"];
 		    };
-
-		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding '<Super>Return'
-		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command 'kitty'
-		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name 'Launch kitty'
-		#
-		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
-
-		# /org/gnome/clocks/world-clocks [{'location': <(uint32 2, <('Anywhere on Earth (AoE)', '@AoE', false, @a(dd) [], @a(dd) [])>)>}]
-
-		# /org/gnome/shell/world-clocks/locations [<(uint32 2, <('Anywhere on Earth (AoE)', '@AoE', false, @a(dd) [], @a(dd) [])>)>]
                 };
             }
         ];

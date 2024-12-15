@@ -8,6 +8,7 @@
         bottles
         brave
         btop
+        dconf2nix
         deluge
         fastfetch
         fd
@@ -21,10 +22,12 @@
         gnome-user-share
         gnome-weather
         gnomeExtensions.appindicator
+        gnomeExtensions.auto-accent-colour
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge
         gnomeExtensions.night-theme-switcher
         gnomeExtensions.rounded-window-corners-reborn
+        gnomeExtensions.tiling-shell
         gnumake
         gnupg
         heroic
@@ -36,6 +39,7 @@
         libreoffice
         lsd
         lutris
+        mousam # weather
         mpv
         nodejs-slim
         obsidian
