@@ -75,7 +75,8 @@
         enable = true;
         profiles.user.databases = [
             {
-                lockAll = true; # prevents overriding
+                # lockAll = true; # prevents overriding
+                lockAll = false; # enable overriding while testing settings
                 settings = {
                     "org/gnome/desktop/interface" = {
                         clock-show-weekday = true;
@@ -129,6 +130,8 @@
                     "org/gnome/settings-daemon/plugins/media-keys" = {
                         www = ["<Super>b"];
 			search = ["<Super>space"];
+			logout = ["<Shift><Super>e"];
+			screensaver = ["<Shift><Super>o"];
                     };
 
 
