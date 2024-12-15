@@ -130,6 +130,15 @@
                         www = ["<Super>b"];
 			search = ["<Super>space"];
                     };
+
+
+		    "org/gnome/desktop/wm/keybindings" = {
+		        # disable these so they don't clash with the search shortcut
+		    	switch-input-source = pkgs.lib.gvariant.mkEmptyArray (pkgs.lib.gvariant.type.string);
+			switch-input-source-backward = pkgs.lib.gvariant.mkEmptyArray (pkgs.lib.gvariant.type.string);
+			close = ["<Shift><Super>q"];
+		    };
+
 		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding '<Super>Return'
 		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command 'kitty'
 		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name 'Launch kitty'
