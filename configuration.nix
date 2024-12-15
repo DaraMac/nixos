@@ -110,15 +110,15 @@
                         ];
 
                         enabled-extensions = [
-			    "auto-accent-colour@Wartybix"
-			    "tilingshell@ferrarodomenico.com"
+                            "auto-accent-colour@Wartybix"
+                            "tilingshell@ferrarodomenico.com"
                             "appindicatorsupport@rgcjonas.gmail.com"
                             "dash-to-dock@micxgx.gmail.com"
                             "drive-menu@gnome-shell-extensions.gcampax.github.com"
                             "gsconnect@andyholmes.github.io"
                             "nightthemeswitcher@romainvigier.fr"
+                            "rounded-window-corners@fxgn"
                             # "forge@jmmaranan.com"
-                            # "rounded-window-corners@fxgn"
                         ];
                     };
 
@@ -135,6 +135,8 @@
 			logout = ["<Shift><Super>e"];
 			screensaver = ["<Shift><Super>o"];
                     };
+
+		    # /org/gnome/desktop/wm/keybindings/minimize this is <Super>h, so need to clear
 
 		    "org/gnome/desktop/wm/keybindings" = {
 		        # disable these so they don't clash with the search shortcut
