@@ -128,6 +128,7 @@
 
                     "org/gnome/settings-daemon/plugins/media-keys" = {
                         www = ["<Super>b"];
+			search = ["<Super>space"];
                     };
 		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding '<Super>Return'
 		# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command 'kitty'

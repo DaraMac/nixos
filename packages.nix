@@ -19,6 +19,7 @@
         git
         gnome-tweaks
         gnome-user-share
+        gnome-weather
         gnomeExtensions.appindicator
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge
