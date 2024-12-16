@@ -1,4 +1,7 @@
 { pkgs, ...}:
+
+with pkgs.lib.gvariant;
+
 {
     # Enable GNOME desktop
     services.xserver.displayManager.gdm.enable = true;
