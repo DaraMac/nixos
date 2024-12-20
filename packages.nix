@@ -2,7 +2,7 @@
 {
     environment.systemPackages = with pkgs; [
         adwsteamgtk
-        anki-bin
+        anki
         bartib
         bat
         bottles
