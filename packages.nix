@@ -35,6 +35,7 @@
         libreoffice
         lsd
         lutris
+        mousam
         mpv
         nodejs-slim
         obsidian
