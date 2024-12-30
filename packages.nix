@@ -27,7 +27,6 @@
         gnomeExtensions.forge
         gnomeExtensions.night-theme-switcher
         gnomeExtensions.rounded-window-corners-reborn
-        gnomeExtensions.tiling-shell
         gnumake
         gnupg
         heroic
