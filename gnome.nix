@@ -34,10 +34,24 @@ with pkgs.lib.gvariant;
                 # lockAll = true; # prevents overriding
                 lockAll = false; # enable overriding while testing settings
                 settings = {
+
+                   "org/gnome/desktop/datetime" = {
+                        automatic-timezone = true;
+                    };
+
                     "org/gnome/desktop/interface" = {
                         clock-show-weekday = true;
                         enable-hot-corners = true;
                     };
+
+		    "org/gnome/desktop/privacy" = {
+		      remove-old-temp-files = true;
+		    };
+
+		    "org/gnome/desktop/session" = {
+		      idle-delay = mkUint32 0;
+		    };
+
 
                     "org/gnome/desktop/wm/preferences" = {
                         focus-mode = "mouse";
@@ -81,7 +95,7 @@ with pkgs.lib.gvariant;
                     "org/gnome/settings-daemon/plugins/color" = {
                         night-light-enabled = true;
                         night-light-schedule-automatic = true;
-                        night-light-temperature = pkgs.lib.gvariant.mkUint32 4135;
+                        night-light-temperature = mkUint32 4135;
                     };
 
                     "org/gnome/settings-daemon/plugins/media-keys" = {
@@ -95,9 +109,11 @@ with pkgs.lib.gvariant;
 
 		    "org/gnome/desktop/wm/keybindings" = {
 		        # disable these so they don't clash with the search shortcut
-		    	switch-input-source = pkgs.lib.gvariant.mkEmptyArray (pkgs.lib.gvariant.type.string);
-			switch-input-source-backward = pkgs.lib.gvariant.mkEmptyArray (pkgs.lib.gvariant.type.string);
 			close = ["<Shift><Super>q"];
+			maximize = [ "<Super>Up" ];
+			minimize = mkEmptyArray (type.string);
+			switch-input-source = mkEmptyArray (type.string);
+			switch-input-source-backward = mkEmptyArray (type.string);
 		    };
                 };
             }
