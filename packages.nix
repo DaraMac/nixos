@@ -41,6 +41,7 @@
         lutris
         mousam # weather
         mpv
+        newsflash
         nodejs-slim
         obsidian
         p7zip
