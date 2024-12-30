@@ -33,6 +33,7 @@
         heroic
         hledger
         hledger-iadd
+        imagemagick # auto-accent requires it
         inkscape
         kitty
         libnotify
