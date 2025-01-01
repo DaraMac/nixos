@@ -1,11 +1,12 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
+        # bottles
+        # heroic
         adwsteamgtk
         anki
         bartib
         bat
-        # bottles
         brave
         btop
         dconf2nix
@@ -17,6 +18,7 @@
         fzf
         gcc
         gdu
+        ghostty
         git
         gnome-tweaks
         gnome-user-share
@@ -29,7 +31,6 @@
         gnomeExtensions.rounded-window-corners-reborn
         gnumake
         gnupg
-        # heroic
         hledger
         hledger-iadd
         imagemagick # auto-accent requires it
