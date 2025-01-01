@@ -5,7 +5,7 @@
         anki
         bartib
         bat
-        bottles
+        # bottles
         brave
         btop
         dconf2nix
@@ -29,7 +29,7 @@
         gnomeExtensions.rounded-window-corners-reborn
         gnumake
         gnupg
-        heroic
+        # heroic
         hledger
         hledger-iadd
         imagemagick # auto-accent requires it
