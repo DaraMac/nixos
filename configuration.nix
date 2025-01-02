@@ -6,6 +6,7 @@
             # Include the results of the hardware scan.
             ./hardware-configuration.nix
             ./packages.nix
+	    ./firefox.nix
             ./gnome.nix
         ];
 
@@ -123,10 +124,6 @@
 
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
-
-    # Install firefox
-    programs.firefox.enable = true;
-    programs.firefox.nativeMessagingHosts.packages = with pkgs; [passff-host];
 
     # Set up zsh
     programs.zsh = {
