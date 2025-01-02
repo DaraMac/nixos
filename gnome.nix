@@ -74,7 +74,7 @@ with pkgs.lib.gvariant;
 								"firefox.desktop"
 								"thunderbird.desktop"
 								"anki.desktop"
-								"ghostty.desktop"
+								"com.mitchellh.ghostty.desktop"
 								"org.gnome.Calendar.desktop"
 								"org.gnome.Settings.desktop"
 						];
