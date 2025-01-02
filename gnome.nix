@@ -31,8 +31,7 @@ with pkgs.lib.gvariant;
 		enable = true;
 		profiles.user.databases = [
 		{
-# lockAll = true; # prevents overriding
-			lockAll = false; # enable overriding while testing settings
+			lockAll = true; # prevents overriding
 				settings = {
 
 					"org/gnome/desktop/datetime" = {
@@ -71,7 +70,7 @@ with pkgs.lib.gvariant;
 
 						disable-user-extensions = false;
 						favorite-apps = [
-							"org.gnome.Nautilus.desktop"
+								"org.gnome.Nautilus.desktop"
 								"firefox.desktop"
 								"thunderbird.desktop"
 								"anki.desktop"
@@ -81,7 +80,7 @@ with pkgs.lib.gvariant;
 						];
 
 						enabled-extensions = [
-							"appindicatorsupport@rgcjonas.gmail.com"
+								"appindicatorsupport@rgcjonas.gmail.com"
 								"auto-accent-colour@Wartybix"
 								"dash-to-dock@micxgx.gmail.com"
 								"drive-menu@gnome-shell-extensions.gcampax.github.com"
@@ -203,12 +202,10 @@ with pkgs.lib.gvariant;
 						name = "Launch terminal";
 					};
 
-# /org/gnome/desktop/wm/keybindings/minimize this is <Super>h, so need to clear
-
 					"org/gnome/desktop/wm/keybindings" = {
 						close = ["<Shift><Super>q"];
 						maximize = [ "<Super>Up" ];
-# disables these so they don't clash with the search shortcut
+						# disables these so they don't clash with the search shortcut
 						minimize = mkEmptyArray (type.string);
 						switch-input-source = mkEmptyArray (type.string);
 						switch-input-source-backward = mkEmptyArray (type.string);
