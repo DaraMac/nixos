@@ -3,12 +3,11 @@
 {
     imports =
         [ 
-            # Include the results of the hardware scan.
+	    ./firefox.nix
+	    ./graphics.nix
+            ./gnome.nix
             ./hardware-configuration.nix
             ./packages.nix
-	    ./firefox.nix
-            ./gnome.nix
-	    ./graphics.nix
         ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
