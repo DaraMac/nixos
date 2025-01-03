@@ -6,6 +6,23 @@
 			enable = true;
 			nativeMessagingHosts.packages = with pkgs; [passff-host];
 			policies = {
+
+				EnableTrackingProtection = {
+					Value= true;
+					Locked = true;
+					Cryptomining = true;
+					Fingerprinting = true;
+					EmailTracking = true;
+				};
+				DisablePocket = true;
+				DisplayBookmarksToolbar = "never";
+				SearchBar = "separate";
+				NewTabPage = "false";
+
+				Homepage = {
+					StartPage = "previous-session";
+				};
+
 				ExtensionSettings = {
 					# uBlock Origin
 					"uBlock0@raymondhill.net" = {
