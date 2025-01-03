@@ -85,18 +85,18 @@
     nixpkgs.config.allowUnfree = true;
 
     # Set up zsh
-    programs.zsh.enable = true;
-    # programs.zsh = {
-    #     enable = true;
-    #     autosuggestions.enable = true;
-    #     syntaxHighlighting.enable = true;
-    #     promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-    #     ohMyZsh = {
-    #         enable = true;
-    #         plugins = [
-    #         ];
-    #     };
-    # };
+    # programs.zsh.enable = true;
+    programs.zsh = {
+        enable = true;
+        autosuggestions.enable = true;
+        syntaxHighlighting.enable = true;
+        promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        ohMyZsh = {
+            enable = true;
+            plugins = [
+            ];
+        };
+    };
 
     users.defaultUserShell = pkgs.zsh;
 
