@@ -59,7 +59,7 @@
     # Enable CUPS to print documents.
     services.printing.enable = true;
 
-    hardware.pulseaudio.enable = false;
+    services.pulseaudio.enable = false;
     security.rtkit.enable = true;
     services.pipewire = {
         enable = true;
@@ -86,19 +86,20 @@
 
     # Set up zsh
     # programs.zsh.enable = true;
-    programs.zsh = {
-        enable = true;
-        autosuggestions.enable = true;
-        syntaxHighlighting.enable = true;
-        promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        ohMyZsh = {
-            enable = true;
-            plugins = [
-            ];
-        };
-    };
 
-    users.defaultUserShell = pkgs.zsh;
+    # programs.zsh = {
+    #     enable = true;
+    #     autosuggestions.enable = true;
+    #     syntaxHighlighting.enable = true;
+    #     promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    #     ohMyZsh = {
+    #         enable = true;
+    #         plugins = [
+    #         ];
+    #     };
+    # };
+
+    # users.defaultUserShell = pkgs.zsh;
 
     programs.neovim = {
         enable = true;
