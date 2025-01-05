@@ -41,6 +41,7 @@
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
 		oh-my-zsh.enable = true;
+		dotDir = ".config/zsh";
 		shellAliases = {
 			# fzf
 			v = "fzf --bind 'enter:become(nvim {})'";
