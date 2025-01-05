@@ -14,7 +14,6 @@
         fd
         ferdium
         file
-        fzf
         gcc
         gdu
         ghostty
