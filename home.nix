@@ -52,15 +52,23 @@
 			ls = "lsd";
 		};
 		initExtra = ''
-			# Setup yazi alias
-			function y() {
-				local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-				yazi "$@" --cwd-file="$tmp"
-				if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-				builtin cd -- "$cwd"
-				fi
-				rm -f -- "$tmp"
-		}
+		# Location of ledger file for hledger
+		export LEDGER_FILE='/home/dara/Documents/accounts/2025.journal'
+
+		# Use bat for highighted manual
+		export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+		export MANROFFOPT="-c"
+
+
+		# Setup yazi alias
+		function y() {
+			local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+			yazi "$@" --cwd-file="$tmp"
+			if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+			builtin cd -- "$cwd"
+			fi
+			rm -f -- "$tmp"
+	}
 
 		'';
 	};
