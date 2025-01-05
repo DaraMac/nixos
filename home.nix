@@ -42,6 +42,7 @@
 		syntaxHighlighting.enable = true;
 		oh-my-zsh.enable = true;
 		dotDir = ".config/zsh";
+
 		shellAliases = {
 			# fzf
 			v = "fzf --bind 'enter:become(nvim {})'";
@@ -52,6 +53,10 @@
 			lr = "lsd -lr";
 			ls = "lsd";
 		};
+
+		plugins = [
+		];
+
 		initExtra = ''
 		# Location of ledger file for hledger
 		export LEDGER_FILE='/home/dara/Documents/accounts/2025.journal'
