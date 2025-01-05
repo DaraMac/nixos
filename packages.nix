@@ -58,6 +58,7 @@
         texliveFull
         thunderbird
         tmux
+        tokei
         tree-sitter
         unrar-free
         unzip
@@ -66,7 +67,7 @@
         wofi
         yazi
         zathura
-        zotero_7
+        zotero
         zsh-powerlevel10k
     ];
 }
