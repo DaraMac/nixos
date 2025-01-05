@@ -68,7 +68,6 @@
         yazi
         zathura
         zotero_7
-        zoxide
         zsh-powerlevel10k
     ];
 }

@@ -33,12 +33,24 @@
 		};
 	};
 
+	programs.zoxide = {
+		enable = true;
+	};
+
 	programs.zsh = {
 		enable = true;
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
 		oh-my-zsh.enable = true;
 		shellAliases = {
+			# fzf
+			v = "fzf --bind 'enter:become(nvim {})'";
+
+			# ls
+			la = "lsd -lA";
+			ll = "lsd -l";
+			lr = "lsd -lr";
+			ls = "lsd";
 		};
 	};
 }
