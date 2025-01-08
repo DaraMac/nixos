@@ -36,6 +36,14 @@
 	programs.fzf.enable = true;
 	programs.zoxide.enable = true;
 
+	programs.lsd.enable = true;
+	programs.lsd.settings = {
+		# date = "+%Y-%m-%d %H:%M";
+		date = "relative";
+		symlink-arrow = "→";
+		sorting.dir-grouping = "first";
+	};
+
 	programs.zsh = {
 		enable = true;
 		autosuggestion.enable = true;
@@ -52,6 +60,7 @@
 			ll = "lsd -l";
 			lr = "lsd -lr";
 			ls = "lsd";
+			lt = "lsd --tree";
 		};
 
 		plugins = [

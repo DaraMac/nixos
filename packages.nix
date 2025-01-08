@@ -37,7 +37,6 @@
         kitty
         libnotify
         libreoffice
-        lsd
         lutris
         mousam # weather
         mpv
