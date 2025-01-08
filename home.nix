@@ -64,6 +64,88 @@
 			lr = "lsd -lr";
 			ls = "lsd";
 			lt = "lsd --tree";
+
+			# start git aliases
+			ggpur="ggu";
+			g="git";
+			ga="git add";
+			gaa="git add --all";
+			gapa="git add --patch";
+			gau="git add --update";
+			gav="git add --verbose";
+			gwip=''git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"'';
+			gam="git am";
+			gama="git am --abort";
+			gamc="git am --continue";
+			gamscp="git am --show-current-patch";
+			gams="git am --skip";
+			gap="git apply";
+			gapt="git apply --3way";
+			gbs="git bisect";
+			gbsb="git bisect bad";
+			gbsg="git bisect good";
+			gbsn="git bisect new";
+			gbso="git bisect old";
+			gbsr="git bisect reset";
+			gbss="git bisect start";
+			gbl="git blame -w";
+			gb="git branch";
+			gba="git branch --all";
+			gbd="git branch --delete";
+			gbD="git branch --delete --force";
+
+			###
+
+			gbgd=''LANG=C git branch --no-color -vv | grep ": gone\]" | cut -c 3- | awk '"'"'{print $1}'"'"' | xargs git branch -d'';
+			gbgD=''LANG=C git branch --no-color -vv | grep ": gone\]" | cut -c 3- | awk '"'"'{print $1}'"'"' | xargs git branch -D'';
+			gbm="git branch --move";
+			gbnm="git branch --no-merged";
+			gbr="git branch --remote";
+			ggsup="git branch --set-upstream-to=origin/$(git_current_branch)";
+			gbg=''LANG=C git branch -vv | grep ": gone\]"'';
+			gco="git checkout";
+			gcor="git checkout --recurse-submodules";
+			gcb="git checkout -b";
+			gcB="git checkout -B";
+			gcd="git checkout $(git_develop_branch)";
+			gcm="git checkout $(git_main_branch)";
+			gcp="git cherry-pick";
+			gcpa="git cherry-pick --abort";
+			gcpc="git cherry-pick --continue";
+			gclean="git clean --interactive -d";
+			gcl="git clone --recurse-submodules";
+			gclf="git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules";
+
+			###
+
+			gcam="git commit --all --message";
+			gcas="git commit --all --signoff";
+			gcasm="git commit --all --signoff --message";
+			gcs="git commit --gpg-sign";
+			gcss="git commit --gpg-sign --signoff";
+			gcssm="git commit --gpg-sign --signoff --message";
+			gcmsg="git commit --message";
+			gcsm="git commit --signoff --message";
+			gc="git commit --verbose";
+			gca="git commit --verbose --all";
+			"gca!" ="git commit --verbose --all --amend";
+			"gcan!" ="git commit --verbose --all --no-edit --amend";
+			"gcans!" ="git commit --verbose --all --signoff --no-edit --amend";
+			"gcann!" ="git commit --verbose --all --date=now --no-edit --amend";
+			"gc!" ="git commit --verbose --amend";
+			gcn="git commit --verbose --no-edit";
+			"gcn!" ="git commit --verbose --no-edit --amend";
+			gcf="git config --list";
+			gdct="git describe --tags $(git rev-list --tags --max-count=1)";
+			gd="git diff";
+			gdca="git diff --cached";
+			gdcw="git diff --cached --word-diff";
+			gds="git diff --staged";
+			gdw="git diff --word-diff";
+
+			gdup="git diff @{upstream}";
+
+			# end git aliases
 		};
 
 		plugins = [
@@ -85,6 +167,52 @@
 		'';
 
 		initExtra = ''
+		# start git functions
+
+		function gbda() {
+			git branch --no-color --merged | command grep -vE "^([+*]|\s*($(git_main_branch)|$(git_develop_branch))\s*$)" | command xargs git branch --delete 2>/dev/null
+		}
+
+# https://github.com/jmaroeder/plugin-git/blob/216723ef4f9e8dde399661c39c80bdf73f4076c4/functions/gbda.fish
+		function gbds() {
+			local default_branch=$(git_main_branch)
+				(( ! $? )) || default_branch=$(git_develop_branch)
+
+				git for-each-ref refs/heads/ "--format=%(refname:short)" | \
+				while read branch; do
+					local merge_base=$(git merge-base $default_branch $branch)
+						if [[ $(git cherry $default_branch $(git commit-tree $(git rev-parse $branch\^{tree}) -p $merge_base -m _)) = -* ]]; then
+							git branch -D $branch
+								fi
+								done
+		}
+
+		function gccd() {
+			setopt localoptions extendedglob
+
+# get repo URI from args based on valid formats: https://git-scm.com/docs/git-clone#URLS
+				local repo="''${''${@[(r)(ssh://*|git://*|ftp(s)#://*|http(s)#://*|*@*)(.git/#)#]}:-$_}"
+
+# clone repository and exit if it fails
+				command git clone --recurse-submodules "$@" || return
+
+# if last arg passed was a directory, that's where the repo was cloned
+# otherwise parse the repo URI and use the last part as the directory
+				[[ -d "$_" ]] && cd "$_" || cd "''${''${repo:t}%.git/#}"
+		}
+		compdef _git gccd=git-clone
+
+		function gdv() { git diff -w "$@" | view - }
+		compdef _git gdv=git-diff
+
+		function gdnolock() {
+			git diff "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"
+		}
+		compdef _git gdnolock=git-diff
+
+		### end git functions
+
+
 		# Location of ledger file for hledger
 		export LEDGER_FILE='/home/dara/Documents/accounts/2025.journal'
 
