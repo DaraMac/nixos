@@ -44,6 +44,9 @@
 		sorting.dir-grouping = "first";
 	};
 
+	home.file."p10.zsh".source = ./dot-p10k.zsh;
+	home.file."p10.zsh".target = ".config/p10k/p10k.zsh";
+
 	programs.zsh = {
 		enable = true;
 		autosuggestion.enable = true;
