@@ -44,6 +44,22 @@
 		sorting.dir-grouping = "first";
 	};
 
+	programs.tmux = {
+		enable = true;
+		mouse = true;
+		terminal = "screen-256color"; # this was needed on Mac, maybe not on linux
+		keyMode = "vi";
+		extraConfig = ''
+			set -g status off
+			bind -Tcopy-mode MouseDragEnd1Pane send -X copy-selection
+
+			# To make new splits open in the same directory as current
+			# https://unix.stackexchange.com/a/109255
+			bind  %  split-window -h -c "#{pane_current_path}"
+			bind '"' split-window -v -c "#{pane_current_path}"
+		'';
+	};
+
 	home.file."p10.zsh".source = ./dot-p10k.zsh;
 	home.file."p10.zsh".target = ".config/p10k/p10k.zsh";
 
