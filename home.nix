@@ -47,6 +47,9 @@
 	home.file."p10.zsh".source = ./dot-p10k.zsh;
 	home.file."p10.zsh".target = ".config/p10k/p10k.zsh";
 
+	home.file."hledger-iadd".target = ".config/hledger-iadd/config.conf";
+	home.file."hledger-iadd".text = ''date-format = "%Y-%m-%d"'';
+
 	programs.zsh = {
 		enable = true;
 		autosuggestion.enable = true;
