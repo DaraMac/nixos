@@ -60,6 +60,15 @@
 		'';
 	};
 
+	programs.zathura = {
+		enable = true;
+		options = {
+			# to make it copy to the GUI clipboard upon highlight selecting
+			# https://unix.stackexchange.com/a/339488
+			selection-clipboard = "clipboard";
+		};
+	};
+
 	home.file."p10.zsh".source = ./dot-p10k.zsh;
 	home.file."p10.zsh".target = ".config/p10k/p10k.zsh";
 

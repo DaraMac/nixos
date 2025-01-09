@@ -64,7 +64,6 @@
         wl-clipboard
         wofi
         yazi
-        zathura
         zotero
         zsh-powerlevel10k
     ];
