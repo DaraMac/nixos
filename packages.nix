@@ -10,6 +10,7 @@
         btop
         dconf2nix
         deluge
+        drawio
         fastfetch
         fd
         ferdium
