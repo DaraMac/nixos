@@ -145,6 +145,60 @@
 
 			gdup="git diff @{upstream}";
 
+			gdt="git diff-tree --no-commit-id --name-only -r";
+			gf="git fetch";
+			gfa="git fetch --all --tags --prune --jobs=10";
+			gfo="git fetch origin";
+			gg="git gui citool";
+			gga="git gui citool --amend";
+			ghh="git help";
+			glgg="git log --graph";
+			glgga="git log --graph --decorate --all";
+			glgm="git log --graph --max-count=10";
+			glods=''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date=short'';
+			glod=''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset"'';
+			glola=''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --all'';
+			glols=''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --stat'';
+			glol=''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset"'';
+			glo="git log --oneline --decorate";
+			glog="git log --oneline --decorate --graph";
+			gloga="git log --oneline --decorate --graph --all";
+
+			glp="_git_log_prettily";
+			glg="git log --stat";
+			glgp="git log --stat --patch";
+			gignored=''git ls-files -v | grep "^[[:lower:]]"'';
+			gfg="git ls-files | grep";
+			gm="git merge";
+			gma="git merge --abort";
+			gmc="git merge --continue";
+			gms="git merge --squash";
+			gmff="git merge --ff-only";
+			gmom="git merge origin/$(git_main_branch)";
+			gmum="git merge upstream/$(git_main_branch)";
+			gmtl="git mergetool --no-prompt";
+			gmtlvim="git mergetool --no-prompt --tool=vimdiff";
+
+			gl="git pull";
+			gpr="git pull --rebase";
+			gprv="git pull --rebase -v";
+			gpra="git pull --rebase --autostash";
+			gprav="git pull --rebase --autostash -v";
+
+			gprom="git pull --rebase origin $(git_main_branch)";
+			gpromi="git pull --rebase=interactive origin $(git_main_branch)";
+			gprum="git pull --rebase upstream $(git_main_branch)";
+			gprumi="git pull --rebase=interactive upstream $(git_main_branch)";
+			ggpull=''git pull origin "$(git_current_branch)"'';
+
+			gluc="git pull upstream $(git_current_branch)";
+			glum="git pull upstream $(git_main_branch)";
+			gp="git push";
+			gpd="git push --dry-run";
+
+			"gpf!"="git push --force";
+			gpf="git push --force-with-lease --force-if-includes";
+
 			# end git aliases
 		};
 
@@ -209,6 +263,42 @@
 			git diff "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"
 		}
 		compdef _git gdnolock=git-diff
+
+		# Pretty log messages
+		function _git_log_prettily(){
+			if ! [ -z $1 ]; then
+				git log --pretty=$1
+			fi
+		}
+		compdef _git _git_log_prettily=git-log
+
+		function ggu() {
+			[[ "$#" != 1 ]] && local b="$(git_current_branch)"
+			git pull --rebase origin "''${b:=$1}"
+		}
+		compdef _git ggu=git-checkout
+
+		function ggl() {
+			if [[ "$#" != 0 ]] && [[ "$#" != 1 ]]; then
+				git pull origin "''${*}"
+			else
+				[[ "$#" == 0 ]] && local b="$(git_current_branch)"
+				git pull origin "''${b:=$1}"
+			fi
+		}
+		compdef _git ggl=git-checkout
+
+		function ggf() {
+			[[ "$#" != 1 ]] && local b="$(git_current_branch)"
+			git push --force origin "''${b:=$1}"
+		}
+		compdef _git ggf=git-checkout
+
+		function ggfl() {
+			[[ "$#" != 1 ]] && local b="$(git_current_branch)"
+			git push --force-with-lease origin "''${b:=$1}"
+		}
+		compdef _git ggfl=git-checkout
 
 		### end git functions
 
