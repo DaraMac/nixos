@@ -2,7 +2,8 @@
 
 {
     imports =
-        [ 
+        [
+	    ./bootloader-laptop.nix
 	    ./firefox.nix
 	    ./graphics.nix
             ./gnome.nix
@@ -11,10 +12,6 @@
         ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-    # Bootloader.
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
 
     # Enable networking
     networking.hostName = "nixos"; # Define your hostname.
