@@ -56,7 +56,6 @@
         swaynotificationcenter
         texliveFull
         thunderbird
-        tmux
         tokei
         tree-sitter
         unrar-free
