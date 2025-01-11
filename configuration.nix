@@ -9,11 +9,6 @@
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-    # Bootloader.
-    boot.loader.grub.enable = true;
-    boot.loader.grub.device = "/dev/nvme0n1";
-    boot.loader.grub.useOSProber = true;
-
     # Enable networking
     networking.networkmanager.enable = true;
     networking.hostName = "nixos"; # Define your hostname.
