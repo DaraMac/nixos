@@ -2,9 +2,11 @@
 
 {
     imports =
-        [ # Include the results of the hardware scan.
+        [
+            # Include the results of the hardware scan.
             ./hardware-configuration.nix
             ./packages.nix
+            ./bootload-desktop.nix
         ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
