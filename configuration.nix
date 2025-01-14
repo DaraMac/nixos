@@ -3,11 +3,12 @@
 {
     imports =
         [
-	    ./bootloader-laptop.nix
-	    ./firefox.nix
-	    ./graphics.nix
+            ./bootloader-laptop.nix
+            ./firefox.nix
+            ./graphics.nix
             ./gnome.nix
             ./hardware-configuration.nix
+            ./nvim.nix
             ./packages.nix
         ];
 
@@ -101,14 +102,6 @@
     #     viAlias = true;
     #     vimAlias = true;
     # };
-
-    programs.nvf = {
-      enable = true;
-      settings.vim = {
-       viAlias = true;
-       vimAlias = true;
-     };
-    };
 
     programs.steam.enable = true;
     programs.steam.gamescopeSession.enable = true;
