@@ -5,8 +5,8 @@
         [
             ./bootloader-laptop.nix
             ./firefox.nix
-            ./graphics.nix
             ./gnome.nix
+            ./graphics.nix
             ./hardware-configuration.nix
             ./nvim.nix
             ./packages.nix
@@ -95,13 +95,6 @@
     };
 
     users.defaultUserShell = pkgs.zsh;
-
-    # programs.neovim = {
-    #     enable = true;
-    #     defaultEditor = true;
-    #     viAlias = true;
-    #     vimAlias = true;
-    # };
 
     programs.steam.enable = true;
     programs.steam.gamescopeSession.enable = true;
