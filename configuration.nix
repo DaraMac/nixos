@@ -104,9 +104,9 @@
 
     programs.nvf = {
       enable = true;
-      settings = {
-       vim.viAlias = true;
-       vim.vimAlias = true;
+      settings.vim = {
+       viAlias = true;
+       vimAlias = true;
      };
     };
 
