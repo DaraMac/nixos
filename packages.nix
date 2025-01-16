@@ -35,6 +35,7 @@
         libreoffice
         lsd
         lutris
+        micro
         mousam
         mpv
         nodejs-slim
@@ -47,6 +48,7 @@
         python3
         renameutils
         ripgrep
+        ripgrep-all
         stow
         stretchly # no breaktimer on nix
         swaynotificationcenter
