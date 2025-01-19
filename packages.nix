@@ -43,6 +43,8 @@
         p7zip
         pass
         pinentry-gnome3
+        plex-desktop
+        plex-media-player
         prismlauncher
         puffin
         python3
