@@ -13,6 +13,10 @@
         ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
+    nix.settings.auto-optimise-store = true;
+    nix.gc.automatic = true;
+    nix.gc.dates = "weekly";
+
 
     # Enable networking
     networking.hostName = "nixos"; # Define your hostname.
