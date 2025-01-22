@@ -8,6 +8,19 @@
             viAlias = true;
             vimAlias = true;
 
+            keymaps = [
+            {
+                key = ''<Space>'';
+                mode = [''n'' ''v''];
+                action = ''<Nop>'';
+            }
+            {
+                key = ''<Esc>'';
+                mode = ''n'';
+                action = ''<cmd>nohlsearch<CR>'';
+            }
+            ];
+
             globals = {
                 mapleader = '' '';
                 maplocalleader = '' '';
@@ -58,8 +71,9 @@
                 ruler = false;
 
 
-                # vim.opt.tags:append('./.tags;/')
+                # TODO: Check if this works without being append
                 tags = ''./.tags;/'';
+                # vim.opt.tags:append('./.tags;/')
             };
         };
     };
