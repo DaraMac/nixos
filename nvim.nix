@@ -54,7 +54,6 @@
 
             useSystemClipboard = true;
 
-
             options = {
                 guicursor = '''';
 
@@ -96,6 +95,10 @@
                 # TODO: Check if this works without being append
                 tags = ''./.tags;/'';
                 # vim.opt.tags:append('./.tags;/')
+            };
+
+            telescope = {
+                enable = true;
             };
         };
     };
