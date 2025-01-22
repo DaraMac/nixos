@@ -1,62 +1,66 @@
 { config, pkgs, ...}:
 
 {
-        programs.nvf = {
-                enable = true;
-                enableManpages = true;
-                settings.vim = {
-                        viAlias = true;
-                        vimAlias = true;
+    programs.nvf = {
+        enable = true;
+        enableManpages = true;
+        settings.vim = {
+            viAlias = true;
+            vimAlias = true;
 
-                        globals = {
-                                mapleader = '' '';
-                                maplocalleader = '' '';
+            globals = {
+                mapleader = '' '';
+                maplocalleader = '' '';
 
-                                netrw_banner = 0;
-                                netrw_liststyle = 3;
-                        };
+                netrw_banner = 0;
+                netrw_liststyle = 3;
+            };
 
-                        options = {
-                                guicursor = '''';
+            useSystemClipboard = true;
 
-                                number = true;
-                                relativenumber = true;
-                                signcolumn = ''number'';
 
-                                mouse = ''a'';
+            options = {
+                guicursor = '''';
 
-                                # clipboard:append { 'unnamedplus' }
+                number = true;
+                relativenumber = true;
+                signcolumn = ''number'';
 
-                                breakindent = true;
+                mouse = ''a'';
 
-                                tabstop = 4;
-                                softtabstop = 4;
-                                shiftwidth = 4;
-                                expandtab = true;
 
-                                smartindent = true;
+                breakindent = true;
 
-                                termguicolors = true;
+                tabstop = 4;
+                softtabstop = 4;
+                shiftwidth = 4;
+                expandtab = true;
 
-                                ignorecase = true;
-                                smartcase = true;
+                smartindent = true;
 
-                                list = true;
-                                # listchars = 
+                termguicolors = true;
 
-                                autowrite = true;
+                ignorecase = true;
+                smartcase = true;
 
-                                cursorline = true;
+                list = true;
+                listchars = ''tab:» ,trail:·,nbsp:␣'';
 
-                                # setting it to a very large value just to keep it always in centre
-                                scrolloff = 999;
+                autowrite = true;
 
-                                hlsearch = true;
+                cursorline = true;
 
-                                ruler = false;
+                # setting it to a very large value just to keep it always in centre
+                scrolloff = 999;
 
-                                # tags:append('./.tags;/')
-                        };
-                };
+                hlsearch = true;
+
+                ruler = false;
+
+
+                # vim.opt.tags:append('./.tags;/')
+                tags = ''./.tags;/'';
+            };
         };
+    };
 }
