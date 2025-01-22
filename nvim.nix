@@ -29,6 +29,19 @@
                 mode = ''n'';
                 action = ''<cmd>nohlsearch<CR>'';
             }
+            {
+                key = ''-'';
+                mode = ''n'';
+                # action = ''vim.cmd.Ex'';
+                action = ''<cmd>Explore<CR>'';
+                desc = ''Switch to file browser'';
+            }
+            {
+                key = ''J'';
+                mode = ''n'';
+                action = ''mjJ`j'';
+                desc = ''Join a line while retaining cursor position'';
+            }
             ];
 
             globals = {
