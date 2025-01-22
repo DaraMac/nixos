@@ -8,6 +8,12 @@
             viAlias = true;
             vimAlias = true;
 
+            theme = {
+                enable = true;
+                name = "tokyonight";
+                style = "night";
+            };
+
             luaConfigRC.basic = ''
                 vim.api.nvim_create_autocmd('TextYankPost', {
                     desc = 'Highlight when yanking (copying) text',
@@ -95,6 +101,14 @@
                 # TODO: Check if this works without being append
                 tags = ''./.tags;/'';
                 # vim.opt.tags:append('./.tags;/')
+            };
+
+            languages = {
+                enableTreesitter = true;
+
+                nix.enable = true;
+                python.enable = true;
+                lua.enable = true;
             };
         };
     };
