@@ -96,10 +96,6 @@
                 tags = ''./.tags;/'';
                 # vim.opt.tags:append('./.tags;/')
             };
-
-            telescope = {
-                enable = true;
-            };
         };
     };
 }
