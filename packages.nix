@@ -17,6 +17,7 @@
         gcc
         gdu
         git
+        gnome-podcasts
         gnome-tweaks
         gnome-user-share
         gnomeExtensions.appindicator
