@@ -61,6 +61,7 @@
         tree-sitter
         unrar-free
         unzip
+        varia
         vesktop
         wl-clipboard
         wofi
