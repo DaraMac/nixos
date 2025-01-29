@@ -106,6 +106,8 @@
 
             languages = {
                 enableTreesitter = true;
+                enableLSP = true;
+                enableFormat = true;
 
                 assembly.enable = true;
                 bash.enable = true;
