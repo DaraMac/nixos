@@ -51,8 +51,10 @@
             ];
 
             globals = {
-                mapleader = '' '';
-                maplocalleader = '' '';
+                
+                # I guess these were already set somewhere?
+                # mapleader = '' '';
+                # maplocalleader = '' '';
 
                 netrw_banner = 0;
                 netrw_liststyle = 3;
@@ -109,6 +111,10 @@
                 nix.enable = true;
                 python.enable = true;
                 lua.enable = true;
+            };
+
+            telescope = {
+                enable = true;
             };
         };
     };
