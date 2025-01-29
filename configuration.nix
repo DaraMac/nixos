@@ -8,7 +8,7 @@
             ./gnome.nix
             ./graphics.nix
             ./hardware-configuration.nix
-            ./nvim.nix
+            ./nvf.nix
             ./packages.nix
         ];
 

@@ -51,7 +51,6 @@
             ];
 
             globals = {
-                
                 # I guess these were already set somewhere?
                 # mapleader = '' '';
                 # maplocalleader = '' '';
