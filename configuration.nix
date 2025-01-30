@@ -8,7 +8,7 @@
             ./firefox.nix
             ./gnome.nix
             ./graphics.nix
-            ./hardware-configuration.nix
+            ./hardware-configuration-desktop.nix
             ./nvf.nix
             ./packages.nix
         ];
