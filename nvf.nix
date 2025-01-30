@@ -131,6 +131,11 @@
             autocomplete.nvim-cmp = {
                 enable = true;
             };
+
+            notes.todo-comments = {
+                enable = true;
+                mappings.telescope = ''<leader>st'';
+            };
         };
     };
 }
