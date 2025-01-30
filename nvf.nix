@@ -98,7 +98,6 @@
 
                 ruler = false;
 
-
                 # TODO: Check if this works without being append
                 tags = ''./.tags;/'';
                 # vim.opt.tags:append('./.tags;/')
@@ -132,9 +131,33 @@
                 enable = true;
             };
 
+            # TODO: test
+            # NOTE: here
+            # FIXME: Fix!
             notes.todo-comments = {
                 enable = true;
                 mappings.telescope = ''<leader>st'';
+            };
+
+            notes.obsidian = {
+                enable = true;
+                setupOpts = {
+
+                    daily_notes = {
+                        date_format = ''%Y/Days/%Y-%m-%d-%a'';
+                        folder = ''Diary'';
+                    };
+
+                    workspaces = [
+                        {
+                            name = ''wiki'';
+                            path = ''~/Documents/wiki'';
+                        }
+                    ];
+
+                    ui.enable = false;
+                    disable_frontmatter = true;
+                };
             };
         };
     };
