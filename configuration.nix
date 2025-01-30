@@ -4,6 +4,7 @@
     imports =
         [
             # ./bootloader-laptop.nix
+            # ./hardware-configuration-laptop.nix
             ./bootloader-desktop.nix
             ./firefox.nix
             ./gnome.nix
