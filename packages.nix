@@ -8,19 +8,22 @@
         bottles
         brave
         btop
+        dconf2nix
         deluge
         fastfetch
         fd
         ferdium
         file
-        fzf
         gcc
         gdu
+        ghostty
         git
         gnome-podcasts
         gnome-tweaks
         gnome-user-share
+        gnome-weather
         gnomeExtensions.appindicator
+        gnomeExtensions.auto-accent-colour
         gnomeExtensions.dash-to-dock
         gnomeExtensions.forge
         gnomeExtensions.night-theme-switcher
@@ -30,22 +33,21 @@
         heroic
         hledger
         hledger-iadd
+        imagemagick # auto-accent requires it
         inkscape
         kitty
         libnotify
         libreoffice
-        lsd
         lutris
         micro
-        mousam
+        mousam # weather
         mpv
+        newsflash
         nodejs-slim
         obsidian
         p7zip
         pass
         pinentry-gnome3
-        plex-desktop
-        plex-media-player
         prismlauncher
         puffin
         python3
@@ -57,7 +59,7 @@
         swaynotificationcenter
         texliveFull
         thunderbird
-        tmux
+        tokei
         tree-sitter
         unrar-free
         unzip
@@ -68,7 +70,6 @@
         yazi
         zathura
         zotero
-        zoxide
         zsh-powerlevel10k
     ];
 }

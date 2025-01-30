@@ -3,16 +3,24 @@
 {
     imports =
         [
+            # ./bootloader-laptop.nix
             ./bootloader-desktop.nix
+            ./firefox.nix
+            ./gnome.nix
+            ./graphics.nix
             ./hardware-configuration.nix
+            ./nvf.nix
             ./packages.nix
         ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
+    nix.settings.auto-optimise-store = true;
+    nix.gc.automatic = true;
+    nix.gc.dates = "weekly";
 
     # Enable networking
-    networking.networkmanager.enable = true;
     networking.hostName = "nixos"; # Define your hostname.
+    networking.networkmanager.enable = true;
 
     # Set your time zone.
     time.timeZone = "Europe/Dublin";
@@ -35,139 +43,6 @@
     # Enable the X11 windowing system.
     services.xserver.enable = true;
 
-    # Enable GNOME desktop
-    services.xserver.displayManager.gdm.enable = true;
-    services.xserver.desktopManager.gnome.enable = true;
-
-    environment.gnome.excludePackages = with pkgs; [
-        epiphany
-        evince
-        geary
-        gnome-connections
-        gnome-logs
-        gnome-maps
-        gnome-music
-        gnome-system-monitor
-        gnome-text-editor
-        gnome-tour
-        kgx # gnome terminal
-        simple-scan
-        snapshot
-        totem
-        yelp
-    ];
-
-    # GNOME configuration
-    programs.dconf = {
-        enable = true;
-        profiles.user.databases = [
-            {
-                lockAll = true; # prevents overriding
-                settings = {
-                    "org/gnome/desktop/interface" = {
-                        clock-show-weekday = true;
-                        enable-hot-corners = true;
-                    };
-
-                    "org/gnome/desktop/wm/preferences" = {
-                        focus-mode = "mouse";
-                    };
-
-                    "org/gnome/desktop/peripherals/mouse" = {
-                        natural-scroll = true;
-                    };
-
-                    "org/gnome/mutter" = {
-                        dynamic-workspaces = true;
-                    };
-
-                    "org/gnome/shell" = {
-                        "app-switcher/current-workspace-only" = false;
-
-                        disable-user-extensions = false;
-                        favorite-apps = [
-                            "org.gnome.Nautilus.desktop"
-                            "firefox.desktop"
-                            "thunderbird.desktop"
-                            "anki.desktop"
-                            "kitty.desktop"
-                            "org.gnome.Calendar.desktop"
-                            "org.gnome.Settings.desktop"
-                        ];
-
-                        enabled-extensions = [
-                            "appindicatorsupport@rgcjonas.gmail.com"
-                            "dash-to-dock@micxgx.gmail.com"
-                            "drive-menu@gnome-shell-extensions.gcampax.github.com"
-                            "forge@jmmaranan.com"
-                            "gsconnect@andyholmes.github.io"
-                            "nightthemeswitcher@romainvigier.fr"
-                            "rounded-window-corners@fxgn"
-                        ];
-                    };
-
-
-                    "org/gnome/settings-daemon/plugins/color" = {
-                        night-light-enabled = true;
-                        night-light-schedule-automatic = true;
-                        night-light-temperature = pkgs.lib.gvariant.mkUint32 4135;
-                    };
-
-                    "org/gnome/settings-daemon/plugins/media-keys" = {
-                        www = ["<Super>b"];
-                    };
-                };
-            }
-        ];
-    };
-
-    # Get fonts, including all nerdfonts
-    fonts.packages = with pkgs; [ meslo-lgs-nf ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
-
-    # Enable Hyprland
-    programs.hyprland.enable = true;
-
-    # Enable OpenGL
-    hardware.graphics = {
-        enable = true;
-        enable32Bit = true;
-    };
-
-    # Load nvidia driver for Xorg and Wayland
-    services.xserver.videoDrivers = ["nvidia"];
-
-    hardware.nvidia = {
-
-        # Modesetting is required.
-        modesetting.enable = true;
-
-        # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
-        # Enable this if you have graphical corruption issues or application crashes after waking
-        # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead 
-        # of just the bare essentials.
-        powerManagement.enable = false;
-
-        # Fine-grained power management. Turns off GPU when not in use.
-        # Experimental and only works on modern Nvidia GPUs (Turing or newer).
-        powerManagement.finegrained = false;
-
-        # Use the NVidia open source kernel module (not to be confused with the
-        # independent third-party "nouveau" open source driver).
-        # Support is limited to the Turing and later architectures. Full list of 
-        # supported GPUs is at: 
-        # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
-        # Only available from driver 515.43.04+
-        # Currently alpha-quality/buggy, so false is currently the recommended setting.
-        open = false;
-
-        # Enable the Nvidia settings menu,
-        # accessible via `nvidia-settings`.
-        nvidiaSettings = true;
-
-        # Optionally, you may need to select the appropriate driver version for your specific GPU.
-        package = config.boot.kernelPackages.nvidiaPackages.stable;
-    };
-
     # Configure keymap in X11
     services.xserver.xkb = {
         layout = "gb";
@@ -176,6 +51,12 @@
 
     # Configure console keymap
     console.keyMap = "uk";
+
+    # Get fonts, including all nerdfonts
+    fonts.packages = with pkgs; [ meslo-lgs-nf ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+
+    # Enable Hyprland
+    programs.hyprland.enable = true;
 
     # Enable CUPS to print documents.
     services.printing.enable = true;
@@ -204,30 +85,20 @@
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
-    # Install firefox
-    programs.firefox.enable = true;
-    programs.firefox.nativeMessagingHosts.packages = with pkgs; [passff-host];
-
     # Set up zsh
     programs.zsh = {
         enable = true;
-        autosuggestions.enable = true;
-        syntaxHighlighting.enable = true;
+        # autosuggestions.enable = true;
+        # syntaxHighlighting.enable = true;
         promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        ohMyZsh = {
-            enable = true;
-            plugins = [
-            ];
-        };
+        # ohMyZsh = {
+        #     enable = true;
+        #     plugins = [
+        #     ];
+        # };
     };
-    users.defaultUserShell = pkgs.zsh;
 
-    programs.neovim = {
-        enable = true;
-        defaultEditor = true;
-        viAlias = true;
-        vimAlias = true;
-    };
+    users.defaultUserShell = pkgs.zsh;
 
     programs.steam.enable = true;
     programs.steam.gamescopeSession.enable = true;
@@ -240,6 +111,10 @@
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+    xdg.mime.defaultApplications = {
+        "default-web-browser" = "firefox.desktop";
+    };
+
     # Add media controls to mpv so KDE Connect works, and make the UI nicer
     nixpkgs.overlays = [
         (self: super: {
@@ -248,13 +123,6 @@
             };
         })
     ];
-
-    # services.grocy = {
-    #     enable = true;
-    #     hostName = "grocy.local";
-    #     nginx.enableSSL = false;
-    #     dataDir = "/var/lib/grocy";
-    # };
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
