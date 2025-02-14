@@ -14,7 +14,6 @@
         fd
         ferdium
         file
-        gcc
         gdu
         ghostty
         git
@@ -35,11 +34,9 @@
         hledger-iadd
         imagemagick # auto-accent requires it
         inkscape
-        kitty
         libnotify
         libreoffice
         lutris
-        micro
         mousam # weather
         mpv
         newsflash
@@ -49,24 +46,20 @@
         pass
         pinentry-gnome3
         prismlauncher
-        puffin
         python3
         renameutils
         ripgrep
-        ripgrep-all
+        ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
         stow
         stretchly # no breaktimer on nix
-        swaynotificationcenter
         texliveFull
-        thunderbird
+        thunderbird-latest
         tokei
         tree-sitter
         unrar-free
         unzip
-        varia
         vesktop
         wl-clipboard
-        wofi
         yazi
         zathura
         zotero
