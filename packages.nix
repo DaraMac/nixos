@@ -1,7 +1,6 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
-
         adwsteamgtk
         anki
         bartib
@@ -51,6 +50,7 @@
         renameutils
         ripgrep
         ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+        rustdesk
         stow
         stretchly # no breaktimer on nix
         texliveFull
