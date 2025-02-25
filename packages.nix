@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
+
         adwsteamgtk
         anki
         bartib
@@ -63,6 +64,7 @@
         yazi
         zathura
         zotero
+        zsh-completions
         zsh-powerlevel10k
     ];
 }
