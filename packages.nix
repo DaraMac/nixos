@@ -16,6 +16,7 @@
         file
         gdu
         ghostty
+        gimp
         git
         gnome-podcasts
         gnome-tweaks
