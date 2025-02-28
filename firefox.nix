@@ -4,25 +4,16 @@
     programs = {
         firefox = {
             enable = true;
-            nativeMessagingHosts.packages = with pkgs; [passff-host];
             policies = {
-
-                EnableTrackingProtection = {
-                    Value          = true;
-                    Locked         = true;
-                    Cryptomining   = true;
-                    Fingerprinting = true;
-                    EmailTracking  = true;
-                };
                 DisablePocket = true;
                 DisplayBookmarksToolbar = "never";
-                SearchBar = "separate";
-                NewTabPage = "false";
-
-                Homepage = {
-                    StartPage = "previous-session";
+                EnableTrackingProtection = {
+                    Cryptomining   = true;
+                    EmailTracking  = true;
+                    Fingerprinting = true;
+                    Locked         = true;
+                    Value          = true;
                 };
-
                 ExtensionSettings = {
                     # BetterTTV
                     "firefox@betterttv.net" = {
@@ -72,7 +63,11 @@
                         installation_mode = "force_installed";
                     };
                 };
+                Homepage.StartPage = "previous-session";
+                NewTabPage = "false";
+                SearchBar = "separate";
             };
+            nativeMessagingHosts.packages = with pkgs; [passff-host];
         };
     };
 }
