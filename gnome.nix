@@ -3,11 +3,6 @@
 with pkgs.lib.gvariant;
 
 {
-    # Enable GNOME desktop
-    services.xserver.displayManager.gdm.enable = true;
-    services.xserver.desktopManager.gnome.enable = true;
-
-
     environment.gnome.excludePackages = with pkgs; [
         epiphany
         evince
@@ -69,16 +64,6 @@ with pkgs.lib.gvariant;
                         "app-switcher/current-workspace-only" = false;
 
                         disable-user-extensions = false;
-                        favorite-apps = [
-                            "org.gnome.Nautilus.desktop"
-                            "firefox.desktop"
-                            "thunderbird.desktop"
-                            "anki.desktop"
-                            "com.mitchellh.ghostty.desktop"
-                            "org.gnome.Calendar.desktop"
-                            "org.gnome.Settings.desktop"
-                        ];
-
                         enabled-extensions = [
                             "appindicatorsupport@rgcjonas.gmail.com"
                             "auto-accent-colour@Wartybix"
@@ -88,6 +73,15 @@ with pkgs.lib.gvariant;
                             "gsconnect@andyholmes.github.io"
                             "nightthemeswitcher@romainvigier.fr"
                             "rounded-window-corners@fxgn"
+                        ];
+                        favorite-apps = [
+                            "org.gnome.Nautilus.desktop"
+                            "firefox.desktop"
+                            "thunderbird.desktop"
+                            "anki.desktop"
+                            "com.mitchellh.ghostty.desktop"
+                            "org.gnome.Calendar.desktop"
+                            "org.gnome.Settings.desktop"
                         ];
                     };
 
@@ -190,10 +184,10 @@ with pkgs.lib.gvariant;
 
                     "org/gnome/settings-daemon/plugins/media-keys" = {
                         custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" ];
-                        www = ["<Super>b"];
-                        search = ["<Super>space"];
                         logout = ["<Shift><Super>e"];
                         screensaver = ["<Shift><Super>o"];
+                        search = ["<Super>space"];
+                        www = ["<Super>b"];
                     };
 
                     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -205,6 +199,7 @@ with pkgs.lib.gvariant;
                     "org/gnome/desktop/wm/keybindings" = {
                         close = ["<Shift><Super>q"];
                         maximize = [ "<Super>Up" ];
+
                         # disables these so they don't clash with the search shortcut
                         minimize = mkEmptyArray (type.string);
                         switch-input-source = mkEmptyArray (type.string);
@@ -214,5 +209,11 @@ with pkgs.lib.gvariant;
                 };
             }
         ];
+    };
+
+    # Enable GNOME desktop
+    services.xserver = {
+        desktopManager.gnome.enable = true;
+        displayManager.gdm.enable = true;
     };
 }
