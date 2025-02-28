@@ -14,40 +14,77 @@
             ./packages.nix
         ];
 
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
-    nix.settings.auto-optimise-store = true;
-    nix.gc.automatic = true;
-    nix.gc.dates = "weekly";
+    nix =  {
+        gc = {
+            automatic = true;
+            dates = "weekly";
+        };
+        settings = {
+            experimental-features = [ "nix-command" "flakes" ];
+            auto-optimise-store = true;
+        };
+    };
 
     # Enable networking
-    networking.hostName = "nixos"; # Define your hostname.
-    networking.networkmanager.enable = true;
+    networking = {
+        hostName = "nixos"; # Define your hostname.
+        networkmanager.enable = true;
+    };
 
     # Set your time zone.
     time.timeZone = "Europe/Dublin";
 
     # Select internationalisation properties.
-    i18n.defaultLocale = "en_GB.UTF-8";
+    i18n = {
+        defaultLocale = "en_GB.UTF-8";
 
-    i18n.extraLocaleSettings = {
-        LC_ADDRESS = "en_IE.UTF-8";
-        LC_IDENTIFICATION = "en_IE.UTF-8";
-        LC_MEASUREMENT = "en_IE.UTF-8";
-        LC_MONETARY = "en_IE.UTF-8";
-        LC_NAME = "en_IE.UTF-8";
-        LC_NUMERIC = "en_IE.UTF-8";
-        LC_PAPER = "en_IE.UTF-8";
-        LC_TELEPHONE = "en_IE.UTF-8";
-        LC_TIME = "en_IE.UTF-8";
+        extraLocaleSettings = {
+            LC_ADDRESS = "en_IE.UTF-8";
+            LC_IDENTIFICATION = "en_IE.UTF-8";
+            LC_MEASUREMENT = "en_IE.UTF-8";
+            LC_MONETARY = "en_IE.UTF-8";
+            LC_NAME = "en_IE.UTF-8";
+            LC_NUMERIC = "en_IE.UTF-8";
+            LC_PAPER = "en_IE.UTF-8";
+            LC_TELEPHONE = "en_IE.UTF-8";
+            LC_TIME = "en_IE.UTF-8";
+        };
     };
 
-    # Enable the X11 windowing system.
-    services.xserver.enable = true;
+    # PipeWire uses this to acquire realtime priority
+    security.rtkit.enable = true;
 
-    # Configure keymap in X11
-    services.xserver.xkb = {
-        layout = "gb";
-        variant = "";
+    services = {
+        # Enable automatic login for the user.
+        displayManager = {
+            autoLogin = {
+                enable = false;
+                user = "dara";
+            };
+        };
+
+        pipewire = {
+            alsa = {
+                enable = true;
+                support32Bit = true;
+            };
+            enable = true;
+            pulse.enable = true;
+        };
+
+        # Enable CUPS to print documents.
+        printing.enable = true;
+
+        # Enable the X11 windowing system.
+        xserver = { 
+            enable = true;
+
+            # Configure keymap in X11
+            xkb = {
+                layout = "gb";
+                variant = "";
+            };
+        };
     };
 
     # Configure console keymap
@@ -56,58 +93,52 @@
     # Get fonts, including all nerdfonts
     fonts.packages = with pkgs; [ meslo-lgs-nf ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
-    # Enable Hyprland
-    programs.hyprland.enable = true;
+    users = {
+        defaultUserShell = pkgs.zsh;
 
-    # Enable CUPS to print documents.
-    services.printing.enable = true;
-
-    security.rtkit.enable = true;
-    services.pipewire = {
-        enable = true;
-        alsa.enable = true;
-        alsa.support32Bit = true;
-        pulse.enable = true;
+        # Define a user account.
+        users.dara = {
+            description = "Dara MacConville";
+            extraGroups = [ "networkmanager" "wheel" ];
+            isNormalUser = true;
+        };
     };
 
-    # Define a user account.
-    users.users.dara = {
-        isNormalUser = true;
-        description = "Dara MacConville";
-        extraGroups = [ "networkmanager" "wheel" ];
-        packages = with pkgs; [
-        ];
-    };
 
-    # Enable automatic login for the user.
-    services.displayManager.autoLogin.enable = false;
-    services.displayManager.autoLogin.user = "dara";
+    programs = {
+        # Enable Hyprland
+        hyprland.enable = true;
 
-    # Allow unfree packages
-    nixpkgs.config.allowUnfree = true;
+        # Set up zsh
+        zsh = {
+            enable = true;
+            # autosuggestions.enable = true;
+            # syntaxHighlighting.enable = true;
+            promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+            # ohMyZsh = {
+            #     enable = true;
+            #     plugins = [
+            #     ];
+            # };
+        };
 
-    # Set up zsh
-    programs.zsh = {
-        enable = true;
-        # autosuggestions.enable = true;
-        # syntaxHighlighting.enable = true;
-        promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        # ohMyZsh = {
-        #     enable = true;
-        #     plugins = [
-        #     ];
-        # };
-    };
+        steam = {
+            enable = true;
+            gamescopeSession.enable = true;
+        };
+        gamemode.enable = true;
 
-    users.defaultUserShell = pkgs.zsh;
+        kdeconnect = {
+            enable = true;
+            package = pkgs.gnomeExtensions.gsconnect;
+        };
 
-    programs.steam.enable = true;
-    programs.steam.gamescopeSession.enable = true;
-    programs.gamemode.enable = true;
-
-    programs.kdeconnect = {
-        enable = true;
-        package = pkgs.gnomeExtensions.gsconnect;
+        # Some programs need SUID wrappers, can be configured further or are
+        # started in user sessions.
+        gnupg.agent = {
+            enable = true;
+            enableSSHSupport = true;
+        };
     };
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -116,20 +147,18 @@
         "default-web-browser" = "firefox.desktop";
     };
 
-    # Add media controls to mpv so KDE Connect works, and make the UI nicer
-    nixpkgs.overlays = [
-        (self: super: {
-            mpv = super.mpv.override {
-                scripts = [ self.mpvScripts.mpris self.mpvScripts.modernx ];
-            };
-        })
-    ];
+    nixpkgs = {
+        # Allow unfree packages
+        config.allowUnfree = true;
 
-    # Some programs need SUID wrappers, can be configured further or are
-    # started in user sessions.
-    programs.gnupg.agent = {
-        enable = true;
-        enableSSHSupport = true;
+        # Add media controls to mpv so KDE Connect works, and make the UI nicer
+        overlays = [
+            (self: super: {
+                mpv = super.mpv.override {
+                    scripts = [ self.mpvScripts.mpris self.mpvScripts.modernx ];
+                };
+            })
+        ];
     };
 
     # This value determines the NixOS release from which the default
