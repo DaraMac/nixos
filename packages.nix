@@ -35,6 +35,7 @@
         hledger-iadd
         imagemagick # auto-accent requires it
         inkscape
+        isabelle
         libnotify
         libreoffice
         lutris
