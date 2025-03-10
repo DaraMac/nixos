@@ -57,7 +57,7 @@
         stretchly # no breaktimer on nix
         texliveFull
         thunderbird-latest
-        tokei
+        tokei  # code counter
         tree-sitter
         unrar-free
         unzip
