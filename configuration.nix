@@ -143,6 +143,7 @@
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
     environment.variables.EDITOR = "nvim";
+    environment.variables.BARTIB_FILE = "/home/dara/.local/share/bartib/2025.bartib";
 
     xdg.mime.defaultApplications = {
         "default-web-browser" = "firefox.desktop";
