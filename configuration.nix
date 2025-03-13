@@ -10,6 +10,7 @@
             ./gnome.nix
             ./graphics.nix
             ./hardware-configuration-desktop.nix
+            ./kup.nix
             ./nvf.nix
             ./packages.nix
         ];
