@@ -51,7 +51,7 @@
         renameutils
         ripgrep
         ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
-        rustdesk
+        # rustdesk # broken atm
         shortwave
         stow
         stretchly # no breaktimer on nix
