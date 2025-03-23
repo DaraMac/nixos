@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
     environment.systemPackages = with pkgs; [
+        # rustdesk # broken atm
         adwsteamgtk
         anki-bin
         bartib
@@ -8,6 +9,7 @@
         bottles
         brave
         btop
+        calibre
         dconf2nix
         deluge
         fastfetch
@@ -51,7 +53,6 @@
         renameutils
         ripgrep
         ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
-        # rustdesk # broken atm
         shortwave
         stow
         stretchly # no breaktimer on nix
