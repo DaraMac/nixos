@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # rustdesk # broken atm
     adwsteamgtk
     anki-bin
     bartib
@@ -52,6 +51,7 @@
     renameutils
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    rustdesk
     shortwave
     stow
     stretchly # no breaktimer on nix
