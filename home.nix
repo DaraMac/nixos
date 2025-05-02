@@ -95,11 +95,11 @@
         v = "fzf --bind 'enter:become(nvim {})'";
 
         # ls
-        la = "lsd -lA";
-        ll = "lsd -l";
+        # la = "lsd -lA";
+        # ll = "lsd -l";
         lr = "lsd -lr";
-        ls = "lsd";
-        lt = "lsd --tree";
+        # ls = "lsd";
+        # lt = "lsd --tree";
 
         # start git aliases
         ggpur = "ggu";
