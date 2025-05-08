@@ -37,6 +37,7 @@
     inkscape
     libnotify
     libreoffice
+    libretrack
     lutris
     mousam # weather
     mpv
