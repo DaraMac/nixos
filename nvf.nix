@@ -14,6 +14,8 @@
                 style = "night";
             };
 
+            lsp.enable = true;
+
             luaConfigRC.basic = ''
                 vim.api.nvim_create_autocmd('TextYankPost', {
                     desc = 'Highlight when yanking (copying) text',
@@ -105,7 +107,6 @@
 
             languages = {
                 enableTreesitter = true;
-                enableLSP = true;
                 enableFormat = true;
 
                 assembly.enable = true;
