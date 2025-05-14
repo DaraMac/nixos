@@ -31,6 +31,7 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnumake
     gnupg
+    helix
     heroic
     hledger
     hledger-iadd
