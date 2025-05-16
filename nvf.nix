@@ -16,6 +16,8 @@
 
             lsp.enable = true;
 
+            clipboard.registers = "unnamedplus";
+
             luaConfigRC.basic = ''
                 vim.api.nvim_create_autocmd('TextYankPost', {
                     desc = 'Highlight when yanking (copying) text',
@@ -60,8 +62,6 @@
                 netrw_banner = 0;
                 netrw_liststyle = 3;
             };
-
-            useSystemClipboard = true;
 
             options = {
                 guicursor = '''';
