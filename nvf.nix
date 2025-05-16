@@ -16,8 +16,12 @@
 
             lsp.enable = true;
 
-            clipboard.registers = "unnamedplus";
+            clipboard = {
+                enable = true;
+                registers = "unnamedplus";
+            };
 
+            # add vim.opt.clipboard:append("unnamedplus")' in luaConfigRC
             luaConfigRC.basic = ''
                 vim.api.nvim_create_autocmd('TextYankPost', {
                     desc = 'Highlight when yanking (copying) text',
