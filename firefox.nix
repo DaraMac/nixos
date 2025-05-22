@@ -39,6 +39,12 @@
                         installation_mode = "force_installed";
                     };
 
+                    # Stylus
+                    "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}" = {
+                        install_url = "https://addons.mozilla.org/firefox/downloads/latest/stylus/latest.xpi";
+                        installation_mode = "force_installed";
+                    };
+
                     # Tridactyl
                     "tridactyl.vim@cmcaine.co.uk" = {
                         install_url = "https://addons.mozilla.org/firefox/downloads/latest/tridactyl-vim/latest.xpi";
