@@ -58,6 +58,14 @@
       };
     };
 
+    neovim = {
+        enable = true;
+        defaultEditor = true;
+        viAlias = true;
+        vimAlias = true;
+        vimdiffAlias = true;
+    };
+
     tmux = {
       enable = true;
       keyMode = "vi";
