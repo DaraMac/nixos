@@ -2,7 +2,8 @@
   environment.systemPackages = with pkgs; [
     adwsteamgtk
     anki-bin
-    nil # nix lsp
+    nil # nix lsp (helix)
+    nixpkgs-fmt # formatter for nix, (helix)
     bartib
     bat
     bottles
