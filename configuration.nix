@@ -11,7 +11,6 @@
             ./graphics.nix
             ./hardware-configuration-laptop.nix
             ./kup.nix
-            ./nvf.nix
             ./packages.nix
         ];
 
