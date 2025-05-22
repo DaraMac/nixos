@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     adwsteamgtk
     anki-bin
+    nil # nix lsp
     bartib
     bat
     bottles
