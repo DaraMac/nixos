@@ -5,6 +5,7 @@
     nil # nix lsp (helix)
     nixpkgs-fmt # formatter for nix, (helix)
     bartib
+    gcc # for compiling helix tree-sitter grammars
     bat
     bottles
     brave
