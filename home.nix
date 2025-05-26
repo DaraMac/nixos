@@ -67,6 +67,7 @@
 
         plugins = with pkgs.vimPlugins; [
             telescope-nvim
+            todo-comments-nvim
         ];
 
         # The comment will allow the LSP and Treesitter to work in the string
@@ -135,6 +136,7 @@
             vim.keymap.set('n', 'J', 'mjJ`j', { desc = 'Join a line while retaining cursor position' })
 
             -- plugins
+
             -- telescope
 
             local builtin = require('telescope.builtin')
@@ -150,6 +152,7 @@
             vim.keymap.set('n', '<leader>sk', builtin.keymaps,       { desc = '[S]earch [K]eymaps' })
             vim.keymap.set('n', '<leader>sr', builtin.resume,        { desc = '[S]earch [R]esume' })
             vim.keymap.set('n', '<leader>ss', builtin.builtin,       { desc = '[S]earch [S]elect Telescope' })
+            vim.keymap.set('n', '<leader>st', ':TodoTelescope<CR>',  { desc = '[S]earch [T]odos' })
             vim.keymap.set('n', '<leader>sw', builtin.grep_string,   { desc = '[S]earch current [W]ord' })
 
             vim.keymap.set("n", "<leader>/", function()
@@ -159,6 +162,10 @@
                     previewer = false,
                 }))
             end, { desc = "[/] Fuzzily search in current buffer" })
+
+
+            -- todo-comments
+            require("todo-comments").setup()
         '';
     };
 
