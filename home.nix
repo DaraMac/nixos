@@ -67,6 +67,7 @@
 
         plugins = with pkgs.vimPlugins; [
             catppuccin-nvim
+            nvim-treesitter.withAllGrammars
             telescope-nvim
             todo-comments-nvim
         ];
