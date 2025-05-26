@@ -66,6 +66,7 @@
         vimdiffAlias = true;
 
         plugins = with pkgs.vimPlugins; [
+            catppuccin-nvim
             telescope-nvim
             todo-comments-nvim
         ];
@@ -73,6 +74,9 @@
         # The comment will allow the LSP and Treesitter to work in the string
         # assuming I set them up properly
         extraLuaConfig = /* lua */ ''
+
+            vim.cmd.colorscheme 'catppuccin-mocha'
+
             vim.g.mapleader = ' '
             vim.g.maplocalleader = ' '
             vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
