@@ -68,6 +68,7 @@
         plugins = with pkgs.vimPlugins; [
             catppuccin-nvim
             nvim-treesitter.withAllGrammars
+            obsidian-nvim
             telescope-nvim
             todo-comments-nvim
         ];
@@ -171,6 +172,27 @@
 
             -- todo-comments
             require("todo-comments").setup()
+
+
+            -- obsidian
+            require("obsidian").setup {
+                -- A list of workspace names, paths, and configuration overrides.
+                -- If you use the Obsidian app, the 'path' of a workspace should generally be
+                -- your vault root (where the `.obsidian` folder is located).
+                -- When obsidian.nvim is loaded by your plugin manager, it will automatically set
+                -- the workspace to the first workspace in the list whose `path` is a parent of the
+                -- current markdown file being edited.
+                workspaces = {
+                    {
+                        name = "wiki",
+                        path = "~/Documents/wiki",
+                    }
+                },
+
+                ui = {
+                    enable = false
+                }
+            }
         '';
     };
 
