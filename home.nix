@@ -133,6 +133,11 @@
             vim.keymap.set('n', '-', '<cmd>Explore<CR>', { desc = 'Switch to file browser' })
 
             vim.keymap.set('n', 'J', 'mjJ`j', { desc = 'Join a line while retaining cursor position' })
+
+            -- plugins
+            -- telescope
+
+            local builtin = require('telescope.builtin')
         '';
     };
 
