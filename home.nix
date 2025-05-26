@@ -67,6 +67,7 @@
 
         plugins = with pkgs.vimPlugins; [
             catppuccin-nvim
+            nvim-lspconfig
             nvim-treesitter.withAllGrammars
             obsidian-nvim
             telescope-nvim
@@ -193,6 +194,10 @@
                     enable = false
                 }
             }
+
+
+            -- lsp
+            vim.lsp.enable('nil_ls')
         '';
     };
 
