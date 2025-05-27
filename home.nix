@@ -67,6 +67,8 @@
 
         plugins = with pkgs.vimPlugins; [
             catppuccin-nvim
+            cmp-path
+            nvim-cmp
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
             obsidian-nvim
