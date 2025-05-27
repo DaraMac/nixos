@@ -32,7 +32,6 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnumake
     gnupg
-    helix
     heroic
     hledger
     hledger-iadd
@@ -41,6 +40,7 @@
     libnotify
     libreoffice
     libretrack
+    lua-language-server
     lutris
     mousam # weather
     mpv
