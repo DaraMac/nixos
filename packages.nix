@@ -2,10 +2,8 @@
   environment.systemPackages = with pkgs; [
     adwsteamgtk
     anki-bin
-    nil # nix lsp (helix)
-    nixpkgs-fmt # formatter for nix, (helix)
     bartib
-    gcc # for compiling helix tree-sitter grammars
+    basedpyright # lsp
     bat
     bottles
     brave
@@ -47,6 +45,7 @@
     mousam # weather
     mpv
     newsflash
+    nil # nix lsp
     nodejs-slim
     obsidian
     p7zip
