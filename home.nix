@@ -77,7 +77,6 @@
         ];
 
         # NOTE: The comment will allow the LSP and Treesitter to work in the string
-        # assuming I set them up properly
         extraLuaConfig = /* lua */ ''
 
             vim.cmd.colorscheme 'catppuccin-mocha'
