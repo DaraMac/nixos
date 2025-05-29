@@ -403,7 +403,7 @@
       keyMode = "vi";
       mouse = true;
       terminal = "screen-256color"; # this was needed on Mac, maybe not on linux
-      extraConfig = /* conf */ ''
+      extraConfig = /* js */ ''
         set -g status off
         bind -Tcopy-mode MouseDragEnd1Pane send -X copy-selection
 
