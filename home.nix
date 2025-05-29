@@ -20,11 +20,13 @@
     # changes in each release.
     stateVersion = "25.05";
 
-    file."hledger-iadd".target = ".config/hledger-iadd/config.conf";
-    file."hledger-iadd".text = ''date-format = "%Y-%m-%d"'';
+    file = {
+        "hledger-iadd".target = ".config/hledger-iadd/config.conf";
+        "hledger-iadd".text = ''date-format = "%Y-%m-%d"'';
 
-    file."p10k.zsh".source = ./dot-p10k.zsh;
-    file."p10k.zsh".target = ".config/p10k/p10k.zsh";
+        "p10k.zsh".source = ./dot-p10k.zsh;
+        "p10k.zsh".target = ".config/p10k/p10k.zsh";
+    };
   };
 
   programs = {
