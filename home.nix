@@ -76,7 +76,7 @@
             todo-comments-nvim
         ];
 
-        # The comment will allow the LSP and Treesitter to work in the string
+        # NOTE: The comment will allow the LSP and Treesitter to work in the string
         # assuming I set them up properly
         extraLuaConfig = /* lua */ ''
 
@@ -297,6 +297,14 @@
                     end
                 end,
             })
+
+
+            -- treesitter
+            require'nvim-treesitter.configs'.setup {
+                highlight = {
+                    enable = true
+                }
+            }
 
         '';
     };
