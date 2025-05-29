@@ -22,7 +22,7 @@
             };
 
             # add vim.opt.clipboard:append("unnamedplus")' in luaConfigRC
-            luaConfigRC.basic = ''
+            luaConfigRC.basic = /* lua */ ''
                 vim.api.nvim_create_autocmd('TextYankPost', {
                     desc = 'Highlight when yanking (copying) text',
                     group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
