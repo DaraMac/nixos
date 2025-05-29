@@ -67,7 +67,10 @@
 
         plugins = with pkgs.vimPlugins; [
             catppuccin-nvim
+            cmp-nvim-lsp
             cmp-path
+            cmp_luasnip
+            luasnip
             nvim-cmp
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
