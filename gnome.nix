@@ -212,7 +212,7 @@ with pkgs.lib.gvariant;
     };
 
     # Enable GNOME desktop
-    services.xserver = {
+    services = {
         desktopManager.gnome.enable = true;
         displayManager.gdm.enable = true;
     };
