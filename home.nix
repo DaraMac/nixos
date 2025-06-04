@@ -433,6 +433,8 @@
         # fzf
         v = "fzf --bind 'enter:become(nvim {})'";
 
+        open = "xdg-open";
+
         # ls
         # la = "lsd -lA";
         # ll = "lsd -l";
@@ -535,7 +537,7 @@
         glola = ''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --all'';
         glols = ''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --stat'';
         glol = ''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset"'';
-        glo = "git log --oneline --decorate";
+        glo=''git log --pretty="format:%C(yellow)%h %Creset%s %Cblue%>(12)%ad" --date=relative'';
         glog = "git log --oneline --decorate --graph";
         gloga = "git log --oneline --decorate --graph --all";
 
