@@ -35,6 +35,14 @@
   programs = {
     home-manager.enable = true;
 
+    ghostty = {
+        enable = true;
+        settings = {
+            # disable ligatures
+            font-family = "-calt";
+        };
+    };
+
     git = {
       enable = true;
       userEmail = "DaraMac@users.noreply.github.com";

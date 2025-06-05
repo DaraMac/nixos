@@ -17,7 +17,6 @@
     ferdium
     file
     gdu
-    ghostty
     gimp3
     git
     gnome-podcasts
