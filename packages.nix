@@ -60,6 +60,7 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rustdesk
     shortwave
+    stack
     stow
     stretchly # no breaktimer on nix
     texliveFull
