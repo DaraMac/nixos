@@ -21,6 +21,7 @@
     ghc
     gimp3
     git
+    gmp
     gnome-podcasts
     gnome-tweaks
     gnome-user-share
@@ -46,6 +47,7 @@
     lutris
     mousam # weather
     mpv
+    ncurses
     newsflash
     nil # nix lsp
     nodejs-slim
@@ -72,6 +74,7 @@
     wl-clipboard
     yazi
     zathura
+    zlib
     zotero
     zsh-completions
     zsh-powerlevel10k
