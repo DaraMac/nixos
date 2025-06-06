@@ -215,6 +215,10 @@
 
             -- lsp
             vim.lsp.enable('basedpyright')
+            vim.lsp.enable('hls')
+            vim.lsp.config('hls', {
+                filetypes = { 'haskell', 'lhaskell', 'cabal' },
+            })
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('nil_ls')
 

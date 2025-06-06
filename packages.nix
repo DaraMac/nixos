@@ -8,6 +8,7 @@
     bottles
     brave
     btop
+    cabal-install
     calibre
     dconf2nix
     deluge
@@ -17,6 +18,7 @@
     ferdium
     file
     gdu
+    ghc
     gimp3
     git
     gnome-podcasts
@@ -31,6 +33,7 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnumake
     gnupg
+    haskell-language-server
     heroic
     hledger
     hledger-iadd
