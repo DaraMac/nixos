@@ -4,6 +4,7 @@
     anki-bin
     bartib
     basedpyright # lsp
+    bash-language-server
     bat
     bottles
     brave

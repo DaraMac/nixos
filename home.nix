@@ -215,12 +215,13 @@
 
             -- lsp
             vim.lsp.enable('basedpyright')
+            vim.lsp.enable('bashls')
             vim.lsp.enable('hls')
+            vim.lsp.enable('lua_ls')
+            vim.lsp.enable('nil_ls')
             vim.lsp.config('hls', {
                 filetypes = { 'haskell', 'lhaskell', 'cabal' },
             })
-            vim.lsp.enable('lua_ls')
-            vim.lsp.enable('nil_ls')
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
