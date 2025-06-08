@@ -204,12 +204,19 @@
                     {
                         name = "wiki",
                         path = "~/Documents/wiki",
+                        overrides = {
+                            templates = {
+                                folder = "Templates"
+                            }
+                        }
                     }
                 },
 
                 ui = {
                     enable = false
-                }
+                },
+
+                disable_frontmatter = true,
             }
 
 
