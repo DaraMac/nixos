@@ -20,6 +20,7 @@
     file
     gdu
     ghc # haskell
+    ghcid # haskell
     gimp3
     git
     gnome-podcasts
@@ -35,6 +36,9 @@
     gnumake
     gnupg
     haskell-language-server # lsp
+    haskellPackages.hasktags # haskell
+    haskellPackages.quickbench # haskell
+    haskellPackages.shelltestrunner # haskell
     heroic
     hledger
     hledger-iadd
@@ -72,6 +76,7 @@
     unrar-free
     unzip
     vesktop
+    watchexec # haskell
     wl-clipboard
     yazi
     zathura
