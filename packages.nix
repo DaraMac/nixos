@@ -4,12 +4,12 @@
     anki-bin
     bartib
     basedpyright # lsp
-    bash-language-server
+    bash-language-server # lsp
     bat
     bottles
     brave
     btop
-    cabal-install
+    cabal-install # haskell
     calibre
     dconf2nix
     deluge
@@ -19,7 +19,7 @@
     ferdium
     file
     gdu
-    ghc
+    ghc # haskell
     gimp3
     git
     gnome-podcasts
@@ -34,12 +34,13 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnumake
     gnupg
-    haskell-language-server
+    haskell-language-server # lsp
     heroic
     hledger
     hledger-iadd
     imagemagick # auto-accent requires it
     inkscape
+    just # haskell
     libnotify
     libreoffice
     libretrack
@@ -48,7 +49,7 @@
     mousam # weather
     mpv
     newsflash
-    nil # nix lsp
+    nil # lsp
     nodejs-slim
     obsidian
     p7zip
@@ -61,7 +62,7 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rustdesk
     shortwave
-    stack
+    stack # haskell
     stow
     stretchly # no breaktimer on nix
     texliveFull
