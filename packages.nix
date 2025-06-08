@@ -33,8 +33,10 @@
     gnomeExtensions.forge
     gnomeExtensions.night-theme-switcher
     gnomeExtensions.rounded-window-corners-reborn
+    gnum4 # haskell
     gnumake
     gnupg
+    groff # haskell
     haskell-language-server # lsp
     haskellPackages.hasktags # haskell
     haskellPackages.quickbench # haskell
@@ -57,6 +59,7 @@
     nodejs-slim
     obsidian
     p7zip
+    pandoc # haskell
     pass
     pinentry-gnome3
     prismlauncher
