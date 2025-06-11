@@ -4,10 +4,12 @@
     anki-bin
     bartib
     basedpyright # lsp
+    bash-language-server # lsp
     bat
     bottles
     brave
     btop
+    cabal-install # haskell
     calibre
     dconf2nix
     deluge
@@ -17,7 +19,8 @@
     ferdium
     file
     gdu
-    ghostty
+    ghc # haskell
+    ghcid # haskell
     gimp3
     git
     gnome-podcasts
@@ -30,13 +33,20 @@
     gnomeExtensions.forge
     gnomeExtensions.night-theme-switcher
     gnomeExtensions.rounded-window-corners-reborn
+    gnum4 # haskell
     gnumake
     gnupg
+    groff # haskell
+    haskell-language-server # lsp
+    haskellPackages.hasktags # haskell
+    haskellPackages.quickbench # haskell
+    haskellPackages.shelltestrunner # haskell
     heroic
     hledger
     hledger-iadd
     imagemagick # auto-accent requires it
     inkscape
+    just # haskell
     libnotify
     libreoffice
     libretrack
@@ -45,10 +55,11 @@
     mousam # weather
     mpv
     newsflash
-    nil # nix lsp
+    nil # lsp
     nodejs-slim
     obsidian
     p7zip
+    pandoc # haskell
     pass
     pinentry-gnome3
     prismlauncher
@@ -58,6 +69,7 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rustdesk
     shortwave
+    stack # haskell
     stow
     stretchly # no breaktimer on nix
     texliveFull
@@ -67,6 +79,7 @@
     unrar-free
     unzip
     vesktop
+    watchexec # haskell
     wl-clipboard
     yazi
     zathura

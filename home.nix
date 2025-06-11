@@ -35,6 +35,14 @@
   programs = {
     home-manager.enable = true;
 
+    ghostty = {
+        enable = true;
+        settings = {
+            # disable ligatures
+            font-family = "-calt";
+        };
+    };
+
     git = {
       enable = true;
       userEmail = "DaraMac@users.noreply.github.com";
@@ -196,19 +204,31 @@
                     {
                         name = "wiki",
                         path = "~/Documents/wiki",
+                        overrides = {
+                            templates = {
+                                folder = "Templates"
+                            }
+                        }
                     }
                 },
 
                 ui = {
                     enable = false
-                }
+                },
+
+                disable_frontmatter = true,
             }
 
 
             -- lsp
             vim.lsp.enable('basedpyright')
+            vim.lsp.enable('bashls')
+            vim.lsp.enable('hls')
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('nil_ls')
+            vim.lsp.config('hls', {
+                filetypes = { 'haskell', 'lhaskell', 'cabal' },
+            })
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
@@ -433,6 +453,8 @@
         # fzf
         v = "fzf --bind 'enter:become(nvim {})'";
 
+        open = "xdg-open";
+
         # ls
         # la = "lsd -lA";
         # ll = "lsd -l";
@@ -535,7 +557,7 @@
         glola = ''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --all'';
         glols = ''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --stat'';
         glol = ''git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset"'';
-        glo = "git log --oneline --decorate";
+        glo=''git log --pretty="format:%C(yellow)%h %Creset%s %Cblue%>(12)%ad" --date=relative'';
         glog = "git log --oneline --decorate --graph";
         gloga = "git log --oneline --decorate --graph --all";
 
