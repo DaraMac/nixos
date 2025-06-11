@@ -53,6 +53,7 @@
         init.defaultBranch = "main";
         log.date = "iso";
         merge.conflictstyle = "diff3";
+        merge.tool = "nvimdiff";
         pull.rebase = "true";
         push.autoSetupRemote = "true";
       };
