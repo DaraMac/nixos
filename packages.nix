@@ -21,6 +21,7 @@
     gimp3
     git
     gnome-podcasts
+    gnome-sound-recorder
     gnome-tweaks
     gnome-user-share
     gnome-weather
