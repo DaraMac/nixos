@@ -33,6 +33,7 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnumake
     gnupg
+    goofcord
     haskell-language-server # lsp
     heroic
     hledger
@@ -68,7 +69,6 @@
     tree-sitter
     unrar-free
     unzip
-    vesktop
     wl-clipboard
     yazi
     zathura
