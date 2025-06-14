@@ -70,6 +70,7 @@
     tree-sitter
     unrar-free
     unzip
+    waybar # hyprland
     wl-clipboard
     wofi # hyprland
     yazi
