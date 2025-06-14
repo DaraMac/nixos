@@ -9,7 +9,6 @@
     bottles
     brave
     btop
-    cabal-install # haskell
     calibre
     dconf2nix
     deluge
@@ -19,11 +18,10 @@
     ferdium
     file
     gdu
-    ghc # haskell
-    ghcid # haskell
     gimp3
     git
     gnome-podcasts
+    gnome-sound-recorder
     gnome-tweaks
     gnome-user-share
     gnome-weather
@@ -33,20 +31,15 @@
     gnomeExtensions.forge
     gnomeExtensions.night-theme-switcher
     gnomeExtensions.rounded-window-corners-reborn
-    gnum4 # haskell
     gnumake
     gnupg
-    groff # haskell
+    goofcord
     haskell-language-server # lsp
-    haskellPackages.hasktags # haskell
-    haskellPackages.quickbench # haskell
-    haskellPackages.shelltestrunner # haskell
     heroic
     hledger
     hledger-iadd
     imagemagick # auto-accent requires it
     inkscape
-    just # haskell
     libnotify
     libreoffice
     libretrack
@@ -59,7 +52,6 @@
     nodejs-slim
     obsidian
     p7zip
-    pandoc # haskell
     pass
     pinentry-gnome3
     prismlauncher
@@ -69,7 +61,6 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rustdesk
     shortwave
-    stack # haskell
     stow
     stretchly # no breaktimer on nix
     texliveFull
@@ -78,8 +69,6 @@
     tree-sitter
     unrar-free
     unzip
-    vesktop
-    watchexec # haskell
     wl-clipboard
     wofi # hyprland
     yazi
