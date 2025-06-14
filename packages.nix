@@ -39,6 +39,7 @@
     heroic
     hledger
     hledger-iadd
+    hyprpaper # hyprpaper
     imagemagick # auto-accent requires it
     inkscape
     libnotify
