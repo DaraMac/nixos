@@ -13,6 +13,7 @@
     dconf2nix
     deluge
     drawio
+    dunst # hyprland
     fastfetch
     fd
     ferdium
