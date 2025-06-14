@@ -81,6 +81,7 @@
     vesktop
     watchexec # haskell
     wl-clipboard
+    wofi # hyprland
     yazi
     zathura
     zotero
