@@ -9,6 +9,8 @@
       "locked": {
         "lastModified": 1751236542,
         "narHash": "sha256-M++mrTo3dQrFPMUKcbcS91O8GqeLnUmD40H/i0yA/c4=",
+        "lastModified": 1749821119,
+        "narHash": "sha256-X3WAS322EsebI4ohJcXhKpiyG1v+7wE4VOiXy1pxM/c=",
         "owner": "nix-community",
         "repo": "home-manager",
         "rev": "522c681ac22bf3b4d2cfc5f74e71401da82001cc",
