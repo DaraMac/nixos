@@ -53,6 +53,7 @@
     nil # lsp
     nodejs-slim
     obsidian
+    overskride
     p7zip
     pass
     pinentry-gnome3
