@@ -35,6 +35,7 @@
     gnumake
     gnupg
     goofcord
+    grim
     haskell-language-server # lsp
     heroic
     hledger
@@ -64,6 +65,7 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rustdesk
     shortwave
+    slurp
     stow
     stretchly # no breaktimer on nix
     texliveFull
