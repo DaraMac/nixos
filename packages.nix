@@ -6,6 +6,7 @@
     basedpyright # lsp
     bash-language-server # lsp
     bat
+    bibata-cursors
     bottles
     brave
     btop
