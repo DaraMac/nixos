@@ -6,9 +6,10 @@
     basedpyright # lsp
     bash-language-server # lsp
     bat
-    bibata-cursors
+    bibata-cursors # hyprland
     bottles
     brave
+    brightnessctl # hyprland
     btop
     calibre
     dconf2nix
@@ -36,18 +37,18 @@
     gnumake
     gnupg
     goofcord
-    grim
+    grim # hyprland
     haskell-language-server # lsp
     heroic
     hledger
     hledger-iadd
-    hyprpaper # hyprpaper
+    hyprpaper # hyprland
     imagemagick # auto-accent requires it
     inkscape
     libnotify
     libreoffice
     libretrack
-    lua-language-server
+    lua-language-server # lsp
     lutris
     mousam # weather
     mpv
@@ -55,10 +56,11 @@
     nil # lsp
     nodejs-slim
     obsidian
-    overskride
+    overskride # hyprland
     p7zip
     pass
     pinentry-gnome3
+    playerctl # hyprland
     prismlauncher
     python3
     renameutils
@@ -66,7 +68,7 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rustdesk
     shortwave
-    slurp
+    slurp # hyprland
     stow
     stretchly # no breaktimer on nix
     texliveFull
