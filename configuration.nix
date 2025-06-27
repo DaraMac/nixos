@@ -141,9 +141,13 @@
         };
     };
 
-    environment.sessionVariables.NIXOS_OZONE_WL = "1";
-    environment.variables.EDITOR = "nvim";
-    environment.variables.BARTIB_FILE = "/home/dara/.local/share/bartib/2025.bartib";
+    environment = {
+        sessionVariables.NIXOS_OZONE_WL = "1";
+        variables = {
+            BARTIB_FILE = "/home/dara/.local/share/bartib/2025.bartib";
+            EDITOR = "nvim";
+        };
+    };
 
     xdg.mime.defaultApplications = {
         "default-web-browser" = "firefox.desktop";
