@@ -107,7 +107,10 @@
 
     programs = {
         # Enable Hyprland
-        hyprland.enable = true;
+        hyprland = {
+            enable = true;
+            withUWSM = true;
+        };
 
         # Set up zsh
         zsh = {
