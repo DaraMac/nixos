@@ -43,6 +43,7 @@
     hledger
     hledger-iadd
     hyprpaper # hyprland
+    hyprpicker # hyprland
     imagemagick # auto-accent requires it
     inkscape
     libnotify
