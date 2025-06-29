@@ -82,6 +82,7 @@
     waybar # hyprland
     wl-clipboard
     wofi # hyprland
+    xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     yazi
     zathura
     zotero
