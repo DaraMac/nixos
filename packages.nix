@@ -14,6 +14,7 @@
     calibre
     dconf2nix
     deluge
+    dissent # discord
     drawio
     fastfetch
     fd
@@ -35,7 +36,7 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnumake
     gnupg
-    goofcord
+    goofcord # discord
     grim # hyprland
     haskell-language-server # lsp
     heroic
