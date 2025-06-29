@@ -69,7 +69,7 @@
     renameutils
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
-    rofi # hyprland
+    rofi-wayland # hyprland
     rustdesk
     shortwave
     slurp # hyprland
