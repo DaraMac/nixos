@@ -15,7 +15,6 @@
     dconf2nix
     deluge
     drawio
-    dunst # hyprland
     fastfetch
     fd
     ferdium
@@ -70,11 +69,13 @@
     renameutils
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    rofi # hyprland
     rustdesk
     shortwave
     slurp # hyprland
     stow
     stretchly # no breaktimer on nix
+    swaynotificationcenter # hyprland
     texliveFull
     thunderbird-latest
     tokei # code counter
