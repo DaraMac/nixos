@@ -42,6 +42,7 @@
     heroic
     hledger
     hledger-iadd
+    hyprlock # hyprland
     hyprpaper # hyprland
     hyprpicker # hyprland
     imagemagick # auto-accent requires it
