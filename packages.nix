@@ -63,6 +63,7 @@
     overskride # hyprland
     p7zip
     pass
+    pavucontrol # hyprland
     pinentry-gnome3
     playerctl # hyprland
     prismlauncher
