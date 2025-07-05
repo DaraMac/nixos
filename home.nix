@@ -72,6 +72,10 @@
       };
     };
 
+    rofi = {
+        enable = true;
+    };
+
     neovim = {
         enable = true;
         defaultEditor = true;
