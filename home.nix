@@ -74,6 +74,8 @@
 
     rofi = {
         enable = true;
+        package = pkgs.rofi-wayland;
+        plugins = [ pkgs.rofi-calc ];
     };
 
     neovim = {
