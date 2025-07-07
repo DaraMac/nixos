@@ -47,6 +47,7 @@
     hyprpicker # hyprland
     hyprsunset # hyprland
     hyprsysteminfo # hyprland
+    ianny
     imagemagick # auto-accent requires it
     inkscape
     libnotify
@@ -71,7 +72,6 @@
     renameutils
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
-    # rofi-wayland # hyprland
     rofimoji # hyprland
     rustdesk
     shortwave
