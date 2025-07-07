@@ -142,6 +142,11 @@
             enable = true;
             enableSSHSupport = true;
         };
+
+        nautilus-open-any-terminal = {
+            enable = true;
+            terminal = "ghostty";
+        };
     };
 
     environment = {
