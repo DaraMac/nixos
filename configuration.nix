@@ -102,6 +102,14 @@
             extraGroups = [ "networkmanager" "wheel" ];
             isNormalUser = true;
         };
+
+        groups.libvirtd.members = ["dara"]; # vm
+    };
+
+    # vm
+    virtualisation = {
+        libvirtd.enable = true;
+        spiceUSBRedirection.enable = true;
     };
 
 
@@ -147,6 +155,8 @@
             enable = true;
             terminal = "ghostty";
         };
+
+        virt-manager.enable = true; # vm
     };
 
     environment = {
