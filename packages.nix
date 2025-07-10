@@ -12,6 +12,7 @@
     brightnessctl # hyprland
     btop
     calibre
+    cinny-desktop
     dconf2nix
     deluge
     dissent # discord
