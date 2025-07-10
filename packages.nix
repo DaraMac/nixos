@@ -47,7 +47,6 @@
     hyprpicker # hyprland
     hyprsunset # hyprland
     hyprsysteminfo # hyprland
-    ianny
     imagemagick # auto-accent requires it
     inkscape
     libnotify
