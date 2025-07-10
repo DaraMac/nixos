@@ -12,7 +12,6 @@
     brightnessctl # hyprland
     btop
     calibre
-    cinny-desktop
     dconf2nix
     deluge
     dissent # discord
@@ -21,6 +20,7 @@
     fd
     ferdium
     file
+    fractal
     gdu
     gimp3
     git
