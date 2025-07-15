@@ -57,6 +57,7 @@
     lutris
     mousam # weather
     mpv
+    networkmanagerapplet
     newsflash
     nil # lsp
     nodejs-slim
