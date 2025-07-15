@@ -102,7 +102,7 @@
         # NOTE: The comment will allow the LSP and Treesitter to work in the string
         extraLuaConfig = /* lua */ ''
 
-            vim.cmd.colorscheme 'catppuccin-mocha'
+            vim.cmd.colorscheme 'catppuccin-macchiato'
 
             vim.g.mapleader = ' '
             vim.g.maplocalleader = ' '
