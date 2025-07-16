@@ -38,8 +38,8 @@
     ghostty = {
         enable = true;
         settings = {
-            # disable ligatures
-            font-family = "-calt";
+            font-family = "-calt"; # disable ligatures
+            theme = "catppuccin-macchiato";
         };
     };
 
