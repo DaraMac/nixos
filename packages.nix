@@ -67,7 +67,6 @@
     pavucontrol # hyprland
     pinentry-gnome3
     playerctl # hyprland
-    prismlauncher
     python3
     renameutils
     ripgrep
