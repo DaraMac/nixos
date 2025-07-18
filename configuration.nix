@@ -167,6 +167,11 @@
         };
     };
 
+    stylix = {
+        enable = true;
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
+    };
+
     xdg.mime.defaultApplications = {
         "default-web-browser" = "firefox.desktop";
     };
