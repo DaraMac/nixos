@@ -85,6 +85,7 @@
     unrar-free
     unzip
     waybar # hyprland
+    wev
     wl-clipboard
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     yazi
