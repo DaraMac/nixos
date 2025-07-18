@@ -222,8 +222,8 @@
                 ui = {
                     enable = false
                 },
-
                 disable_frontmatter = true,
+                legacy_commands = false
             }
 
 
