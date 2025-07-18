@@ -50,6 +50,7 @@
     hyprsysteminfo # hyprland
     imagemagick # auto-accent requires it
     inkscape
+    kando
     libnotify
     libreoffice
     lua-language-server # lsp
