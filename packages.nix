@@ -52,7 +52,6 @@
     inkscape
     libnotify
     libreoffice
-    libretrack
     lua-language-server # lsp
     lutris
     mousam # weather
