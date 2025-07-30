@@ -20,6 +20,7 @@
     fd
     ferdium
     file
+    fractal
     gdu
     gimp3
     git
@@ -49,9 +50,9 @@
     hyprsysteminfo # hyprland
     imagemagick # auto-accent requires it
     inkscape
+    kando
     libnotify
     libreoffice
-    libretrack
     lua-language-server # lsp
     lutris
     mousam # weather
@@ -63,9 +64,9 @@
     overskride # hyprland
     p7zip
     pass
+    pavucontrol # hyprland
     pinentry-gnome3
     playerctl # hyprland
-    prismlauncher
     python3
     renameutils
     ripgrep
@@ -85,6 +86,7 @@
     unrar-free
     unzip
     waybar # hyprland
+    wev
     wl-clipboard
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     yazi

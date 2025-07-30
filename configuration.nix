@@ -3,13 +3,13 @@
 {
     imports =
         [
-            # ./bootloader-desktop.nix
-            # ./hardware-configuration-desktop.nix
-            ./bootloader-laptop.nix
+            # ./bootloader-laptop.nix
+            # ./hardware-configuration-laptop.nix
+            ./bootloader-desktop.nix
             ./firefox.nix
             ./gnome.nix
             ./graphics.nix
-            ./hardware-configuration-laptop.nix
+            ./hardware-configuration-desktop.nix
             ./kup.nix
             ./packages.nix
         ];
@@ -102,6 +102,14 @@
             extraGroups = [ "networkmanager" "wheel" ];
             isNormalUser = true;
         };
+
+        groups.libvirtd.members = ["dara"]; # vm
+    };
+
+    # vm
+    virtualisation = {
+        libvirtd.enable = true;
+        spiceUSBRedirection.enable = true;
     };
 
 
@@ -142,6 +150,13 @@
             enable = true;
             enableSSHSupport = true;
         };
+
+        nautilus-open-any-terminal = {
+            enable = true;
+            terminal = "ghostty";
+        };
+
+        virt-manager.enable = true; # vm
     };
 
     environment = {
@@ -150,6 +165,11 @@
             BARTIB_FILE = "/home/dara/.local/share/bartib/2025.bartib";
             EDITOR = "nvim";
         };
+    };
+
+    stylix = {
+        enable = true;
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
     };
 
     xdg.mime.defaultApplications = {
