@@ -230,9 +230,13 @@
             -- lsp
             vim.lsp.enable('basedpyright')
             vim.lsp.enable('bashls')
+            vim.lsp.enable('cssls')
             vim.lsp.enable('hls')
+            vim.lsp.enable('html')
+            vim.lsp.enable('jsonls')
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('nil_ls')
+
             vim.lsp.config('hls', {
                 filetypes = { 'haskell', 'lhaskell', 'cabal' },
             })
