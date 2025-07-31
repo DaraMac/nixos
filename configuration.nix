@@ -91,7 +91,7 @@
     console.keyMap = "uk";
 
     # Get fonts, including all nerdfonts
-    fonts.packages = with pkgs; [ meslo-lgs-nf ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+    fonts.packages = with pkgs; [ noto-fonts noto-fonts-cjk-sans meslo-lgs-nf ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
     users = {
         defaultUserShell = pkgs.zsh;
