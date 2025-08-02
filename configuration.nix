@@ -85,6 +85,10 @@
                 variant = "";
             };
         };
+        zerotierone = {
+            enable = true;
+            joinNetworks = [ "856127940cd53ca3" ];
+        };
     };
 
     # Configure console keymap
