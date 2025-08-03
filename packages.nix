@@ -1,8 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # dissent # discord
-    # fractal
-    # rustdesk
     adwsteamgtk
     anki-bin
     bartib
@@ -22,6 +19,7 @@
     fd
     ferdium
     file
+    fractal
     gdu
     gimp3
     git
@@ -73,6 +71,7 @@
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # hyprland
+    rustdesk
     shortwave
     slurp # hyprland
     stow
