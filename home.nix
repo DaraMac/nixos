@@ -65,7 +65,6 @@
     lsd = {
       enable = true;
       settings = {
-        # date = "+%Y-%m-%d %H:%M";
         date = "relative";
         sorting.dir-grouping = "first";
         symlink-arrow = "→";
@@ -456,7 +455,7 @@
     zsh = {
       enable = true;
       autosuggestion.enable = true;
-      dotDir = ".config/zsh";
+      dotDir = "/home/dara/.config/zsh/";
       oh-my-zsh.enable = true;
       syntaxHighlighting.enable = true;
 
@@ -466,12 +465,11 @@
 
         open = "xdg-open";
 
+        hl = "hledger";
+
         # ls
-        # la = "lsd -lA";
-        # ll = "lsd -l";
         lr = "lsd -lr";
-        # ls = "lsd";
-        # lt = "lsd --tree";
+
 
         # start git aliases
         ggpur = "ggu";
