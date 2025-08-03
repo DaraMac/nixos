@@ -2,9 +2,13 @@
 
 {
     imports = [
+        ./home-manager/ghostty.nix
         ./home-manager/git.nix
+        ./home-manager/lsd.nix
         ./home-manager/neovim.nix
+        ./home-manager/rofi.nix
         ./home-manager/tmux.nix
+        ./home-manager/zathura.nix
         ./home-manager/zsh.nix
     ];
 
@@ -40,39 +44,7 @@
   programs = {
     home-manager.enable = true;
 
-    ghostty = {
-        enable = true;
-        settings = {
-            font-family = "-calt"; # disable ligatures
-            theme = "catppuccin-macchiato";
-        };
-    };
-
     fzf.enable = true;
     zoxide.enable = true;
-
-    lsd = {
-      enable = true;
-      settings = {
-        date = "relative";
-        sorting.dir-grouping = "first";
-        symlink-arrow = "→";
-      };
-    };
-
-    rofi = {
-        enable = true;
-        package = pkgs.rofi-wayland;
-        plugins = [ pkgs.rofi-calc ];
-    };
-
-    zathura = {
-      enable = true;
-      options = {
-        # to make it copy to the GUI clipboard upon highlight selecting
-        # https://unix.stackexchange.com/a/339488
-        selection-clipboard = "clipboard";
-      };
-    };
   };
 }
