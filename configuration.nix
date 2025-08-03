@@ -8,9 +8,9 @@
             ./hardware/bootloader/laptop.nix
             ./hardware/graphics.nix
             ./hardware/laptop.nix
-            ./packages.nix
             ./programs/firefox.nix
             ./programs/gnome.nix
+            ./programs/packages.nix
         ];
 
     nix =  {
