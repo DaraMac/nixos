@@ -257,6 +257,16 @@
             [[ ! -f ~/.config/p10k/p10k.zsh ]] || source ~/.config/p10k/p10k.zsh
             ###############################################################################
 
+            # Setup yazi alias
+            function y() {
+                local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+                yazi "$@" --cwd-file="$tmp"
+                if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+                builtin cd -- "$cwd"
+                fi
+                rm -f -- "$tmp"
+            }
+
             # start git functions
 
             # Check for develop and similarly named branches
@@ -376,22 +386,6 @@
             compdef _git ggp=git-checkout
 
             ### end git functions
-
-            # Use bat for highighted manual
-            export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-            export MANROFFOPT="-c"
-
-
-            # Setup yazi alias
-            function y() {
-                local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-                yazi "$@" --cwd-file="$tmp"
-                if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-                builtin cd -- "$cwd"
-                fi
-                rm -f -- "$tmp"
-            }
-
           '';
         };
     };

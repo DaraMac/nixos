@@ -160,6 +160,10 @@
             BARTIB_FILE = "/home/dara/.local/share/bartib/2025.bartib";
             EDITOR = "nvim";
             LEDGER_FILE="/home/dara/Documents/accounts/2025.journal";
+
+            # Use bat for highighted manual
+            MANPAGER="sh -c 'col -bx | bat -l man -p'";
+            MANROFFOPT="-c";
         };
     };
 
