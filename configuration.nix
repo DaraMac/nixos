@@ -159,6 +159,7 @@
         variables = {
             BARTIB_FILE = "/home/dara/.local/share/bartib/2025.bartib";
             EDITOR = "nvim";
+            LEDGER_FILE="/home/dara/Documents/accounts/2025.journal";
         };
     };
 
