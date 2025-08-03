@@ -3,13 +3,13 @@
 {
     imports =
         [
-            # ./bootloader-desktop.nix
-            # ./hardware-configuration-desktop.nix
-            ./bootloader-laptop.nix
+            # ./hardware/bootloader/desktop.nix
+            # ./hardware/desktop.nix
             ./firefox.nix
             ./gnome.nix
             ./graphics.nix
-            ./hardware-configuration-laptop.nix
+            ./hardware/bootloader/laptop.nix
+            ./hardware/laptop.nix
             ./packages.nix
         ];
 
