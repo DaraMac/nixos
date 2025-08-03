@@ -15,11 +15,11 @@
     dconf2nix
     deluge
     drawio
+    element-desktop
     fastfetch
     fd
     ferdium
     file
-    fractal
     gdu
     gimp3
     git
