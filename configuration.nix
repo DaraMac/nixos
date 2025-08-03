@@ -5,8 +5,8 @@
         [
             # ./hardware/bootloader/desktop.nix
             # ./hardware/desktop.nix
-            ./graphics.nix
             ./hardware/bootloader/laptop.nix
+            ./hardware/graphics.nix
             ./hardware/laptop.nix
             ./packages.nix
             ./programs/firefox.nix
