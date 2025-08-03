@@ -5,12 +5,12 @@
         [
             # ./hardware/bootloader/desktop.nix
             # ./hardware/desktop.nix
-            ./firefox.nix
-            ./gnome.nix
             ./graphics.nix
             ./hardware/bootloader/laptop.nix
             ./hardware/laptop.nix
             ./packages.nix
+            ./programs/firefox.nix
+            ./programs/gnome.nix
         ];
 
     nix =  {

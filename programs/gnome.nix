@@ -204,6 +204,7 @@ with pkgs.lib.gvariant;
                         minimize = mkEmptyArray (type.string);
                         switch-input-source = mkEmptyArray (type.string);
                         switch-input-source-backward = mkEmptyArray (type.string);
+
                         toggle-fullscreen = [ "<Super>f" ];
                     };
                 };
