@@ -117,11 +117,12 @@
 
 
     programs = {
-        # Enable Hyprland
         hyprland = {
             enable = true;
             withUWSM = true;
         };
+
+        niri.enable = true;
 
         # Set up zsh
         zsh = {
