@@ -87,7 +87,7 @@
     waybar # hyprland
     wev
     wl-clipboard
-    wlogout
+    wlogout # hyprland
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     yazi
     zathura
