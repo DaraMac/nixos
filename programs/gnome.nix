@@ -46,6 +46,10 @@ with pkgs.lib.gvariant;
                         idle-delay = mkUint32 0;
                     };
 
+                    # turn caps lock into Escape
+                    "org/gnome/desktop" = {
+                        input-sources = [ "terminate:ctrl_alt_bksp" "caps:escape" ];
+                    };
 
                     "org/gnome/desktop/wm/preferences" = {
                         focus-mode = "mouse";
