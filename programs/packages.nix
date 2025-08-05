@@ -59,6 +59,7 @@
     newsflash
     nil # lsp
     nodejs-slim
+    nwg-displays
     obsidian
     overskride # hyprland
     p7zip
