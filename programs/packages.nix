@@ -78,6 +78,7 @@
     stow
     stretchly # no breaktimer on nix
     swaynotificationcenter # hyprland
+    swww # niri
     texliveFull
     thunderbird-latest
     tokei # code counter
@@ -86,6 +87,8 @@
     unzip
     vscode-langservers-extracted # lsp
     waybar # hyprland
+    waypaper
+    waytrogen # niri
     wev
     wl-clipboard
     wlogout # hyprland
