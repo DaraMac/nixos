@@ -15,6 +15,7 @@
     dconf2nix
     deluge
     drawio
+    dunst # niri
     element-desktop
     fastfetch
     fd
