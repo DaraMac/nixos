@@ -149,7 +149,10 @@ programs = {
                     enable = false
                 },
                 disable_frontmatter = true,
-                legacy_commands = false
+                legacy_commands = false,
+                footer = {
+                    enabled = false,
+                }
             }
 
 
