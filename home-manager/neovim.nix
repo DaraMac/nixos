@@ -17,6 +17,7 @@ programs = {
             cmp_luasnip
             luasnip
             nvim-cmp
+            nvim-highlight-colors
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
             obsidian-nvim
@@ -268,6 +269,10 @@ programs = {
                     enable = true
                 }
             }
+
+
+            -- nvim-highlight-colors
+            require('nvim-highlight-colors').setup({})
 
 
             -- nvim-cmp
