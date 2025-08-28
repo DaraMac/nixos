@@ -3,11 +3,11 @@
 {
     imports =
         [
-            # ./hardware/bootloader/desktop.nix
-            # ./hardware/desktop.nix
-            ./hardware/bootloader/laptop.nix
+            # ./hardware/bootloader/laptop.nix
+            # ./hardware/laptop.nix
+            ./hardware/bootloader/desktop.nix
+            ./hardware/desktop.nix
             ./hardware/graphics.nix
-            ./hardware/laptop.nix
             ./programs/firefox.nix
             ./programs/gnome.nix
             ./programs/packages.nix
@@ -83,10 +83,6 @@
                 layout = "gb";
                 variant = "";
             };
-        };
-        zerotierone = {
-            enable = true;
-            joinNetworks = [ "856127940cd53ca3" ];
         };
     };
 
