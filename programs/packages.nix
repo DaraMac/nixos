@@ -16,11 +16,11 @@
     deluge
     drawio
     dunst # niri
-    element-desktop
     fastfetch
     fd
     ferdium
     file
+    fluffychat
     gdu
     gimp3
     git
