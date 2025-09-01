@@ -77,6 +77,7 @@
     slurp # hyprland
     stow
     stretchly # no breaktimer on nix
+    sunsetr # niri
     swaynotificationcenter # hyprland
     swww # niri
     texliveFull
