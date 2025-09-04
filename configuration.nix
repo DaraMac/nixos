@@ -3,11 +3,11 @@
 {
     imports =
         [
-            # ./hardware/bootloader/desktop.nix
-            # ./hardware/desktop.nix
-            ./hardware/bootloader/laptop.nix
+            # ./hardware/desktop/bootloader.nix
+            # ./hardware/desktop/hardware.nix
             ./hardware/graphics.nix
-            ./hardware/laptop.nix
+            ./hardware/laptop/bootloader.nix
+            ./hardware/laptop/hardware.nix
             ./programs/firefox.nix
             ./programs/gnome.nix
             ./programs/packages.nix
