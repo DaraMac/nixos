@@ -94,6 +94,7 @@
     wl-clipboard
     wlogout # hyprland
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
+    xwayland-satellite # niri
     yazi
     zathura
     zotero
