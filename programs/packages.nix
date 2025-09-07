@@ -24,6 +24,7 @@
     gdu
     gimp3
     git
+    gnome-maps
     gnome-podcasts
     gnome-sound-recorder
     gnome-tweaks
