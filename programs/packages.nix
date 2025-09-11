@@ -85,6 +85,7 @@
     thunderbird-latest
     tokei # code counter
     tree-sitter
+    tuba
     unrar-free
     unzip
     vscode-langservers-extracted # lsp
