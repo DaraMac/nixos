@@ -68,7 +68,6 @@
     pavucontrol # hyprland
     pinentry-gnome3
     playerctl # hyprland
-    pricehist # hedger
     python3
     renameutils
     ripgrep
