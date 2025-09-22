@@ -2,6 +2,7 @@
 
 {
     imports = [
+        ./home-manager/direnv.nix
         ./home-manager/ghostty.nix
         ./home-manager/git.nix
         ./home-manager/lsd.nix
