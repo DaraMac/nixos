@@ -7,7 +7,7 @@
             enable = true;
             settings = {
                 font-family = "-calt"; # disable ligatures
-                theme = "catppuccin-macchiato";
+                theme = "Catppuccin Macchiato";
             };
         };
     };
