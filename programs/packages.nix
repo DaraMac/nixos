@@ -11,7 +11,7 @@
     brave
     brightnessctl # hyprland
     btop
-    calibre
+    # calibre
     dconf2nix
     deluge
     drawio
