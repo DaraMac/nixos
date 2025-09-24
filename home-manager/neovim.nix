@@ -160,6 +160,12 @@ programs = {
                 checkbox = {
                     order = { " ", "x"}
                 },
+                daily_notes = {
+                    folder = "Diary",
+                    date_format = "%Y/Days/%Y-%m-%d-%a",
+                    default_tags = {},
+                    template = "Daily Note.md"
+                },
                 disable_frontmatter = true,
                 legacy_commands = false,
                 footer = {
