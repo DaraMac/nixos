@@ -142,11 +142,23 @@ programs = {
                                 folder = "Templates"
                             }
                         }
+                    },
+                    {
+                        name = "notes",
+                        path = "~/College/notes",
+                        overrides = {
+                            templates = {
+                                folder = "Meta/Templates"
+                            }
+                        }
                     }
                 },
 
                 ui = {
                     enable = false
+                },
+                checkbox = {
+                    order = { " ", "x"}
                 },
                 disable_frontmatter = true,
                 legacy_commands = false,
