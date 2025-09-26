@@ -14,6 +14,7 @@ with pkgs.lib.gvariant;
         gnome-tour
         kgx # gnome terminal
         simple-scan
+        totem
         yelp
     ];
 

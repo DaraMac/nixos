@@ -74,6 +74,7 @@
     rofimoji # hyprland
     rustdesk
     shortwave
+    showtime # gnome video player
     slurp # hyprland
     stow
     stretchly # no breaktimer on nix
