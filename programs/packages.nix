@@ -14,6 +14,7 @@
     calibre
     dconf2nix
     deluge
+    diebahn # railway
     drawio
     dunst # niri
     fastfetch
