@@ -42,6 +42,7 @@
     grim # hyprland
     haskell-language-server # lsp
     heroic
+    hieroglyphic # latex symbols
     hledger
     hledger-iadd
     hyprlock # hyprland
