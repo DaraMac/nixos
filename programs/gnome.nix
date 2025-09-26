@@ -11,11 +11,9 @@ with pkgs.lib.gvariant;
         gnome-logs
         gnome-music
         gnome-system-monitor
-        gnome-text-editor
         gnome-tour
         kgx # gnome terminal
         simple-scan
-        totem
         yelp
     ];
 
