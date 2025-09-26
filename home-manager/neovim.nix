@@ -180,7 +180,7 @@ programs = {
             vim.lsp.enable('cssls')
             vim.lsp.enable('hls')
             vim.lsp.enable('html')
-            vim.lsp.enable('java_language_server')
+            vim.lsp.enable('jdtls')
             vim.lsp.enable('jsonls')
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('nil_ls')

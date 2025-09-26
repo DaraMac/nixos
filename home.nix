@@ -38,6 +38,11 @@
             source = ./home-manager/dot-p10k.zsh;
             target = ".config/p10k/p10k.zsh";
         };
+
+        "nvim" = {
+            target = "~/.config/nvim/after/ftplugin/markdown.lua";
+            text = "vim.opt_local.spell = true";
+        };
     };
   };
 

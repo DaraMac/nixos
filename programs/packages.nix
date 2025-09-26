@@ -55,6 +55,7 @@
     imagemagick # auto-accent requires it
     inkscape
     java-language-server # lsp
+    jdt-language-server # lsp
     kando
     libnotify
     libreoffice
