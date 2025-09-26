@@ -9,14 +9,12 @@ with pkgs.lib.gvariant;
         geary
         gnome-connections
         gnome-logs
-        gnome-maps
         gnome-music
         gnome-system-monitor
         gnome-text-editor
         gnome-tour
         kgx # gnome terminal
         simple-scan
-        snapshot
         totem
         yelp
     ];
