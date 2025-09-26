@@ -2,6 +2,18 @@
     pkgs, lib, ...
 }:
 {
+# filetype specific options
+home.file = {
+    "markdown" = {
+        target = ".config/nvim/after/ftplugin/markdown.lua";
+        text = "vim.opt_local.spell = true";
+    };
+
+    "latex" = {
+        target = ".config/nvim/after/ftplugin/tex.lua";
+        text = "vim.opt_local.spell = true";
+    };
+};
 programs = {
     neovim = {
         enable = true;
