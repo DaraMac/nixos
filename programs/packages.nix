@@ -22,6 +22,7 @@
     ferdium
     file
     fluffychat
+    foliate # gnome ebook reader
     gdu
     gimp3
     git
@@ -72,6 +73,7 @@
     playerctl # hyprland
     python3
     renameutils
+    resources # gnome circle system monitor
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # hyprland
