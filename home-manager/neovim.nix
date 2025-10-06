@@ -31,6 +31,7 @@ programs = {
             nvim-cmp
             nvim-dap
             nvim-highlight-colors
+            nvim-jdtls
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
             obsidian-nvim
@@ -296,6 +297,12 @@ programs = {
                     end
                 end,
             })
+
+            -- nvim-dap
+            vim.keymap.set("n", "<leader>db", require("dap").toggle_breakpoint, { desc = "DAP: Toggle [B]reakpoint"})
+            vim.keymap.set("n", "<leader>dc", require("dap").continue, { desc = "DAP: [C]ontinue"})
+            vim.keymap.set("n", "<leader>dC", require("dap").run_to_cursor, { desc = "DAP: Run to [C]ursor"})
+            vim.keymap.set("n", "<leader>dT", require("dap").terminate, { desc = "DAP: [T]erminate"})
 
 
             -- treesitter
