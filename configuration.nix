@@ -136,6 +136,7 @@
             enable = true;
         };
 
+        # enabled this to get uv working
         nix-ld.enable = true;
 
         # Some programs need SUID wrappers, can be configured further or are
