@@ -6,6 +6,7 @@
     basedpyright # lsp
     bash-language-server # lsp
     bat
+    better-control # niri
     bibata-cursors # hyprland
     bottles
     brave
