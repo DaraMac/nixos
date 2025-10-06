@@ -26,6 +26,7 @@
     gdu
     gimp3
     git
+    gnome-boxes
     gnome-decoder # qr code generator
     gnome-podcasts
     gnome-sound-recorder
