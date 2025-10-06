@@ -29,6 +29,7 @@ programs = {
             cmp_luasnip
             luasnip
             nvim-cmp
+            nvim-dap
             nvim-highlight-colors
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
