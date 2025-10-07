@@ -149,20 +149,20 @@ programs = {
                 -- current markdown file being edited.
                 workspaces = {
                     {
-                        name = "wiki",
-                        path = "~/Documents/wiki",
-                        overrides = {
-                            templates = {
-                                folder = "Templates"
-                            }
-                        }
-                    },
-                    {
                         name = "notes",
                         path = "~/College/notes",
                         overrides = {
                             templates = {
                                 folder = "Meta/Templates"
+                            }
+                        }
+                    },
+                    {
+                        name = "wiki",
+                        path = "~/Documents/wiki",
+                        overrides = {
+                            templates = {
+                                folder = "Templates"
                             }
                         }
                     }
