@@ -17,6 +17,7 @@
     deluge
     diebahn # railway
     drawio
+    dua # cli disk usage
     dunst # niri
     fastfetch
     fd
@@ -24,7 +25,6 @@
     file
     fluffychat
     foliate # gnome ebook reader
-    gdu
     gimp3
     git
     gnome-boxes
