@@ -180,7 +180,9 @@ programs = {
                     default_tags = {},
                     template = "Daily Note.md"
                 },
-                disable_frontmatter = true,
+                frontmatter = {
+                    enabled = false
+                },
                 legacy_commands = false,
                 footer = {
                     enabled = false,
