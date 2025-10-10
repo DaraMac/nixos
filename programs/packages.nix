@@ -81,7 +81,7 @@
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # hyprland
-    rustdesk
+    # rustdesk
     shortwave
     showtime # gnome video player
     slurp # hyprland
