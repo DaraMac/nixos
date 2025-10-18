@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    # rustdesk
     adwsteamgtk
     anki-bin
     bartib
@@ -14,7 +15,7 @@
     btop
     calibre
     dconf2nix
-    deluge
+    deluge # torrent
     diebahn # railway
     drawio
     dua # cli disk usage
@@ -25,6 +26,7 @@
     file
     fluffychat
     foliate # gnome ebook reader
+    fragments # torrent
     gimp3
     git
     gnome-boxes
@@ -81,7 +83,6 @@
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # hyprland
-    # rustdesk
     shortwave
     showtime # gnome video player
     slurp # hyprland
