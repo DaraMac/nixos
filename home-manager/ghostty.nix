@@ -8,6 +8,7 @@
             settings = {
                 font-family = "-calt"; # disable ligatures
                 theme = "Catppuccin Macchiato";
+                quit-after-last-window-closed = "false";
             };
         };
     };
