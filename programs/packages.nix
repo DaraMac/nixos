@@ -47,6 +47,7 @@
     goofcord # discord
     grim # hyprland
     haskell-language-server # lsp
+    helix
     heroic
     hieroglyphic # latex symbols
     hledger
