@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    # calibre
     # rustdesk
     adwsteamgtk
     anki-bin
@@ -8,12 +9,11 @@
     bash-language-server # lsp
     bat
     better-control # niri
-    bibata-cursors # hyprland
+    bibata-cursors # niri
     bottles
     brave
-    brightnessctl # hyprland
+    brightnessctl # niri
     btop
-    calibre
     dconf2nix
     deluge # torrent
     diebahn # railway
@@ -45,17 +45,13 @@
     gnumake
     gnupg
     goofcord # discord
-    grim # hyprland
     haskell-language-server # lsp
     helix
     heroic
     hieroglyphic # latex symbols
     hledger
     hledger-iadd
-    hyprlock # hyprland
-    hyprpaper # hyprland
-    hyprpicker # hyprland
-    hyprsunset # hyprland
+    hyprlock # niri
     imagemagick # auto-accent requires it
     inkscape
     java-language-server # lsp
@@ -71,12 +67,12 @@
     nil # lsp
     nodejs-slim
     obsidian
-    overskride # hyprland
+    overskride # niri
     p7zip
     pass
-    pavucontrol # hyprland
+    pavucontrol # niri
     pinentry-gnome3
-    playerctl # hyprland
+    playerctl # niri
     python3
     renameutils
     resources # gnome circle system monitor
@@ -84,14 +80,12 @@
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rocq-core
     rocqPackages.stdlib
-    rofimoji # hyprland
+    rofimoji # niri
     shortwave
     showtime # gnome video player
-    slurp # hyprland
     stow
     stretchly # no breaktimer on nix
     sunsetr # niri
-    swaynotificationcenter # hyprland
     swww # niri
     texliveFull
     thunderbird-latest
@@ -101,12 +95,11 @@
     unrar-free
     unzip
     vscode-langservers-extracted # lsp
-    waybar # hyprland
+    waybar # niri
     waypaper
-    waytrogen # niri
     wev
     wl-clipboard
-    wlogout # hyprland
+    wlogout # niri
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     xwayland-satellite # niri
     yazi
