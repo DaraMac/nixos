@@ -5,9 +5,9 @@
     programs = {
         git = {
             enable = true;
-            userEmail = "DaraMac@users.noreply.github.com";
-            userName = "dmac";
-            extraConfig = {
+            settings.user.email = "DaraMac@users.noreply.github.com";
+            settings.user.name = "dmac";
+            settings = {
                 core.editor = "nvim";
                 diff.algorithm = "histogram";
                 init.defaultBranch = "main";

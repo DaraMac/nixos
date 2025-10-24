@@ -56,7 +56,6 @@
     hyprpaper # hyprland
     hyprpicker # hyprland
     hyprsunset # hyprland
-    hyprsysteminfo # hyprland
     imagemagick # auto-accent requires it
     inkscape
     java-language-server # lsp
