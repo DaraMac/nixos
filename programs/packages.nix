@@ -83,6 +83,8 @@
     resources # gnome circle system monitor
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    rocq-core
+    rocqPackages.stdlib
     rofimoji # hyprland
     shortwave
     showtime # gnome video player

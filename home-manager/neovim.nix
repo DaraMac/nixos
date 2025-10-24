@@ -23,6 +23,7 @@ programs = {
         vimdiffAlias = true;
 
         plugins = with pkgs.vimPlugins; [
+            Coqtail
             catppuccin-nvim
             cmp-nvim-lsp
             cmp-path
