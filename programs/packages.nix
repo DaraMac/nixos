@@ -18,6 +18,7 @@
     calibre
     coq # rocq
     coqPackages.stdlib # rocq
+    coqPackages.vscoq-language-server # rocq vscode lsp
     dconf2nix
     deluge # torrent
     diebahn # railway
@@ -95,7 +96,8 @@
     tuba
     unrar-free
     unzip
-    vscode-langservers-extracted # lsp
+    vscode-langservers-extracted # html css json lsp
+    vscodium-fhs # rocq
     waybar # niri
     waypaper
     wev
