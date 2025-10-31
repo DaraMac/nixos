@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # rocq-core # coq
-    # rocqPackages.stdlib # coq
+    # rocq-core # rocq
+    # rocqPackages.stdlib # rocq
     # rustdesk
     adwsteamgtk
     anki-bin
@@ -16,7 +16,8 @@
     brightnessctl # niri
     btop
     calibre
-    coq
+    coq # rocq
+    coqPackages.stdlib # rocq
     dconf2nix
     deluge # torrent
     diebahn # railway
