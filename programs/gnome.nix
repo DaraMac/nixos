@@ -8,11 +8,11 @@ with pkgs.lib.gvariant;
         evince
         geary
         gnome-connections
+        gnome-console
         gnome-logs
         gnome-music
         gnome-system-monitor
         gnome-tour
-        kgx # gnome terminal
         simple-scan
         totem
         yelp

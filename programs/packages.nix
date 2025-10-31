@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # calibre
     # rustdesk
     adwsteamgtk
     anki-bin
@@ -14,6 +13,7 @@
     brave
     brightnessctl # niri
     btop
+    calibre
     dconf2nix
     deluge # torrent
     diebahn # railway
