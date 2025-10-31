@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # rocq-core # rocq
-    # rocqPackages.stdlib # rocq
     # rustdesk
     adwsteamgtk
     anki-bin
@@ -16,7 +15,8 @@
     brightnessctl # niri
     btop
     calibre
-    coq # rocq
+    # coq # rocq
+    coq_8_20 # rocq
     coqPackages.stdlib # rocq
     coqPackages.vscoq-language-server # rocq vscode lsp
     dconf2nix
@@ -82,6 +82,7 @@
     resources # gnome circle system monitor
     ripgrep
     ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    rocqPackages.stdlib # rocq
     rofimoji # niri
     shortwave
     showtime # gnome video player
