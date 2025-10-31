@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # rustdesk
     adwsteamgtk
     anki-bin
     bartib
@@ -81,6 +80,7 @@
     rocq-core
     rocqPackages.stdlib
     rofimoji # niri
+    rustdesk
     shortwave
     showtime # gnome video player
     stow
