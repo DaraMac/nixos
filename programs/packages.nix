@@ -1,12 +1,9 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # coq # rocq
-    # rocq-core # rocq
-    # rocqPackages.stdlib # rocq
     # rustdesk
     adwsteamgtk
-    anki-bin
-    bartib
+    anki-bin # flashcards
+    bartib # time tracker
     basedpyright # lsp
     bash-language-server # lsp
     bat
@@ -17,9 +14,7 @@
     brightnessctl # niri
     btop
     calibre
-    coqPackages.stdlib # rocq
     coqPackages.vscoq-language-server # rocq vscode lsp
-    coq_8_20 # rocq
     dconf2nix
     deluge # torrent
     diebahn # railway
@@ -90,6 +85,7 @@
     stretchly # no breaktimer on nix
     sunsetr # niri
     swww # niri
+    tangram # web apps
     texliveFull
     thunderbird-latest
     tokei # code counter
