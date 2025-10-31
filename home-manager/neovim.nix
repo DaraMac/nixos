@@ -320,6 +320,11 @@ programs = {
             require('nvim-highlight-colors').setup({})
 
 
+            -- coqtail
+            -- vim.g.coqtail_coq_path = ""
+            -- vim.g.coqtail_coq_prog = ""
+
+
             -- nvim-cmp
             -- See `:help cmp`
             local cmp = require("cmp")
