@@ -10,7 +10,6 @@
             # ./hardware/laptop/hardware.nix
             ./programs/firefox.nix
             ./programs/gnome.nix
-            ./programs/kup.nix
             ./programs/packages.nix
         ];
 
