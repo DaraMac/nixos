@@ -96,7 +96,6 @@
     vscode-langservers-extracted # html css json lsp
     vscodium-fhs # rocq
     waybar # niri
-    waypaper
     wev
     wl-clipboard
     wlogout # niri

@@ -114,11 +114,6 @@
 
 
     programs = {
-        hyprland = {
-            enable = true;
-            withUWSM = true;
-        };
-
         niri.enable = true;
 
         # Set up zsh
