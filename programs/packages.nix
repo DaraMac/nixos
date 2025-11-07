@@ -1,53 +1,53 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # rustdesk
-    adwsteamgtk
+    adwsteamgtk # gaming
     anki-bin # flashcards
     bartib # time tracker
     basedpyright # lsp
     bash-language-server # lsp
-    bat
+    bat # cli
     better-control # niri
     bibata-cursors # niri
-    bottles
-    brave
+    blanket # sounds
+    bottles # gaming
+    brave # browser
     brightnessctl # niri
-    btop
-    calibre
+    btop # system monitor
+    calibre # ebooks
     coqPackages.vscoq-language-server # rocq vscode lsp
     dconf2nix
-    deluge # torrent
     diebahn # railway
-    drawio
+    drawio # graphics
     dua # cli disk usage
     dunst # niri
-    fastfetch
-    fd
-    ferdium
-    file
-    fluffychat
+    fastfetch # system info
+    fd # cli
+    ferdium # messaging
+    file # cli
+    fluffychat # messaging
     foliate # gnome ebook reader
     fragments # torrent
-    gimp3
-    git
-    gnome-boxes
+    gimp3 # graphics
+    git # dev tools
+    gnome-boxes # vm
     gnome-decoder # qr code generator
-    gnome-podcasts
-    gnome-sound-recorder
-    gnome-tweaks
+    gnome-podcasts # podcasts
+    gnome-solanum # pomodoro
+    gnome-sound-recorder # audio
+    gnome-tweaks # configuration
     gnome-user-share
-    gnome-weather
+    gnome-weather # weather
     gnomeExtensions.appindicator
     gnomeExtensions.auto-accent-colour
     gnomeExtensions.dash-to-dock
     gnomeExtensions.forge
     gnomeExtensions.night-theme-switcher
     gnomeExtensions.rounded-window-corners-reborn
-    gnumake
-    gnupg
+    gnumake # dev tools
+    gnupg # cryptography
     goofcord # discord
     haskell-language-server # lsp
-    helix
     heroic
     hieroglyphic # latex symbols
     hledger
@@ -89,6 +89,7 @@
     texliveFull
     thunderbird-latest
     tokei # code counter
+    transmission_4 # torrent
     tree-sitter
     tuba
     unrar-free
