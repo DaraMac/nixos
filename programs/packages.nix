@@ -33,7 +33,6 @@
     gnome-boxes # vm
     gnome-decoder # qr code generator
     gnome-podcasts # podcasts
-    gnome-solanum # pomodoro
     gnome-sound-recorder # audio
     gnome-tweaks # configuration
     gnome-user-share
@@ -48,64 +47,63 @@
     gnupg # cryptography
     goofcord # discord
     haskell-language-server # lsp
-    heroic
+    heroic # gaming
     hieroglyphic # latex symbols
-    hledger
-    hledger-iadd
+    hledger # finance
+    hledger-iadd # finance
     hyprlock # niri
     imagemagick # auto-accent requires it
-    inkscape
+    inkscape # graphics
     jdt-language-server # lsp jdtls
-    kando
-    libnotify
-    libreoffice
+    kando # pie menu
+    libnotify # notifications
+    libreoffice # office
     lua-language-server # lsp
-    lutris
+    lutris # gaming
     mousam # weather
-    mpv
+    mpv # media
     newsflash
     nil # lsp
     nodejs-slim
-    obsidian
+    obsidian # notes
     overskride # niri
-    p7zip
-    pass
+    p7zip # cli
+    pass # passwords
     pavucontrol # niri
-    pinentry-gnome3
+    pinentry-gnome3 # passwords
     playerctl # niri
-    python3
-    renameutils
+    python3 # dev tools
+    renameutils # cli
     resources # gnome circle system monitor
-    ripgrep
-    ripgrep-all # also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    ripgrep # cli
+    ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # niri
-    shortwave
+    shortwave # media
     showtime # gnome video player
-    stow
+    stow # cli dotfiles
     stretchly # no breaktimer on nix
     sunsetr # niri
     swww # niri
     tangram # web apps
-    texliveFull
-    thunderbird-latest
-    tokei # code counter
-    transmission_4 # torrent
-    tree-sitter
-    tuba
-    unrar-free
-    unzip
+    texliveFull # latex
+    thunderbird-latest # email
+    tokei # cli dev tools code counter
+    tree-sitter # dev tools
+    tuba # social media
+    unrar-free # cli
+    unzip # cli
     vscode-langservers-extracted # html css json lsp
     vscodium-fhs # rocq
     waybar # niri
-    wev
-    wl-clipboard
+    wev # wayland
+    wl-clipboard # wayland niri
     wlogout # niri
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     xwayland-satellite # niri
-    yazi
-    zathura
-    zotero
-    zsh-completions
-    zsh-powerlevel10k
+    yazi # cli
+    zathura # office
+    zotero # bibliography
+    zsh-completions # cli
+    zsh-powerlevel10k # cli
   ];
 }
