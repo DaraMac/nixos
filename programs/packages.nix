@@ -15,7 +15,6 @@
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
-    coqPackages.vscoq-language-server # rocq vscode lsp
     dconf2nix
     diebahn # railway
     drawio # graphics
@@ -93,7 +92,6 @@
     unrar-free # cli
     unzip # cli
     vscode-langservers-extracted # html css json lsp
-    vscodium-fhs # rocq
     waybar # niri
     wev # wayland
     wl-clipboard # wayland niri
