@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # rustdesk
     # tuba # social media
     adwsteamgtk # gaming
     anki-bin # flashcards
@@ -78,6 +77,7 @@
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # niri
+    rustdesk
     shortwave # media
     showtime # gnome video player
     stow # cli dotfiles
