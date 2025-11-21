@@ -28,6 +28,7 @@
     fluffychat # messaging
     foliate # gnome ebook reader
     fragments # torrent
+    gapless # music player
     gimp3 # graphics
     git # dev tools
     gnome-boxes # vm
