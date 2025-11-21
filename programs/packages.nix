@@ -24,6 +24,7 @@
     fd # cli
     ferdium # messaging
     file # cli
+    file-roller # archiver
     fluffychat # messaging
     foliate # gnome ebook reader
     fragments # torrent
