@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     adwsteamgtk # gaming
+    amberol # music player
     anki-bin # flashcards
     bartib # time tracker
     basedpyright # lsp
