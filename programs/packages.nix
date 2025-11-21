@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # tuba # social media
     adwsteamgtk # gaming
     anki-bin # flashcards
     bartib # time tracker
@@ -89,6 +88,7 @@
     thunderbird-latest # email
     tokei # cli dev tools code counter
     tree-sitter # dev tools
+    tuba # mastodon social media
     unrar-free # cli
     unzip # cli
     vscode-langservers-extracted # html css json lsp
