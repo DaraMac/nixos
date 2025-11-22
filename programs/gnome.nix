@@ -10,8 +10,6 @@ with pkgs.lib.gvariant;
         gnome-console
         gnome-tour
         simple-scan
-        totem
-        yelp
     ];
 
     # GNOME configuration
