@@ -63,7 +63,6 @@
     lutris # gaming
     mousam # weather
     mpv # media
-    museeks # music player
     newsflash
     nil # lsp
     nodejs-slim
@@ -77,7 +76,6 @@
     python3 # dev tools
     renameutils # cli
     resources # gnome circle system monitor
-    rhythmbox # music player
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rofimoji # niri
