@@ -79,6 +79,7 @@
     resources # gnome circle system monitor
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    rmpc # cli music player
     rofimoji # niri
     rustdesk
     shortwave # media
