@@ -57,6 +57,7 @@
     inkscape # graphics
     jdt-language-server # lsp jdtls
     kando # pie menu
+    kew # cli music player
     libnotify # notifications
     libreoffice # office
     lua-language-server # lsp
