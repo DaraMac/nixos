@@ -5,17 +5,11 @@ with pkgs.lib.gvariant;
 {
     environment.gnome.excludePackages = with pkgs; [
         epiphany
-        evince
         geary
         gnome-connections
         gnome-console
-        gnome-logs
-        gnome-music
-        gnome-system-monitor
         gnome-tour
         simple-scan
-        totem
-        yelp
     ];
 
     # GNOME configuration

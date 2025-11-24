@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # rustdesk
     adwsteamgtk # gaming
+    amberol # music player
     anki-bin # flashcards
     bartib # time tracker
     basedpyright # lsp
@@ -24,9 +24,11 @@
     fd # cli
     ferdium # messaging
     file # cli
+    file-roller # archiver
     fluffychat # messaging
     foliate # gnome ebook reader
     fragments # torrent
+    gapless # music player
     gimp3 # graphics
     git # dev tools
     gnome-boxes # vm
@@ -55,6 +57,7 @@
     inkscape # graphics
     jdt-language-server # lsp jdtls
     kando # pie menu
+    kew # cli music player
     libnotify # notifications
     libreoffice # office
     lua-language-server # lsp
@@ -76,7 +79,9 @@
     resources # gnome circle system monitor
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
+    rmpc # cli music player
     rofimoji # niri
+    rustdesk
     shortwave # media
     showtime # gnome video player
     stow # cli dotfiles
@@ -88,7 +93,7 @@
     thunderbird-latest # email
     tokei # cli dev tools code counter
     tree-sitter # dev tools
-    tuba # social media
+    tuba # mastodon social media
     unrar-free # cli
     unzip # cli
     vscode-langservers-extracted # html css json lsp
