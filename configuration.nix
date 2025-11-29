@@ -117,9 +117,6 @@
     programs = {
         niri.enable = true;
 
-        # TEST: new window manager
-        labwc.enable = true;
-
         # Set up zsh
         zsh = {
             enable = true;
