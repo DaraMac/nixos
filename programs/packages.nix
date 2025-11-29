@@ -63,7 +63,6 @@
     inkscape # graphics
     jdt-language-server # lsp jdtls
     kando # pie menu
-    kew # cli music player
     libnotify # notifications
     libreoffice # office
     lua-language-server # lsp
@@ -94,7 +93,6 @@
     stretchly # no breaktimer on nix
     sunsetr # niri
     swww # niri
-    tangram # web apps
     texliveFull # latex
     thunderbird-latest # email
     tokei # cli dev tools code counter
