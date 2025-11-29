@@ -4,7 +4,6 @@
     clementine # test music player
     audacious # test music player
     amarok # test music player
-    deadbeef # test music player
     euphonica # test music player mpd
     harmonoid # test music player
     tauon # test music player
