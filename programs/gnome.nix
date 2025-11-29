@@ -4,6 +4,7 @@ with pkgs.lib.gvariant;
 
 {
     environment.gnome.excludePackages = with pkgs; [
+        decibels
         epiphany
         geary
         gnome-connections
