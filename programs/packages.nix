@@ -57,6 +57,7 @@
     libreoffice # office
     lua-language-server # lsp
     lutris # gaming
+    mangowc #  TEST: window manager
     mousam # weather
     mpv # media
     newsflash
