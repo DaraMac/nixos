@@ -1,13 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     adwsteamgtk # gaming
-    clementine # test music player
-    audacious # test music player
-    amarok # test music player
-    euphonica # test music player mpd
-    harmonoid # test music player
-    tauon # test music player
-    kdePackages.elisa # test music player
     anki-bin # flashcards
     bartib # time tracker
     basedpyright # lsp
@@ -21,18 +14,18 @@
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
-    dconf2nix
+    dconf2nix # gnome nix
     diebahn # railway
     drawio # graphics
     dua # cli disk usage
     dunst # niri
+    euphonica # test music player mpd
     fastfetch # system info
     fd # cli
     ferdium # messaging
     file # cli
     file-roller # archiver
     fluffychat # messaging
-    foliate # gnome ebook reader
     fragments # torrent
     gapless # music player
     gimp3 # graphics
@@ -42,7 +35,6 @@
     gnome-podcasts # podcasts
     gnome-sound-recorder # audio
     gnome-tweaks # configuration
-    gnome-user-share
     gnome-weather # weather
     gnomeExtensions.appindicator
     gnomeExtensions.auto-accent-colour
@@ -86,7 +78,7 @@
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
     rofimoji # niri
-    rustdesk
+    rustdesk # remote desktop
     shortwave # media
     showtime # gnome video player
     stow # cli dotfiles
