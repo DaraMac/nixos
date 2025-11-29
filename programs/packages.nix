@@ -37,11 +37,9 @@
     gnome-tweaks # configuration
     gnome-weather # weather
     gnomeExtensions.appindicator
-    gnomeExtensions.auto-accent-colour
     gnomeExtensions.dash-to-dock
-    gnomeExtensions.forge
     gnomeExtensions.night-theme-switcher
-    gnomeExtensions.rounded-window-corners-reborn
+    gnomeExtensions.paperwm
     gnumake # dev tools
     gnupg # cryptography
     goofcord # discord
