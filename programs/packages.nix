@@ -1,7 +1,14 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     adwsteamgtk # gaming
-    amberol # music player
+    clementine # test music player
+    audacious # test music player
+    amarok # test music player
+    deadbeef # test music player
+    euponica # test music player mpd
+    harmonoid # test music player
+    tauon # test music player
+    kdePackages.elisa # test music player
     anki-bin # flashcards
     bartib # time tracker
     basedpyright # lsp
