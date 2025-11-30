@@ -5,6 +5,7 @@
         ./home-manager/ghostty.nix
         ./home-manager/git.nix
         ./home-manager/lsd.nix
+        ./home-manager/mpd.nix
         ./home-manager/neovim.nix
         ./home-manager/rofi.nix
         ./home-manager/tmux.nix
