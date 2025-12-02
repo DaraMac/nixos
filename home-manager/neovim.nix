@@ -13,6 +13,11 @@ home.file = {
         target = ".config/nvim/after/ftplugin/tex.lua";
         text = "vim.opt_local.spell = true";
     };
+
+    "plaintex" = {
+        target = ".config/nvim/after/ftplugin/plaintex.lua";
+        text = "vim.opt_local.spell = true";
+    };
 };
 programs = {
     neovim = {
