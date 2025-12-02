@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     adwsteamgtk # gaming
-    amberol # music player
     anki-bin # flashcards
     bartib # time tracker
     basedpyright # lsp
@@ -15,11 +14,12 @@
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
-    dconf2nix
+    dconf2nix # gnome nix
     diebahn # railway
     drawio # graphics
     dua # cli disk usage
     dunst # niri
+    euphonica # test music player mpd
     fastfetch # system info
     fd # cli
     ferdium # messaging
@@ -27,7 +27,6 @@
     file-roller # archiver
     flac # music, just for metaflac tag tool
     fluffychat # messaging
-    foliate # gnome ebook reader
     fragments # torrent
     gapless # music player
     gimp3 # graphics
@@ -37,14 +36,11 @@
     gnome-podcasts # podcasts
     gnome-sound-recorder # audio
     gnome-tweaks # configuration
-    gnome-user-share
     gnome-weather # weather
     gnomeExtensions.appindicator
-    gnomeExtensions.auto-accent-colour
     gnomeExtensions.dash-to-dock
-    gnomeExtensions.forge
     gnomeExtensions.night-theme-switcher
-    gnomeExtensions.rounded-window-corners-reborn
+    gnomeExtensions.paperwm
     gnumake # dev tools
     gnupg # cryptography
     goofcord # discord
@@ -58,7 +54,6 @@
     inkscape # graphics
     jdt-language-server # lsp jdtls
     kando # pie menu
-    kew # cli music player
     libnotify # notifications
     libreoffice # office
     lua-language-server # lsp
@@ -82,14 +77,13 @@
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
     rofimoji # niri
-    rustdesk
+    rustdesk # remote desktop
     shortwave # media
     showtime # gnome video player
     stow # cli dotfiles
     stretchly # no breaktimer on nix
     sunsetr # niri
     swww # niri
-    tangram # web apps
     texliveFull # latex
     thunderbird-latest # email
     tokei # cli dev tools code counter

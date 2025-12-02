@@ -1,10 +1,11 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, config, ... }:
 
 {
     imports = [
         ./home-manager/ghostty.nix
         ./home-manager/git.nix
         ./home-manager/lsd.nix
+        ./home-manager/mpd.nix
         ./home-manager/neovim.nix
         ./home-manager/rofi.nix
         ./home-manager/tmux.nix
@@ -37,6 +38,11 @@
         "p10k.zsh" = {
             source = ./home-manager/dot-p10k.zsh;
             target = ".config/p10k/p10k.zsh";
+        };
+
+        "waybar" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nix/home-manager/waybar/";
+            target = ".config/waybar/";
         };
     };
   };

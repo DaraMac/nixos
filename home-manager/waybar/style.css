@@ -1,0 +1,110 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+}
+
+window#waybar {
+  background: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.5;
+}
+
+#workspaces button {
+    color: #363a4f;
+}
+
+#battery,
+#network,
+#pulseaudio,
+#bluetooth,
+#clock,
+#custom-logout,
+#custom-notifications,
+#mpris,
+#tray {
+  border-radius: 4px;
+  margin: 6px 3px;
+  padding: 6px 12px;
+  background-color: #1e1e2e;
+  color: #181825;
+}
+
+#mpris {
+    color: #c6d0f5;
+    background: transparent;
+    border: 1px #c6d0f5 solid;
+}
+
+#custom-logout {
+    background-color: #f5a97f;
+    padding: 6px 6px;
+}
+
+#custom-notifications {
+    background-color: #f5a97f;
+    padding: 6px 12px;
+}
+
+#battery {
+  background-color: #f9e2af;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #f38ba8;
+  color: #f9e2af;
+}
+
+#battery.charging {
+  background-color: #a6e3a1;
+  color: #1e2030;
+}
+
+#network {
+  background-color: #ee99a0;
+  padding-right: 17px;
+}
+
+#clock.calendar {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #8bd5ca;
+}
+
+#clock.time {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #91d7e3;
+}
+
+#bluetooth {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #7dc4e4;
+}
+
+#tray {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #8aadf4;
+}
+
+#pulseaudio {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #a6da95;
+}
+
+tooltip {
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #181926;
+}
+
+tooltip label {
+  padding: 5px;
+  background-color: #181926;
+}
