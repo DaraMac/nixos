@@ -41,7 +41,7 @@
         };
 
         "waybar" = {
-            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nix/home-manager/waybar/";
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";
         };
     };
