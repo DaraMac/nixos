@@ -25,6 +25,7 @@
     ferdium # messaging
     file # cli
     file-roller # archiver
+    flac # music, just for metaflac tag tool
     fluffychat # messaging
     foliate # gnome ebook reader
     fragments # torrent
