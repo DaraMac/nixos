@@ -1,0 +1,188 @@
+// -*- mode: jsonc -*-
+[{
+    // main monitor options
+    "output": ["DP-1", "eDP-1"],
+    "layer": "top",
+    "spacing": 0, // Gaps between modules (4px)
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/submap",
+        "niri/workspaces"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "clock#calendar",
+        "clock#time",
+        "group/signals",
+        "tray"
+    ],
+    // Modules configuration
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+                "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "urgent": " ",
+            "active": " ",
+            "default": " "
+            }
+    },
+    "hyprland/submap": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "urgent": " ",
+            "active": " ",
+            "default": " "
+            }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock#calendar": {
+        "format": "{:%Y-%m-%d %a} ",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+            "format": {
+                "months":   "<span color='#ffead3'><b>{}</b></span>",
+                "days":     "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today":    "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "on-click": "gnome-calendar",
+        "actions": {
+            "on-scroll-down": "shift_up",
+            "on-scroll-up": "shift_down"
+        }
+    },
+    "clock#time": {
+        "format": "{:%H:%M} ",
+        "tooltip-format": "{:%I:%M %p %Z %z}",
+        "on-click": "gnome-clocks"
+    },
+    "mpris": {
+        "format": "{player_icon} ({status_icon}) {title}",
+        "format-paused": "<i>{player_icon} ({status_icon}) {title}</i>",
+        "tooltip-format": "{player}: {artist}",
+        "dynamic-order": [ "title", "artist", "album" ],
+        "title-len": 40,
+        "album-len": 40,
+        "dynamic-len": 100,
+        "player-icons": {
+            "firefox": "󰈹",
+            "chromium": "",
+            "kdeconnect":"",
+            "de":"" // Shortwave radio
+        },
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸"
+        }
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "󰝟 {icon} {format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": "",
+            "portable": "",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "overskride"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} 🌐",
+        "tooltip-format": "{ifname} via {gwaddr} 🌐",
+        "format-linked": "{ifname} (No IP) 🌐",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "group/signals": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 250,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "bluetooth",
+            "battery",
+            "network",
+            "custom/logout",
+            "custom/notifications"
+        ]
+    },
+    "group/group-power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 250,
+            "children-class": "not-power",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/computer-menu", // First element is the group leader and wont be hidden
+            "custom/quit",
+            "custom/lock",
+            "custom/reboot",
+            "custom/power"
+        ]
+    },
+    "custom/logout": {
+        "format": " 󰗼 ",
+        "tooltip": true,
+        "tooltip-format": "Logout menu",
+        "on-click": "wlogout --buttons-per-row 4"
+    },
+    "custom/notifications": {
+        "exec": "~/.config/waybar/scripts/dunst.sh",
+        "restart-interval": 1,
+        "on-click": "dunstctl set-paused toggle",
+        "tooltip": true,
+        "tooltip-format": "Toggle notifications"
+    }
+}
+]
