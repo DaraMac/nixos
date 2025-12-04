@@ -10,7 +10,6 @@
     bibata-cursors # niri
     blanket # sounds
     bottles # gaming
-    brave # browser
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
