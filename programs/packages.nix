@@ -89,6 +89,7 @@
     tokei # cli dev tools code counter
     tree-sitter # dev tools
     tuba # mastodon social media
+    ungoogled-chromium # browser
     unrar-free # cli
     unzip # cli
     vscode-langservers-extracted # html css json lsp
