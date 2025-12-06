@@ -40,6 +40,11 @@
             target = ".config/p10k/p10k.zsh";
         };
 
+        "dunst" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/dunstrc";
+            target = ".config/dunst/dunstrc";
+        };
+
         "waybar" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";
