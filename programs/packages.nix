@@ -14,6 +14,7 @@
     btop # system monitor
     calibre # ebooks
     dconf2nix # gnome nix
+    dialect # translate
     diebahn # railway
     drawio # graphics
     dua # cli disk usage
@@ -93,8 +94,10 @@
     vscode-langservers-extracted # html css json lsp
     waybar # niri
     wev # wayland
+    wike # wikipedia
     wl-clipboard # wayland niri
     wlogout # niri
+    wordbook # gnome dictionary
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     xwayland-satellite # niri
     yazi # cli
