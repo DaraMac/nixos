@@ -5,11 +5,11 @@ with pkgs.lib.gvariant;
 {
     environment.gnome.excludePackages = with pkgs; [
         decibels
-        epiphany
         geary
         gnome-connections
         gnome-console
         gnome-tour
+        papers
         simple-scan
     ];
 
