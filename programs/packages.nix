@@ -78,7 +78,7 @@
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
     rofimoji # niri
-    rustdesk # remote desktop
+    # rustdesk # remote desktop
     shortwave # media
     showtime # gnome video player
     stow # cli dotfiles
