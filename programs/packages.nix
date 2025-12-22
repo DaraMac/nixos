@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    # rustdesk # remote desktop
     adwsteamgtk # gaming
     anki-bin # flashcards
     bartib # time tracker
@@ -58,6 +59,7 @@
     libreoffice # office
     lua-language-server # lsp
     lutris # gaming
+    mhabit # habit
     mousam # weather
     mpv # media
     newsflash
@@ -78,7 +80,6 @@
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
     rofimoji # niri
-    # rustdesk # remote desktop
     shortwave # media
     showtime # gnome video player
     stow # cli dotfiles
