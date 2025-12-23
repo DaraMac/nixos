@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    # rustdesk # remote desktop
     adwsteamgtk # gaming
     anki-bin # flashcards
     bartib # time tracker
@@ -9,16 +10,18 @@
     better-control # niri
     bibata-cursors # niri
     blanket # sounds
-    bottles # gaming
+    bottles # windows gaming
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
+    cartridges # gaming launcher
     dconf2nix # gnome nix
     dialect # translate
     diebahn # railway
     drawio # graphics
     dua # cli disk usage
     dunst # niri
+    eartag # music tag editor
     euphonica # test music player mpd
     fastfetch # system info
     fd # cli
@@ -26,7 +29,7 @@
     file # cli
     file-roller # archiver
     flac # music, just for metaflac tag tool
-    fluffychat # messaging
+    fluffychat # matrix messaging
     fragments # torrent
     gimp3 # graphics
     git # dev tools
@@ -63,22 +66,20 @@
     nil # lsp
     nodejs-slim
     obsidian # notes
-    overskride # niri
+    overskride # bluetooth
     p7zip # cli
     pass # passwords
     pavucontrol # niri
     pinentry-gnome3 # passwords
     playerctl # niri
     python3 # dev tools
-    quick-lookup # dictionary
     renameutils # cli
     resources # gnome circle system monitor
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
     rofimoji # niri
-    # rustdesk # remote desktop
-    shortwave # media
+    shortwave # radio media
     showtime # gnome video player
     stow # cli dotfiles
     stretchly # no breaktimer on nix
@@ -94,7 +95,6 @@
     vscode-langservers-extracted # html css json lsp
     waybar # niri
     wev # wayland
-    wike # wikipedia
     wl-clipboard # wayland niri
     wlogout # niri
     wordbook # gnome dictionary
