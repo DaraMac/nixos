@@ -45,6 +45,11 @@
             target = ".config/dunst/dunstrc";
         };
 
+        "hyprlock" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/hyprlock.conf";
+            target = ".config/hypr/hyprlock.conf";
+        };
+
         "waybar" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";
