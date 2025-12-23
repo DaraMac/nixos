@@ -6,7 +6,6 @@ with pkgs.lib.gvariant;
     environment.gnome.excludePackages = with pkgs; [
         decibels
         geary
-        gnome-connections
         gnome-console
         gnome-tour
         papers
