@@ -41,8 +41,8 @@
         };
 
         "dunst" = {
-            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/dunstrc";
-            target = ".config/dunst/dunstrc";
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/dunst/";
+            target = ".config/dunst/";
         };
 
         "hyprlock" = {
