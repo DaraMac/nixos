@@ -46,8 +46,8 @@
         };
 
         "hyprlock" = {
-            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/hyprlock.conf";
-            target = ".config/hypr/hyprlock.conf";
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/hypr/";
+            target = ".config/hypr/";
         };
 
         "kando" = {
