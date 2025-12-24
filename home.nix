@@ -74,6 +74,11 @@
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";
         };
+
+        "wlogout" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/wlogout/";
+            target = ".config/wlogout/";
+        };
     };
   };
 
