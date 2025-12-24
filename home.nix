@@ -65,6 +65,11 @@
             target = ".config/niri/";
         };
 
+        "sunsetr" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/sunsetr/";
+            target = ".config/sunsetr/";
+        };
+
         "waybar" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";
