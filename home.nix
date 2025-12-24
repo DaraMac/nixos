@@ -50,6 +50,11 @@
             target = ".config/hypr/hyprlock.conf";
         };
 
+        "kando" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/kando/";
+            target = ".config/kando/";
+        };
+
         "waybar" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";

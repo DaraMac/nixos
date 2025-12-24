@@ -1,3 +1,7 @@
 *~
 dconf.nix
 dconf.settings
+
+# kando
+Singleton*
+session/
