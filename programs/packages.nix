@@ -22,7 +22,7 @@
     dua # cli disk usage
     dunst # niri
     eartag # music tag editor
-    euphonica # test music player mpd
+    euphonica # music player mpd
     fastfetch # system info
     fd # cli
     ferdium # messaging

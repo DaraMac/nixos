@@ -5,3 +5,6 @@ dconf.settings
 # kando
 Singleton*
 session/
+
+# sunsetr
+geo.toml
