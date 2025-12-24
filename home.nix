@@ -60,6 +60,11 @@
             target = ".config/latexmk/latexmkrc";
         };
 
+        "niri" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/niri/";
+            target = ".config/niri/";
+        };
+
         "waybar" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";
