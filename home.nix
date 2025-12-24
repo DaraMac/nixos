@@ -65,6 +65,11 @@
             target = ".config/niri/";
         };
 
+        "rofimoji" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/rofimoji/rofimoji.rc";
+            target = ".config/rofimoji.rc";
+        };
+
         "sunsetr" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/sunsetr/";
             target = ".config/sunsetr/";
