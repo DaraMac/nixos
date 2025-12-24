@@ -55,6 +55,11 @@
             target = ".config/kando/";
         };
 
+        "latexmk" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/latexmkrc";
+            target = ".config/latexmk/latexmkrc";
+        };
+
         "waybar" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/waybar/";
             target = ".config/waybar/";

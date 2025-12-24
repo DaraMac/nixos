@@ -1,0 +1,22 @@
+# Run zathura as the pdf viewer, cant remember what the arguments are for
+$pdf_previewer = 'zathura %O %S';
+
+# Tell it to make a pdf directly using pdflatex
+# $pdf_mode = 1;
+
+# Might need to pass extra flags to pdflatex e.g:
+# $pdflatex = 'pdflatex -shell-escape';
+
+# Run bibtex or biber whenever it appears necessary to update the bbl files
+# without checking for the existence of the bib files
+# i.e. presume whatever it's compiling has access to the bib file.
+# This means they will get deleted in a cleanup.
+# $bibtex_use = 2;
+
+# Clean up some extra bits from slides, minted, and others.
+# The %R is a wildcard, and _minted is there twice as it is a directory
+# and it won't remove a non-empty directory so have to remove everything in it with the /* first
+# $clean_full_ext = '_minted-%R _minted-%R/* nav run.xml snm tex.bbl bbl-SAVE-ERROR tex.blg vrb';
+
+# Tell it what the main file is if there are multiple
+# @default_files = ('file.tex')
