@@ -3,6 +3,7 @@
     // main monitor options
     "output": ["DP-1", "eDP-1"],
     "layer": "top",
+    "height": 30,
     "spacing": 0, // Gaps between modules (4px)
     "modules-left": [
         "hyprland/workspaces",
