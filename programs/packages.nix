@@ -7,6 +7,9 @@
     basedpyright # lsp
     bash-language-server # lsp
     bat # cli
+    bat-extras.batdiff # cli
+    bat-extras.batgrep # cli
+    bat-extras.batman # cli
     better-control # niri
     bibata-cursors # niri
     blanket # sounds
