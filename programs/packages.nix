@@ -77,7 +77,7 @@
     playerctl # niri
     python3 # dev tools
     recordbox # music player
-    renameutils # cli
+    # renameutils # cli
     resources # gnome circle system monitor
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
