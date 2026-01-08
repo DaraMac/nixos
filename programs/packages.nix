@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # renameutils # cli
-    # rustdesk # remote desktop
     adwsteamgtk # gaming
     anki-bin # flashcards
     apostrophe # markdown editor / previewer
@@ -84,6 +83,7 @@
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
     rofimoji # niri
+    rustdesk # remote desktop
     shortwave # radio media
     showtime # gnome video player
     stow # cli dotfiles
