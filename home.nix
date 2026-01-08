@@ -57,7 +57,7 @@
 
         "latexmk" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/latexmk/";
-            target = ".config/latexmk/latexmk/";
+            target = ".config/latexmk/";
         };
 
         "niri" = {
