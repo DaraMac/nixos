@@ -8,7 +8,6 @@ with pkgs.lib.gvariant;
         geary
         gnome-console
         gnome-tour
-        papers
         simple-scan
     ];
 
