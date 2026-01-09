@@ -59,6 +59,7 @@
     imagemagick # auto-accent requires it
     inkscape # graphics
     jdt-language-server # lsp jdtls
+    just # dev tools
     kando # pie menu
     libnotify # notifications
     libreoffice # office
