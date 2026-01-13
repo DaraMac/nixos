@@ -21,6 +21,8 @@
             # ls
             lr = "lsd -lr";
 
+            j = "just";
+
 
             # start git aliases
             ggpur = "ggu";
