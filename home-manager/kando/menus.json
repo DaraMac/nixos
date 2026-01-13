@@ -1,4 +1,5 @@
 {
+  "version": "2.1.2",
   "menus": [
     {
       "root": {
@@ -143,15 +144,15 @@
               },
               {
                 "type": "command",
-                "name": "Logout",
-                "icon": "exit_to_app",
-                "iconTheme": "material-symbols-rounded",
                 "data": {
                   "command": "wlogout --buttons-per-row 4",
                   "detached": true,
                   "isolated": false,
                   "delayed": false
-                }
+                },
+                "name": "Logout",
+                "icon": "exit_to_app",
+                "iconTheme": "material-symbols-rounded"
               },
               {
                 "type": "command",
@@ -170,7 +171,9 @@
       "shortcut": "Control+Space",
       "shortcutID": "main-menu",
       "centered": false,
-      "hoverMode": true
+      "anchored": false,
+      "hoverMode": true,
+      "tags": []
     },
     {
       "root": {
@@ -521,6 +524,8 @@
       "shortcut": "",
       "shortcutID": "test",
       "centered": false,
+      "anchored": false,
+      "hoverMode": false,
       "tags": [
         "template"
       ]
