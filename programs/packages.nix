@@ -26,6 +26,7 @@
     dua # cli disk usage
     dunst # niri
     eartag # music tag editor
+    embellish # nerd fonts manager
     euphonica # music player mpd
     fastfetch # system info
     fd # cli
