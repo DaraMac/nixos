@@ -13,10 +13,8 @@ $pdf_previewer = 'zathura %O %S';
 # This means they will get deleted in a cleanup.
 # $bibtex_use = 2;
 
-# Clean up some extra bits from slides, minted, and others.
-# The %R is a wildcard, and _minted is there twice as it is a directory
-# and it won't remove a non-empty directory so have to remove everything in it with the /* first
-# $clean_full_ext = '_minted-%R _minted-%R/* nav run.xml snm tex.bbl bbl-SAVE-ERROR tex.blg vrb';
+# Clean up some extra bits from slides
+# $clean_full_ext = 'bbl-SAVE-ERROR nav run.xml snm tex.bbl tex.blg vrb';
 
 # Tell it what the main file is if there are multiple
-# @default_files = ('file.tex')
+# @default_files = ('file.tex');
