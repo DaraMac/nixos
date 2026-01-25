@@ -46,7 +46,7 @@ programs = {
         ];
 
         # NOTE: The comment will allow the LSP and Treesitter to work in the string
-        extraLuaConfig = /* lua */ ''
+        initLua = /* lua */ ''
 
             vim.cmd.colorscheme 'catppuccin-macchiato'
 
