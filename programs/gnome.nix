@@ -145,5 +145,6 @@ with pkgs.lib.gvariant;
     services = {
         desktopManager.gnome.enable = true;
         displayManager.gdm.enable = true;
+        gnome.evolution-data-server.enable = true; # noctalia
     };
 }

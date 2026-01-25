@@ -73,6 +73,9 @@
             pulse.enable = true;
         };
 
+        power-profiles-daemon.enable = true; # noctalia
+        upower.enable = true; # noctalia
+
         # Enable CUPS to print documents.
         printing.enable = true;
 
