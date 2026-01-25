@@ -314,7 +314,7 @@ programs = {
 
 
             -- treesitter
-            require'nvim-treesitter.configs'.setup {
+            require'nvim-treesitter'.setup {
                 highlight = {
                     enable = true
                 }
