@@ -118,6 +118,11 @@
 
 
     programs = {
+        appimage = {
+            enable = true;
+            binfmt = true;
+        };
+
         niri.enable = true;
 
         # Set up zsh
