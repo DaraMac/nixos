@@ -151,11 +151,6 @@
             enableSSHSupport = true;
         };
 
-        nautilus-open-any-terminal = {
-            enable = true;
-            terminal = "ghostty";
-        };
-
         virt-manager.enable = true; # vm
     };
 
@@ -190,7 +185,7 @@
         ];
     };
 
-    hardware.bluetooth.enable = true; # noctalia
+    hardware.bluetooth.enable = true; # noctalia asked for this
 
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
