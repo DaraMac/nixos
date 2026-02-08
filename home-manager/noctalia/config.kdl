@@ -1,5 +1,29 @@
 spawn-at-startup "qs" "-c" "noctalia-shell"
 
+input {
+    keyboard {
+        xkb {
+            layout "gb"
+            options "caps:escape"
+        }
+
+        // Enable numlock on startup, omitting this setting disables it.
+        numlock
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    mouse {
+        natural-scroll
+    }
+
+    // Make the mouse warp to the center of newly focused windows.
+    warp-mouse-to-focus
+}
+
 window-rule {
     // Rounded corners for a modern look.
     geometry-corner-radius 20
