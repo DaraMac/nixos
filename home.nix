@@ -60,8 +60,13 @@
             target = ".config/latexmk/";
         };
 
-        "niri" = {
-            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/niri/";
+        # "niri" = {
+        #     source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/niri/";
+        #     target = ".config/niri/";
+        # };
+
+        "noctalia" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/noctalia/";
             target = ".config/niri/";
         };
 
