@@ -138,13 +138,13 @@ layout {
     // }
 }
 
-overview {
-    backdrop-color "#181926"
-}
+// overview {
+//     backdrop-color "#181926"
+// }
 
-hotkey-overlay {
-    skip-at-startup
-}
+// hotkey-overlay {
+//     skip-at-startup
+// }
 
 // The path is formatted with strftime(3) to give the screenshot date and time
 // screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%dT%H:%M:%S.png"
@@ -197,14 +197,12 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty" "+new-window"; }
     Mod+B      hotkey-overlay-title="Open Browser: firefox"    { spawn "firefox"; }
-    Mod+Space hotkey-overlay-title="Run an Application: rofi"  { spawn "sh" "-c" "rofi -show combi -combi-modes window,drun -modes combi,emoji:rofimoji,calc -show-icons -calc-command \"echo -n '{result}' | wl-copy\""; }
-    Ctrl+Space hotkey-overlay-title="Run pie menu: kando" { spawn "kando" "--menu" "Main Menu"; }
-    MouseBack hotkey-overlay-title="Run pie menu: kando" { spawn "kando" "--menu" "Main Menu"; }
+    // Mod+Space hotkey-overlay-title="Run an Application: rofi"  { spawn "sh" "-c" "rofi -show combi -combi-modes window,drun -modes combi,emoji:rofimoji,calc -show-icons -calc-command \"echo -n '{result}' | wl-copy\""; }
 
-    Mod+Shift+O hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+Shift+E hotkey-overlay-title="Logout menu: wlogout" { spawn "wlogout" "--buttons-per-row" "4"; }
+    // Mod+Shift+O hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+    // Mod+Shift+E hotkey-overlay-title="Logout menu: wlogout" { spawn "wlogout" "--buttons-per-row" "4"; }
 
-    Mod+Shift+N hotkey-overlay-title="Pull up notifications history" {spawn "dunstctl" "history-pop";}
+    // Mod+Shift+N hotkey-overlay-title="Pull up notifications history" {spawn "dunstctl" "history-pop";}
 
     // The allow-when-locked=true property makes them work even when the session is locked.
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
