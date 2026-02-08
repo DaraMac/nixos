@@ -70,7 +70,7 @@
     mpv # media
     newsflash
     nil # lsp
-    noctalia-shell # desktop
+    noctalia-shell # niri desktop
     nodejs-slim
     obsidian # notes
     overskride # bluetooth

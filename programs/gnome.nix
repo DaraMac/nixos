@@ -16,7 +16,8 @@ with pkgs.lib.gvariant;
         enable = true;
         profiles.user.databases = [
             {
-                lockAll = true; # prevents overriding
+                # lockAll = true; # prevents overriding
+                lockAll = false;
                 settings = {
 
                     "org/gnome/desktop/datetime" = {
