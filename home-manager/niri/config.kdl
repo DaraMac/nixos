@@ -141,7 +141,7 @@ overview {
 }
 
 // Ask the clients to omit their client-side decorations if possible
-prefer-no-csd
+// prefer-no-csd
 
 hotkey-overlay {
     skip-at-startup
