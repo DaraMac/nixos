@@ -114,14 +114,6 @@
     virtualisation = {
         containers.enable = true; # necessary for podman apparently
 
-        # docker = {
-        #     enable = true;
-        #     rootless = {
-        #         enable = true;
-        #         setSocketVariable = true;
-        #     };
-        # };
-
         podman = {
             enable = true;
             dockerCompat = true;
