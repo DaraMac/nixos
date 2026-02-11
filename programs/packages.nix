@@ -28,6 +28,7 @@
     eartag # music tag editor
     embellish # nerd fonts manager
     euphonica # music player mpd
+    eyedropper # gnome colour picker
     fastfetch # system info
     fd # cli
     ferdium # messaging
