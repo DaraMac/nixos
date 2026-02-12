@@ -111,6 +111,7 @@
     xwayland-satellite # niri
     yazi # cli
     zathura # office
+    zip # cli
     zotero # bibliography
     zsh-completions # cli
     zsh-powerlevel10k # cli
