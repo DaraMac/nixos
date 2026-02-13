@@ -74,6 +74,7 @@
     noctalia-shell # niri desktop
     nodejs-slim
     obsidian # notes
+    onlyoffice-desktopeditors # office
     overskride # bluetooth
     p7zip # cli
     pass # passwords
