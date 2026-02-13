@@ -64,7 +64,6 @@
     just # dev tools
     kando # pie menu
     libnotify # notifications
-    libreoffice # office
     lua-language-server # lsp
     lutris # gaming
     mousam # weather
