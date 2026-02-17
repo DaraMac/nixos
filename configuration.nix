@@ -62,7 +62,7 @@
             };
         };
 
-        orca.enable = false;
+        orca.enable = true;
 
         pipewire = {
             alsa = {

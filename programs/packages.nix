@@ -64,7 +64,6 @@
     just # dev tools
     kando # pie menu
     libnotify # notifications
-    libreoffice # office
     lua-language-server # lsp
     lutris # gaming
     mousam # weather
@@ -74,6 +73,7 @@
     noctalia-shell # niri desktop
     nodejs-slim
     obsidian # notes
+    onlyoffice-desktopeditors # office
     overskride # bluetooth
     p7zip # cli
     pass # passwords
@@ -111,6 +111,7 @@
     xwayland-satellite # niri
     yazi # cli
     zathura # office
+    zip # cli
     zotero # bibliography
     zsh-completions # cli
     zsh-powerlevel10k # cli
