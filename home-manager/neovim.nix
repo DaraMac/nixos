@@ -159,7 +159,7 @@ programs = {
                         path = "~/College/notes",
                         overrides = {
                             templates = {
-                                folder = "Meta/Templates"
+                                folder = "Misc/Templates"
                             }
                         }
                     },
