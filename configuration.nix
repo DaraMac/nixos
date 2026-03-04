@@ -160,6 +160,12 @@
         };
 
         virt-manager.enable = true; # vm
+
+        # add terminal to gnome file manager
+        nautilus-open-any-terminal = {
+            enable = true;
+            terminal = "ghostty";
+        };
     };
 
     environment = {
