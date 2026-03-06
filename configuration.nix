@@ -107,24 +107,24 @@
             isNormalUser = true;
         };
 
-        groups.libvirtd.members = ["dara"]; # vm
+        # groups.libvirtd.members = ["dara"]; # vm
     };
 
     # vm
-    virtualisation = {
-        containers.enable = true; # necessary for podman apparently
-
-        podman = {
-            enable = true;
-            dockerCompat = true;
-            defaultNetwork.settings.dns_enabled = true; # Required for containers under podman-compose to be able to talk to each other.
-        };
-
-        libvirtd.enable = true;
-        spiceUSBRedirection.enable = true;
-    };
-
-
+    # virtualisation = {
+    #     containers.enable = true; # necessary for podman apparently
+    #
+    #     podman = {
+    #         enable = true;
+    #         dockerCompat = true;
+    #         defaultNetwork.settings.dns_enabled = true; # Required for containers under podman-compose to be able to talk to each other.
+    #     };
+    #
+    #     libvirtd.enable = true;
+    #     spiceUSBRedirection.enable = true;
+    # };
+    #
+    #
     programs = {
         appimage = {
             enable = true;
@@ -159,7 +159,7 @@
             enableSSHSupport = true;
         };
 
-        virt-manager.enable = true; # vm
+        # virt-manager.enable = true; # vm
 
         # add terminal to gnome file manager
         nautilus-open-any-terminal = {
