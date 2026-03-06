@@ -23,6 +23,7 @@
     dialect # translate
     diebahn # railway
     drawio # graphics
+    drum-machine # music
     dua # cli disk usage
     dunst # niri
     eartag # music tag editor
@@ -63,6 +64,7 @@
     jdt-language-server # lsp jdtls
     just # dev tools
     kando # pie menu
+    keypunch # typing
     libnotify # notifications
     lua-language-server # lsp
     lutris # gaming
