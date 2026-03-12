@@ -4,6 +4,7 @@
     adwsteamgtk # gaming
     anki-bin # flashcards
     apostrophe # markdown editor / previewer
+    authenticator # two-factor authentication
     bartib # time tracker
     basedpyright # lsp
     bash-language-server # lsp
