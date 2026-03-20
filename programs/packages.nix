@@ -40,6 +40,7 @@
     flac # music, just for metaflac tag tool
     fluffychat # matrix messaging
     fragments # torrent
+    gapless # music player
     gimp3 # graphics
     git # dev tools
     gnome-boxes # vm
