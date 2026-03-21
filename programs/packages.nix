@@ -100,6 +100,7 @@
     texliveFull # latex
     thunderbird-latest # email
     tokei # cli dev tools code counter
+    transmission_4-gtk # torrent
     tree-sitter # dev tools
     tuba # mastodon social media
     typst # documents
