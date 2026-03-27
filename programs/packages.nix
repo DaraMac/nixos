@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # heroic # gaming
     # rustdesk # remote desktop
     adwsteamgtk # gaming
     anki-bin # flashcards
@@ -56,6 +55,7 @@
     gnupg # cryptography
     goofcord # discord
     haskell-language-server # lsp
+    heroic # gaming
     hieroglyphic # latex symbols
     hledger # finance
     hledger-iadd # finance
