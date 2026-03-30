@@ -55,6 +55,7 @@
     gnupg # cryptography
     goofcord # discord
     haskell-language-server # lsp
+    hayagriva # bibliography
     heroic # gaming
     hieroglyphic # latex symbols
     hledger # finance
