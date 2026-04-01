@@ -85,6 +85,7 @@
     pinentry-gnome3 # passwords
     playerctl # niri
     python3 # dev tools
+    readest # ebooks
     renameutils # cli
     resources # gnome circle system monitor
     ripgrep # cli
