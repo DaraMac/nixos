@@ -5,6 +5,7 @@
     anki-bin # flashcards
     apostrophe # markdown editor / previewer
     authenticator # two-factor authentication
+    awww # niri wallpaper
     bartib # time tracker
     basedpyright # lsp
     bash-language-server # lsp
@@ -97,7 +98,6 @@
     stow # cli dotfiles
     stretchly # no breaktimer on nix
     sunsetr # niri
-    swww # niri
     texliveFull # latex
     thunderbird-latest # email
     tokei # cli dev tools code counter
