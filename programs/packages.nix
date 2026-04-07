@@ -116,6 +116,7 @@
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     xwayland-satellite # niri
     yazi # cli
+    yq-go # yaml processo
     zathura # office
     zip # cli
     zotero # bibliography
