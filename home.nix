@@ -60,6 +60,11 @@
             target = ".config/latexmk/";
         };
 
+        "mango" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/mango/";
+            target = ".config/mango/";
+        }
+
         "niri" = {
             source = config.lib.file.mkOutOfStoreSymlink "/home/dara/nixos/home-manager/niri/";
             target = ".config/niri/";
