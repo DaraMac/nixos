@@ -16,7 +16,7 @@
     better-control # niri
     bibata-cursors # niri
     blanket # sounds
-    bottles # windows gaming
+    # bottles # windows gaming
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
@@ -70,7 +70,7 @@
     keypunch # typing
     libnotify # notifications
     lua-language-server # lsp
-    lutris # gaming
+    # lutris # gaming
     mousam # weather
     mpv # media
     newsflash
