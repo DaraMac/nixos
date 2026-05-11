@@ -259,6 +259,9 @@
             [[ ! -f ~/.config/p10k/p10k.zsh ]] || source ~/.config/p10k/p10k.zsh
             ###############################################################################
 
+            # Where uv installs programs
+            path+=/home/dara/.local/bin
+
             # Setup yazi alias
             function y() {
                 local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
