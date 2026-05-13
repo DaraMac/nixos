@@ -92,6 +92,7 @@
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
     rmpc # cli music player
+    rnote
     rofimoji # niri
     shortwave # radio media
     showtime # gnome video player
