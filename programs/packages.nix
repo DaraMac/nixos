@@ -109,7 +109,6 @@
     unrar-free # cli
     unzip # cli
     uv # python
-    varia # download manager
     vscode-langservers-extracted # html css json lsp
     waybar # niri
     wev # wayland
