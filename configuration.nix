@@ -36,8 +36,12 @@
     # Select internationalisation properties.
     i18n = {
         defaultLocale = "it_IT.UTF-8";
-        extraLocales = ["en_GB.UTF-8/UTF-8" "en_IE.UTF-8/UTF-8" "ga_IE.UTF-8/UTF-8"];
-        extraLocaleSettings.LC_ALL = "en_IE.UTF-8";
+        extraLocales = [
+            "en_GB.UTF-8/UTF-8"
+            "en_IE.UTF-8/UTF-8"
+            "ga_IE.UTF-8/UTF-8"
+            ];
+        extraLocaleSettings.LC_ALL = "it_IT.UTF-8";
     };
 
     # PipeWire uses this to acquire realtime priority
