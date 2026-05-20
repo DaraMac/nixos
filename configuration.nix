@@ -40,6 +40,7 @@
             "en_GB.UTF-8/UTF-8"
             "en_IE.UTF-8/UTF-8"
             "ga_IE.UTF-8/UTF-8"
+            "it_IT.UTF-8/UTF-8"
             ];
         extraLocaleSettings.LC_ALL = "it_IT.UTF-8";
     };
