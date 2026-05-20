@@ -71,6 +71,7 @@
     keypunch # typing
     libnotify # notifications
     lua-language-server # lsp
+    motrix-next # download manager
     mousam # weather
     mpv # media
     newsflash
