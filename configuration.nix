@@ -35,8 +35,8 @@
 
     # Select internationalisation properties.
     i18n = {
-        defaultLocale = "en_GB.UTF-8";
-        extraLocales = ["it_IT.UTF-8/UTF-8"];
+        defaultLocale = "it_IT.UTF-8";
+        extraLocales = ["en_GB.UTF-8/UTF-8" "en_IE.UTF-8/UTF-8" "ga_IE.UTF-8/UTF-8"];
 
         extraLocaleSettings = {
             LC_ADDRESS = "en_IE.UTF-8";
