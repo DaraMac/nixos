@@ -77,6 +77,7 @@
     newsflash
     nil # lsp
     noctalia-shell # niri desktop
+    nocturne # music
     nodejs-slim
     obsidian # notes
     onlyoffice-desktopeditors # office
