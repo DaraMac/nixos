@@ -8,6 +8,8 @@
           autosuggestion.enable = true;
           dotDir = "/home/dara/.config/zsh/";
           oh-my-zsh.enable = true;
+
+          # Try patina https://github.com/michel-kraemer/zsh-patina
           syntaxHighlighting.enable = true;
 
           shellAliases = {
