@@ -74,6 +74,7 @@
     motrix-next # download manager
     mousam # weather
     mpv # media
+    mypy # python
     newsflash
     nil # lsp
     noctalia-shell # niri desktop
