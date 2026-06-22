@@ -99,10 +99,22 @@
             extraGroups = [ "networkmanager" "wheel" ];
             isNormalUser = true;
         };
+
+        groups = {
+            libvirtd.members = [ "dara" ];
+            kvm.members = [ "dara" ];
+        };
+
     };
 
     # vm
     virtualisation = {
+        libvirtd = {
+            enable = true;
+        };
+
+        spiceUSBRedirection.enable = true;
+
         containers.enable = true; # necessary for podman
 
         podman = {
