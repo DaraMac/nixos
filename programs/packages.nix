@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # bottles # windows gaming
-    # lutris # gaming
     # rustdesk # remote desktop
     adwsteamgtk # gaming
     anki-bin # flashcards
@@ -71,6 +70,7 @@
     keypunch # typing
     libnotify # notifications
     lua-language-server # lsp
+    lutris # gaming
     motrix-next # download manager
     mousam # weather
     mpv # media
