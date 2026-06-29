@@ -21,6 +21,7 @@
     btop # system monitor
     calibre # ebooks
     cartridges # gaming launcher
+    cliphist # wayland mango
     dconf2nix # gnome nix
     dialect # translate
     diebahn # railway
