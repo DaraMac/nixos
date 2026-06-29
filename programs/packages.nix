@@ -117,6 +117,7 @@
     wev # wayland
     wl-clipboard # wayland niri
     wlogout # niri
+    wlr-randr # wayland
     wordbook # gnome dictionary
     xdg-desktop-portal-gtk # hyprland, to implement file picker apparently
     xwayland-satellite # niri
