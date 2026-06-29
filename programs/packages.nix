@@ -119,6 +119,7 @@
     wlogout # niri
     wlr-randr # wayland
     wordbook # gnome dictionary
+    xdg-desktop-portal # wayland mango
     xdg-desktop-portal-gtk # wayland hyprland, to implement file picker apparently
     xdg-desktop-portal-wlr # wayland mango
     xwayland-satellite # niri
