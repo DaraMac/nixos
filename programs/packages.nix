@@ -65,6 +65,7 @@
     hyprlock # niri
     imagemagick # auto-accent requires it
     inkscape # graphics
+    jdk # java for nagini python
     jdt-language-server # lsp jdtls
     just # dev tools
     kando # pie menu
