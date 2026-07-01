@@ -105,6 +105,7 @@
     sunsetr # niri
     texliveFull # latex
     thunderbird-latest # email
+    tinymist # lsp
     tokei # cli dev tools code counter
     transmission_4-gtk # torrent
     tree-sitter # dev tools
