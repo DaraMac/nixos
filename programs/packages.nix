@@ -89,6 +89,8 @@
     pavucontrol # niri
     pinentry-gnome3 # passwords
     playerctl # niri
+    pyrefly # python
+    pyright # python
     python3 # dev tools
     readest # ebooks
     renameutils # cli
@@ -110,6 +112,7 @@
     transmission_4-gtk # torrent
     tree-sitter # dev tools
     tuba # mastodon social media
+    ty # python
     typst # documents
     unrar-free # cli
     unzip # cli
