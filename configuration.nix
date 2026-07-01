@@ -172,11 +172,12 @@
         variables = {
             BARTIB_FILE = "/home/dara/.local/share/bartib/2026.bartib";
             EDITOR = "nvim";
-            LEDGER_FILE="/home/dara/Documents/accounts/2025/2025.journal";
+            LEDGER_FILE = "/home/dara/Documents/accounts/2025/2025.journal";
+            JAVA_HOME = ''${pkgs.jdk.home}/lib/openjdk''; # just for nagini python
 
             # Use bat for highighted manual
-            MANPAGER="sh -c 'col -bx | bat -l man -p'";
-            MANROFFOPT="-c";
+            MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+            MANROFFOPT = "-c";
         };
     };
 
