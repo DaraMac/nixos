@@ -96,7 +96,7 @@
         # Define a user account.
         users.dara = {
             description = "Dara MacConville";
-            extraGroups = [ "networkmanager" "wheel" ];
+            extraGroups = [ "networkmanager" "wheel" "dialout"]; # dialout is for serial devices to access flipper
             isNormalUser = true;
         };
 
