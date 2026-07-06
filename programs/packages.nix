@@ -71,6 +71,7 @@
     kando # pie menu
     keypunch # typing
     libnotify # notifications
+    lilypond # music
     lua-language-server # lsp
     lutris # gaming
     motrix-next # download manager
