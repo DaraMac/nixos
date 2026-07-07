@@ -121,6 +121,7 @@
     unzip # cli
     uv # python
     vscode-langservers-extracted # html css json lsp
+    warp # file transfer
     waybar # niri
     wev # wayland
     wl-clipboard # wayland niri
