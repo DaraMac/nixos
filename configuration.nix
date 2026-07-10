@@ -132,7 +132,7 @@
         };
 
         niri.enable = true;
-        mangowc.enable = true;
+        mango.enable = true;
 
         # Set up zsh
         zsh = {
