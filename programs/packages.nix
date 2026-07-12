@@ -104,7 +104,6 @@
     shortwave # radio media
     showtime # gnome video player
     stow # cli dotfiles
-    stress-ng
     stretchly # no breaktimer on nix
     sunsetr # niri
     texliveFull # latex
@@ -132,7 +131,7 @@
     xdg-desktop-portal-wlr # wayland mango
     xwayland-satellite # niri
     yazi # cli
-    yq-go # yaml processo
+    yq-go # yaml processer
     zathura # office
     zip # cli
     zotero # bibliography
