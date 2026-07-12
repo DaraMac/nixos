@@ -94,8 +94,6 @@
     pyrefly # python
     pyright # python
     python3 # dev tools
-    qFlipper # flipper
-    readest # ebooks
     renameutils # cli
     resources # gnome circle system monitor
     ripgrep # cli
