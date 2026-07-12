@@ -106,6 +106,7 @@
     shortwave # radio media
     showtime # gnome video player
     stow # cli dotfiles
+    stress-ng
     stretchly # no breaktimer on nix
     sunsetr # niri
     texliveFull # latex
