@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    # bottles # windows gaming
     # rustdesk # remote desktop
     adwsteamgtk # gaming
     anki-bin # flashcards
@@ -16,7 +17,6 @@
     better-control # niri
     bibata-cursors # niri
     blanket # sounds
-    bottles # windows gaming
     brightnessctl # niri
     btop # system monitor
     calibre # ebooks
