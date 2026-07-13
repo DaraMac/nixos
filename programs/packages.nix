@@ -119,7 +119,7 @@
     warp # file transfer
     waybar # niri
     wev # wayland
-    wine
+    wine-wayland
     wl-clipboard # wayland niri
     wlogout # niri
     wlr-randr # wayland
