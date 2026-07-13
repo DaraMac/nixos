@@ -26,12 +26,10 @@
     dialect # translate
     diebahn # railway
     drawio # graphics
-    drum-machine # music
     dua # cli disk usage
     dunst # niri
     eartag # music tag editor
     embellish # nerd fonts manager
-    euphonica # music player mpd
     eyedropper # gnome colour picker
     fastfetch # system info
     fd # cli
@@ -71,7 +69,7 @@
     kando # pie menu
     keypunch # typing
     libnotify # notifications
-    lilypond # music
+    lilypond # music notation
     lua-language-server # lsp
     lutris # gaming
     magic-wormhole # file transfer
@@ -82,7 +80,6 @@
     newsflash
     nil # lsp
     noctalia-shell # niri desktop
-    nocturne # music
     nodejs-slim
     obsidian # notes
     onlyoffice-desktopeditors # office
@@ -99,7 +96,6 @@
     resources # gnome circle system monitor
     ripgrep # cli
     ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
-    rmpc # cli music player
     rnote
     rofimoji # niri
     shortwave # radio media
