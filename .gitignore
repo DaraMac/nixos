@@ -6,6 +6,8 @@ dconf.settings
 Singleton*
 session
 backups
+achievements.json
+ipc-info.json
 
 # sunsetr
 geo.toml
