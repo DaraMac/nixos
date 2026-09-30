@@ -79,7 +79,6 @@
     mypy # python
     newsflash
     nil # lsp
-    noctalia-shell # niri desktop
     nodejs-slim
     obsidian # notes
     onlyoffice-desktopeditors # office
@@ -132,7 +131,7 @@
     yq-go # yaml processer
     zathura # office
     zip # cli
-    zotero # bibliography
+    # zotero # bibliography
     zsh-completions # cli
     zsh-powerlevel10k # cli
   ];
