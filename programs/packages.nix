@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # rustdesk # remote desktop
     # zotero # bibliography
     adwsteamgtk # gaming
     anki-bin # flashcards
