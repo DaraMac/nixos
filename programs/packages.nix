@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     # bottles # windows gaming
     # rustdesk # remote desktop
+    # zotero # bibliography
     adwsteamgtk # gaming
     anki-bin # flashcards
     apostrophe # markdown editor / previewer
@@ -79,7 +80,7 @@
     mypy # python
     newsflash
     nil # lsp
-    noctalia-shell # niri desktop
+    nocturne # music
     nodejs-slim
     obsidian # notes
     onlyoffice-desktopeditors # office
@@ -132,7 +133,6 @@
     yq-go # yaml processer
     zathura # office
     zip # cli
-    zotero # bibliography
     zsh-completions # cli
     zsh-powerlevel10k # cli
   ];
