@@ -1,9 +1,9 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    # apostrophe # markdown editor / previewer
     # zotero # bibliography
     adwsteamgtk # gaming
     anki-bin # flashcards
-    apostrophe # markdown editor / previewer
     authenticator # two-factor authentication
     awww # niri wallpaper
     bartib # time tracker
