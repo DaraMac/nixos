@@ -73,7 +73,6 @@
     lua-language-server # lsp
     lutris # gaming
     magic-wormhole # file transfer
-    motrix-next # download manager
     mousam # weather
     mpv # media
     mypy # python
