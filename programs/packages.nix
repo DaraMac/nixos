@@ -13,7 +13,6 @@
     bat-extras.batdiff # cli
     bat-extras.batgrep # cli
     bat-extras.batman # cli
-    better-control # niri
     bibata-cursors # niri
     blanket # sounds
     bottles # windows gaming
