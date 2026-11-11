@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # apostrophe # markdown editor / previewer
-    # calibre # ebooks
     # newsflash
     # pyrefly # python
     # zotero # bibliography
@@ -21,6 +20,7 @@
     bottles # windows gaming
     brightnessctl # niri
     btop # system monitor
+    calibre # ebooks
     cartridges # gaming launcher
     cliphist # wayland mango
     dconf2nix # gnome nix
