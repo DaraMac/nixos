@@ -6,52 +6,37 @@
     adwsteamgtk # gaming
     anki-bin # flashcards
     apostrophe # markdown editor / previewer
-    authenticator # two-factor authentication
-    awww # niri wallpaper
-    bartib # time tracker
     basedpyright # lsp
     bash-language-server # lsp
     bat # cli
     bat-extras.batdiff # cli
     bat-extras.batgrep # cli
     bat-extras.batman # cli
-    bibata-cursors # niri
     blanket # sounds
     bottles # windows gaming
-    brightnessctl # niri
     btop # system monitor
     calibre # ebooks
     cartridges # gaming launcher
-    cliphist # wayland mango
     dconf2nix # gnome nix
     dialect # translate
     diebahn # railway
-    drawio # graphics
     dua # cli disk usage
-    dunst # niri
-    eartag # music tag editor
-    embellish # nerd fonts manager
-    eyedropper # gnome colour picker
     fastfetch # system info
     fd # cli
     ferdium # messaging
     file # cli
     file-roller # archiver
-    flac # music, just for metaflac tag tool
     fluffychat # matrix messaging
     fragments # torrent
-    gimp3 # graphics
     git # dev tools
     gnome-boxes # vm
     gnome-decoder # qr code generator
     gnome-podcasts # podcasts
     gnome-sound-recorder # audio
     gnome-tweaks # configuration
-    gnome-weather # weather
     gnomeExtensions.appindicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.night-theme-switcher
-    gnomeExtensions.paperwm
     gnumake # dev tools
     gnupg # cryptography
     goofcord # discord
@@ -61,47 +46,30 @@
     hieroglyphic # latex symbols
     hledger # finance
     hledger-iadd # finance
-    hyprlock # niri
-    imagemagick # auto-accent requires it
-    inkscape # graphics
     jdk # java for nagini python
     jdt-language-server # lsp jdtls
     just # dev tools
-    kando # pie menu
-    keypunch # typing
-    libnotify # notifications
-    lilypond # music notation
     lua-language-server # lsp
     lutris # gaming
-    magic-wormhole # file transfer
-    mousam # weather
     mpv # media
     mypy # python
     nil # lsp
-    nocturne # music
     nodejs-slim
     obsidian # notes
     onlyoffice-desktopeditors # office
-    overskride # bluetooth
     p7zip # cli
     pass # passwords
-    pavucontrol # niri
     pinentry-gnome3 # passwords
-    playerctl # niri
     pyright # python
     python3 # dev tools
     renameutils # cli
     resources # gnome circle system monitor
     ripgrep # cli
-    ripgrep-all # cli also search in PDFs, E-Books, Office docs, zip, tar.gz, etc
-    rnote
-    rofimoji # niri
+    rnote # drawing pad
     shortwave # radio media
     showtime # gnome video player
     stow # cli dotfiles
     stretchly # no breaktimer on nix
-    sunsetr # niri
-    texliveFull # latex
     thunderbird-latest # email
     tinymist # lsp
     tokei # cli dev tools code counter
@@ -114,18 +82,8 @@
     unzip # cli
     uv # python
     vscode-langservers-extracted # html css json lsp
-    warp # file transfer
-    waybar # niri
-    wev # wayland
-    wineWow64Packages.full # wine
-    wl-clipboard # wayland niri
-    wlogout # niri
-    wlr-randr # wayland
+    wl-clipboard # wayland clipboard commands
     wordbook # gnome dictionary
-    xdg-desktop-portal # wayland mango
-    xdg-desktop-portal-gtk # wayland hyprland, to implement file picker apparently
-    xdg-desktop-portal-wlr # wayland mango
-    xwayland-satellite # niri
     yazi # cli
     yq-go # yaml processer
     zathura # office
