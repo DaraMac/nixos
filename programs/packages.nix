@@ -2,6 +2,8 @@
   environment.systemPackages = with pkgs; [
     # apostrophe # markdown editor / previewer
     # calibre # ebooks
+    # newsflash
+    # pyrefly # python
     # zotero # bibliography
     adwsteamgtk # gaming
     anki-bin # flashcards
@@ -75,7 +77,6 @@
     mousam # weather
     mpv # media
     mypy # python
-    newsflash
     nil # lsp
     nocturne # music
     nodejs-slim
@@ -87,7 +88,6 @@
     pavucontrol # niri
     pinentry-gnome3 # passwords
     playerctl # niri
-    pyrefly # python
     pyright # python
     python3 # dev tools
     renameutils # cli
