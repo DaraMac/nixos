@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # newsflash
     # pyrefly # python
     # zotero # bibliography
     adwsteamgtk # gaming
@@ -53,6 +52,7 @@
     lutris # gaming
     mpv # media
     mypy # python
+    newsflash
     nil # lsp
     nodejs-slim
     obsidian # notes
