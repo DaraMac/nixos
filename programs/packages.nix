@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # pyrefly # python
     # zotero # bibliography
     adwsteamgtk # gaming
     anki-bin # flashcards
@@ -60,6 +59,7 @@
     p7zip # cli
     pass # passwords
     pinentry-gnome3 # passwords
+    pyrefly # python
     pyright # python
     python3 # dev tools
     renameutils # cli
