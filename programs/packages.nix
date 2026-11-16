@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # zotero # bibliography
     adwsteamgtk # gaming
     anki-bin # flashcards
     apostrophe # markdown editor / previewer
@@ -88,6 +87,7 @@
     yq-go # yaml processer
     zathura # office
     zip # cli
+    zotero # bibliography
     zsh-completions # cli
     zsh-powerlevel10k # cli
   ];
