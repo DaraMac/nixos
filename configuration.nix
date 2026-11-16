@@ -185,6 +185,11 @@
         # Allow unfree packages
         config.allowUnfree = true;
 
+        # Temporarily to get zotero working
+        config.permittedInsecurePackages = [
+            "firefox-esr-140-bin-unwrapped-140.17.0esr"
+        ];
+
         # Add media controls to mpv so KDE Connect works, and make the UI nicer
         overlays = [
             (self: super: {
