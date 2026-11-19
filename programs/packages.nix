@@ -38,6 +38,7 @@
     gnupg # cryptography
     goofcord # discord
     haskell-language-server # lsp
+    hatch # python build system
     hayagriva # bibliography
     heroic # gaming
     hieroglyphic # latex symbols
