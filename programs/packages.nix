@@ -25,6 +25,7 @@
     file-roller # archiver
     fluffychat # matrix messaging
     fragments # torrent
+    gettext # translation tools
     git # dev tools
     gnome-boxes # vm
     gnome-decoder # qr code generator
